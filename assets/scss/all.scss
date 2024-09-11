@@ -1,0 +1,68 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import './utils/variables-dark';
+@import "../../node_modules/bootstrap";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// 開啟所有顏色https://bootstrap.dev.org.tw/docs/5.3/customize/color/
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grays, $primaries, $secondaries, $neutrals, $successes, $warnings, $dangers, );
+// 文字顏色
+$utilities: map-merge($utilities,
+        ("color": map-merge(map-get($utilities, "color"),
+                (values: map-merge(map-get(map-get($utilities, "color"), "values"),
+                        ($all-colors ),
+                    ),
+                ),
+            ),
+        ));
+// 背景顏色
+$utilities: map-merge($utilities,
+        ("background-color": map-merge(map-get($utilities, "background-color"),
+                (values: map-merge(map-get(map-get($utilities, "background-color"), "values"),
+                        ($all-colors ),
+                    ),
+                ),
+            ),
+        ));
+// 邊框顏色
+$utilities: map-merge($utilities,
+        ("border-color": map-merge(map-get($utilities, "border-color"),
+                (values: map-merge(map-get(map-get($utilities, "border-color"), "values"),
+                        ($all-colors ),
+                    ),
+                ),
+            ),
+        ));
+// Enable responsive:啟用bootstrap未開啟的font-size響應式class(https://getbootstrap.com/docs/5.2/utilities/api/)
+$utilities: map-merge($utilities, ("font-size": map-merge(map-get($utilities, "font-size"),
+                (responsive: true),
+            ),
+        ));
+// 自訂shadow
+$utilities: map-merge($utilities,
+        ("outline-shadow": (property: box-shadow,
+                class: outline-shadow,
+                values: (sm: $outline-shadow-sm,
+                    lg: $outline-shadow-lg,
+                    disable: $outline-shadow-disable,
+                    ppt: $outline-shadow-ppt,
+                ),
+            ),
+        ));
+
+.outline-shadow-sm:hover {
+    box-shadow: $outline-shadow-sm-hover !important;
+}
+
+.outline-shadow-lg:hover {
+    box-shadow: $outline-shadow-lg-hover !important;
+}
+
+@import "bootstrap/scss/utilities/api";
+@import "./base/base.scss";
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './pages/index.scss';

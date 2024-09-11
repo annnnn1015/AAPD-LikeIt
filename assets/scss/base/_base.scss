@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: $neutral-950 !important;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+h6 {
+    margin-bottom: 0;
+}
+
+//自訂文字desktop自適應
+@include media-breakpoint-up(lg) {
+    .fs-body-1 {
+        font-size: $font-size-base *1.375 !important;
+        // 22px 
+    }
+
+    .fs-body-2 {
+        $body-2-font-size: $font-size-base *1.25 !important;
+        //20px
+    }
+
+    .fs-body-3 {
+        $body-3-font-size: $font-size-base * 1.125 !important;
+        //18px
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+// 預設邊框顏色
+:root {
+    --bs-border-color: #3d3d3d !important;
+}
