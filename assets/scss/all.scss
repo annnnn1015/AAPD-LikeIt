@@ -60,6 +60,30 @@ $utilities: map-merge($utilities,
     box-shadow: $outline-shadow-lg-hover !important;
 }
 
+// 自訂直角
+$utilities: map-merge($utilities,
+        ("rounded-top-right": (property: border-top-right-radius,
+                class: rounded-top-right,
+                values: (0: 0px,
+                ),
+            ),
+            "rounded-top-left": (property: border-top-left-radius,
+                class: rounded-top-left,
+                values: (0: 0px,
+                ),
+            ),
+            "rounded-bottom-left": (property: border-bottom-left-radius,
+                class: rounded-bottom-left,
+                values: (0: 0px,
+                ),
+            ),
+            "rounded-bottom-right": (property: border-bottom-right-radius,
+                class: rounded-bottom-right,
+                values: (0: 0px,
+                ),
+            ),
+        ));
+
 @import "bootstrap/scss/utilities/api";
 @import "./base/base.scss";
 @import './layout/header.scss';
