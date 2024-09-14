@@ -1,4 +1,442 @@
-.box {
-    width: 100px;
-    height: 100px;
+.banner {
+    .card {
+        max-width: 680px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .banner {
+        .card {
+            max-width: 100%;
+        }
+    }
+}
+
+main {
+    .wrap {
+        max-width: 680px;
+    }
+
+    // 課程介紹區域外框上方藍色裝飾
+    .wrap::after {
+        content: "";
+        width: 100%;
+        height: 38px;
+        background-color: $primary;
+        position: absolute;
+        border-radius: 32px 32px 0 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    main {
+        .wrap {
+            max-width: 100%;
+            padding-left: 114px !important;
+            padding-right: 114px !important;
+            transition: ease 0.3s;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    main {
+        .wrap {
+            padding-left: 171px !important;
+            padding-right: 171px !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    main {
+        .wrap {
+            padding-left: 228px !important;
+            padding-right: 228px !important;
+        }
+    }
+}
+
+
+.course-intro {
+    margin-top: 38px;
+
+    // 遮蔽文字漸層裝飾
+    .gradient::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        background: linear-gradient(to bottom, transparent, #FFFFFFB3, #E1EFFD 70%);
+        border-radius: 0 0 32px 32px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    // 限制文字行數
+    .text {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    // 點選label時選擇.open input，使.text增加行數
+    .open:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    // 點選時隱藏遮蔽文字漸層
+    .open:checked+.gradient::after {
+        display: none;
+    }
+
+    .btn {
+        z-index: 2;
+    }
+
+    .btn::after {
+        content: "查看更多";
+    }
+
+    // 展開文字時按鈕切換文字
+    .open:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    // 展開文字時按鈕切換位置
+    .open:checked+.text .btn {
+        left: 85% !important;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    .course-intro {
+        .gradient::after {
+            display: none;
+        }
+    }
+}
+
+.course-unit {
+    .note {
+        margin-left: 34px;
+    }
+
+    // 標題跟副標題中間直線裝飾
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
+    }
+
+    // 修改手風琴標題欄打開時的樣式
+    .accordion-button:not(.collapsed) {
+        border-radius: 32px 32px 0 0 !important;
+        box-shadow: none !important;
+    }
+
+    .accordion-button {
+        line-height: 35.2px;
+    }
+
+    // 修改手風琴右側開合icon
+    .accordion-button::after {
+        background-image: url(/assets/images/Icon/arrow_blue.png) !important;
+        margin-left: 4px !important;
+        background-size: 11px 6.5px !important;
+        background-position: center !important;
+        z-index: 3;
+    }
+
+
+    .accordion-unit2 {
+        .accordion-button::after {
+            background-image: url(/assets/images/Icon/arrow_black.png) !important;
+            margin-left: 4px !important;
+            background-size: 11px 6.5px !important;
+            background-position: center !important;
+            z-index: 3;
+        }
+    }
+}
+
+.course-lecturer {
+    .card-body {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .teacher-photo {
+        background-image: url(/assets/images/Teacher/teacher_Lisa_lg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    .course-lecturer {
+        .card-body {
+            padding-top: 76px;
+            padding-bottom: 76px;
+        }
+    }
+}
+
+.course-review {
+    .note {
+        margin-left: 34px;
+    }
+
+    // 標題跟副標題中間直線裝飾
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
+    }
+
+    // 遮蔽文字漸層裝飾
+    .gradient::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        background: linear-gradient(to bottom, transparent 0%, #FFFFFF 70%);
+        border-radius: 0 0 32px 32px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    // 限制文字行數
+    .text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    // 點選label時選擇.open input，使.text增加行數
+    .open-review-card1:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    .open-review-card2:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    .open-review-card3:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    .open-review-card4:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    // 點選時隱藏遮蔽文字漸層
+    .open-review-card1:checked+.gradient::after {
+        display: none;
+    }
+
+    .open-review-card2:checked+.gradient::after {
+        display: none;
+    }
+
+    .open-review-card3:checked+.gradient::after {
+        display: none;
+    }
+
+    .open-review-card4:checked+.gradient::after {
+        display: none;
+    }
+
+    .btn {
+        z-index: 2;
+    }
+
+    .btn::after {
+        content: "展開留言";
+    }
+
+    // 展開文字時按鈕切換文字
+    .open-review-card1:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    .open-review-card2:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    .open-review-card3:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    .open-review-card4:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    // 展開文字時按鈕切換位置
+    .open-review-card1:checked+.text .btn {
+        left: 85% !important;
+    }
+
+    .open-review-card2:checked+.text .btn {
+        left: 85% !important;
+    }
+
+    .open-review-card3:checked+.text .btn {
+        left: 85% !important;
+    }
+
+    .open-review-card4:checked+.text .btn {
+        left: 85% !important;
+    }
+}
+
+
+.course-page {
+    .pagination {
+        .page-link {
+            color: $neutral-950 !important;
+        }
+
+        .active>.page-link {
+            background-color: #FFFFFF !important;
+            border-bottom: $primary-600 2px solid !important;
+            color: $primary-600 !important;
+        }
+    }
+}
+
+.similar-course,
+.recommand-course {
+    .note {
+        margin-left: 34px;
+    }
+
+    // 標題跟副標題中間直線裝飾
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
+    }
+
+    // 新上架標籤
+    .new-tag {
+        content: "";
+        position: absolute;
+        width: 102px;
+        top: 8px;
+        left: 0px;
+        border-radius: 0px 16px 16px 0;
+        background-color: $success-500;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 8px;
+        line-height: 1.8;
+    }
+
+
+
+    // 愛心標籤
+    .like-tag {
+        content: "";
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        background-image: url(/assets/images/Like_icon/Like_icon_Default.png);
+        background-size: cover;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover {
+            background-image: url(/assets/images/Like_icon/Like_icon_Hover.png);
+        }
+
+        &:active {
+            border-color: transparent !important;
+            box-shadow: transparent !important;
+        }
+
+        &:focus {
+            background-image: url(/assets/images/Like_icon/Like_icon_Clicked.png);
+        }
+    }
+
+    .hot-tag {
+        content: "";
+        position: absolute;
+        width: 120px;
+        top: 8px;
+        left: 0px;
+        border-radius: 0px 16px 16px 0;
+        background-color: $primary-500;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 8px;
+        line-height: 1.8;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .similar-course,
+    .recommand-course {
+        .new-tag {
+            top: 25px;
+            border-radius: 0px 16px 16px 0;
+        }
+
+        .like-tag {
+            width: 49px;
+            height: 49px;
+            top: 24px;
+            right: 20px;
+        }
+
+        .hot-tag {
+            top: 25px;
+            border-radius: 0px 16px 16px 0;
+        }
+    }
+}
+
+.recommand-course {
+    .note {
+        margin-left: 34px;
+    }
+
+    // 標題跟副標題中間直線裝飾
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
+    }
+
+
 }
