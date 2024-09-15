@@ -1,0 +1,171 @@
+@mixin pad-lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+.banner {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: -48px;
+    z-index: -1;
+    content: "";
+    display: block;
+    height: 647px;
+    width: 268px;
+    background: url(/assets/images/Bg_Blob/Bg_Tablet_Home_Blob.png);
+
+    @include pad-lg {
+      right: 25%;
+      top: -300px;
+      height: 649px;
+      width: 654px;
+      background: url(/assets/images/Bg_Blob/Bg_Desktop_Home_Header_Blob_2.png);
+    }
+  }
+
+  &::before {
+    @include pad-lg {
+      position: absolute;
+      left: 0;
+      top: 70%;
+      z-index: -1;
+      content: "";
+      display: block;
+      height: 624px;
+      width: 379px;
+      background: url(/assets/images/Bg_Blob/Bg_Desktop_Home_Header_Blob_1.png);
+    }
+  }
+
+  .banner-img {
+    max-width: 100%;
+    height: auto;
+    @include pad-lg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // ↓ 消除 x 軸
+  .row {
+    --bs-gutter-x: 0rem;
+  }
+  // ↑
+
+  .slogan {
+    @include pad-lg {
+      max-width: 279px;
+      margin-left: 130px;
+    }
+  }
+
+  .swiperBanner {
+    border: 1px solid $neutral-900;
+    border-right: none;
+    border-radius: 32px 0 0 32px;
+    background-color: white;
+    padding: 16px 0 14px 16px;
+    margin-left: 32px;
+    margin-bottom: 52px;
+
+    @include pad-lg {
+      margin-left: 0px;
+    }
+  }
+
+  .ic--round-keyboard-arrow-left {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M14.71 15.88L10.83 12l3.88-3.88a.996.996 0 1 0-1.41-1.41L8.71 11.3a.996.996 0 0 0 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0c.38-.39.39-1.03 0-1.42'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    position: relative;
+  }
+
+  .swiper-arrow {
+    width: 72px;
+    height: 72px;
+    background-color: white;
+    border: 1px solid $neutral-900;
+    border-radius: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: -1;
+  }
+
+  // swiper 覆蓋
+  // ↓ 複製 第八周作業 Lv2 wind chiu 同學程式碼
+  .swiperBanner-overlay {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba($white, 0.7);
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  .swiper-slide-active {
+    &.swiperBanner-overlay {
+      &::before {
+        background-color: rgba($white, 0);
+      }
+    }
+  }
+  // ↑ Github；https://github.com/windj7y/2024-layout-week8/blob/0f7db518b9249afbf32a7441a6c83b22b9c9c593/assets/scss/pages/_index.scss#L15
+
+  // 陰影
+  .swiperBanner-shadow {
+    box-shadow: 0px 7px 0px 0px #bddffa;
+  }
+
+  // pagination 顏色
+  .pagination-color {
+    --swiper-pagination-color: #42a9f1;
+  }
+
+  // pagination 大小
+  .swiper-pagination-bullet {
+    width: var(
+      --swiper-pagination-bullet-width,
+      var(--swiper-pagination-bullet-size, 19px)
+    );
+    height: var(
+      --swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 19px)
+    );
+  }
+
+  // pagination 位置
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, -57px);
+    top: var(--swiper-pagination-top, auto);
+    left: 50%;
+    width: auto;
+    position: absolute;
+  }
+
+  // pagination 點點間距
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  }
+}
