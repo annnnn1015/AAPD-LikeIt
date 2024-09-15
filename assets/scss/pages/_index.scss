@@ -16,6 +16,33 @@
   }
 }
 
+.AI-helper {
+  bottom: 16px;
+  right: 80px;
+  z-index: 2;
+  color: $neutral-950;
+
+  &:active {
+    translate: 4px 4px;
+  }
+
+  .helper {
+    box-shadow: 4px 4px 0px 0px $primary-200;
+  }
+
+  &:hover {
+    .helper {
+      box-shadow: 4px 4px 0px 0px $primary-500;
+    }
+  }
+
+  &:active {
+    .helper {
+      box-shadow: none;
+    }
+  }
+}
+
 .banner {
   position: relative;
 
@@ -211,6 +238,7 @@
 
   .btn-light {
     --bs-btn-bg: #fff;
+    --bs-btn-hover-bg: #fff;
   }
 
   //   對話框樣式
