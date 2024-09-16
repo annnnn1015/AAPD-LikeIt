@@ -1,40 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 載入 Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
-</head>
+    <title>來趣學</title>
+  </head>
 
-<body>
-  <%- include('./layout/header'); -%>
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
+  <body>
+    <%- include('./layout/header'); -%>
 
-    <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- AI 小幫手 -->
+    <a class="position-fixed AI-helper" href="#">
+      <img
+        src="/assets/images/AI_Robot/AI_robot_floating_Btn.png"
+        alt=""
+        class="mb-1"
+      />
+      <p
+        class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper"
+      >
+        我需要幫忙
+      </p>
+    </a>
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="mt-7">
+        <div class="row">
+          <div class="col-lg-5 col-xl-4">
+            <h1
+              class="slogan text-primary d-flex justify-content-center justify-content-lg-start fs-3 fs-lg-2 mb-7 mt-lg-10"
+            >
+              孩子學習的最佳良伴 !
+            </h1>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="col-lg-7 col-xl-8">
+            <div class="position-relative">
+              <div class="swiper swiperBanner swiperBanner-shadow">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiperBanner-overlay">
+                    <img
+                      src="/assets/images/Home_Header_Banner.png"
+                      alt=""
+                      class="banner-img img-fluid"
+                    />
+                  </div>
+                  <div class="swiper-slide swiperBanner-overlay">
+                    <img
+                      src="/assets/images/Home_Header_Banner.png"
+                      alt=""
+                      class="banner-img img-fluid"
+                    />
+                  </div>
+                  <div class="swiper-slide swiperBanner-overlay">
+                    <img
+                      src="/assets/images/Home_Header_Banner.png"
+                      alt=""
+                      class="banner-img img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-next position-absolute translate-middle top-50 z-1 ms-7 ms-lg-0"
+              >
+                <span class="ic--round-keyboard-arrow-left"></span
+                ><span class="swiper-arrow translate-middle"></span>
+              </div>
+              <div
+                class="swiper-pagination pagination-color translate-middle"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- 你想了解什麼 ? -->
+
+    <div class="container-index py-7 py-lg-9">
+      <div class="text-center">
+        <h2 class="fs-5 fs-lg-4 mb-5">
+          你想了解什麼？點選對話框，讓小幫手來幫助你吧！
+        </h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div
+          class="AI-box bg-primary-100 border outline-shadow-lg rounded-5 w-100"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center h-100 position-relative"
+          >
+            <img
+              src="/assets/images/AI_Robot/AI_Robot_Lg.png"
+              alt=""
+              class="AI-img"
+            />
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-top-left fs-4"
+              href="#"
+              >想聊天</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-top-right fs-4"
+              href="#"
+              >問課程</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-bottom-left fs-4"
+              href="#"
+              >問興趣</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-bottom-right fs-4"
+              href="#"
+              >其他</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- 12 大領域 -->
+    <div class="container-index py-7">
+      <div class="d-flex justify-content-center">
+        <div class="category border rounded-5 outline-shadow-lg w-100">
+          <div
+            class="category-header bg-primary-400 text-white text-center py-4"
+          >
+            <h3 class="fs-4 mb-1">12 大領域，開啟你的精采之旅</h3>
+            <p class="fs-body-1">前往探索你的興趣</p>
+          </div>
+          <div class="d-flex justify-content-end py-4 me-9">
+            <a href="#" class="text-primary-700 me-3 link">最多人學</a>
+            <span class="text-neutral-200 me-3">|</span>
+            <a href="#" class="text-neutral-950 link">最近更新</a>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 mb-7 px-5">
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Aesthetics.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">美學素養</h4>
+                  <p class="fs-body-1 text-neutral-500">Aesthetics</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Nature.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">自然探索</h4>
+                  <p class="fs-body-1 text-neutral-500">Nature</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Relationship.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">人際關係</h4>
+                  <p class="fs-body-1 text-neutral-500">Relationship</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Health.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">健康營養</h4>
+                  <p class="fs-body-1 text-neutral-500">Health</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Ideas.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">創意訓練</h4>
+                  <p class="fs-body-1 text-neutral-500">Idea</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Press.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">媒體識別</h4>
+                  <p class="fs-body-1 text-neutral-500">Press</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Spirit.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">心靈成長</h4>
+                  <p class="fs-body-1 text-neutral-500">Spirit</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Finance.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">理財管理</h4>
+                  <p class="fs-body-1 text-neutral-500">Finance</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Logic.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">邏輯推理</h4>
+                  <p class="fs-body-1 text-neutral-500">Logic</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Culture.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">認識文化</h4>
+                  <p class="fs-body-1 text-neutral-500">Culture</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Technology.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">科技應用</h4>
+                  <p class="fs-body-1 text-neutral-500">Technology</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="bg-white border rounded-circle circle my-3">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Music.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h4 class="fs-4 mb-1">音樂素養</h4>
+                  <p class="fs-body-1 text-neutral-500">Music</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
-</body>
+    <script type="module" src="../main.js"></script>
+    <!-- 載入 Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiperBanner = new Swiper(".swiperBanner", {
+        slidesPerView: 1.33,
+        spaceBetween: 16,
 
+        breakpoints: {
+          1440: {
+            slidesPerView: 1.2,
+          },
+          1540: {
+            slidesPerView: 1.3,
+          },
+          1640: {
+            slidesPerView: 1.4,
+          },
+          1740: {
+            slidesPerView: 1.5,
+          },
+          1840: {
+            slidesPerView: 1.6,
+          },
+          1940: {
+            slidesPerView: 1.7,
+          },
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-next",
+        },
+      });
+    </script>
+  </body>
 </html>
