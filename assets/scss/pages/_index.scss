@@ -21,7 +21,7 @@
 .AI-helper {
   bottom: 16px;
   right: 80px;
-  z-index: 2;
+  z-index: 3;
   color: $neutral-950;
 
   &:active {
@@ -637,6 +637,19 @@
   .lecturer-card {
     height: 302px;
     background-color: #ffffff;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 302px;
+      position: absolute;
+      border: 1px solid $neutral-900;
+      border-radius: 32px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
   }
 
   .card-img-left {
@@ -644,6 +657,10 @@
     height: 302px;
     width: 218px;
     object-fit: cover;
+  }
+
+  .right-center {
+    object-position: right center;
   }
 
   .card-body {
@@ -741,7 +758,7 @@
   }
 
   .swiper-lecturers-next {
-    margin-right: 62px;
+    margin-right: 52px;
   }
 
   .swiper-lecturers-prev {
