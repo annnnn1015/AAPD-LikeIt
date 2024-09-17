@@ -351,17 +351,17 @@
   }
 }
 
-// Anna ↓
 // 繼續上課
+.view-more {
+  color: $neutral-950;
+  &:hover {
+    color: $primary-500;
+  }
+}
+
+// Anna ↓
 .continue-courses {
   background-color: $primary-100;
-
-  .view-more {
-    color: $neutral-950;
-    &:hover {
-      color: $primary-500;
-    }
-  }
 
   // 新上架標籤
   .new-tag {
