@@ -21,7 +21,7 @@
 .AI-helper {
   bottom: 16px;
   right: 80px;
-  z-index: 2;
+  z-index: 4;
   color: $neutral-950;
 
   &:active {
@@ -631,12 +631,38 @@
 }
 
 // 1 對 1 講師
+
+// z-index: 1  border
+// z-index: 2  overlay
+// z-index: 3  「前往了解」按鈕
+// z-index: 4  AI 小幫手
+
 .one-to-one {
   background-color: $primary-100;
 
   .lecturer-card {
     height: 302px;
     background-color: #ffffff;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 302px;
+      position: absolute;
+      border: 1px solid $neutral-900;
+      border-radius: 32px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  //   平板_「前往了解」按鈕：置於 border 上層才點擊得到
+  .swiperLecturers {
+    a {
+      z-index: 3;
+    }
   }
 
   .card-img-left {
@@ -644,6 +670,10 @@
     height: 302px;
     width: 218px;
     object-fit: cover;
+  }
+
+  .right-center {
+    object-position: right center;
   }
 
   .card-body {
@@ -691,6 +721,7 @@
       border-radius: 32px;
       background-color: rgba(0, 0, 0, 0.3);
       transition: background-color 0.3s ease;
+      z-index: 2;
     }
   }
 
@@ -704,9 +735,9 @@
         background-color: rgba(0, 0, 0, 0);
       }
 
-      //   置於 overlay 上層才點擊得到
+      //   電腦_「前往了解」按鈕；置於 overlay 上層才點擊得到
       a {
-        z-index: 1;
+        z-index: 3;
       }
     }
   }
@@ -741,7 +772,7 @@
   }
 
   .swiper-lecturers-next {
-    margin-right: 62px;
+    margin-right: 52px;
   }
 
   .swiper-lecturers-prev {
