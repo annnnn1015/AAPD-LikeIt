@@ -13,8 +13,15 @@
 
 <body>
     <%- include('./layout/header'); -%>
+        <!-- AI 小幫手 -->
+        <a class="position-fixed AI-helper" href="#">
+            <img src="/assets/images/AI_Robot/AI_robot_floating_Btn.png" alt="" class="mb-1" />
+            <p class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper">
+                我需要幫忙
+            </p>
+        </a>
         <!-- banner -->
-        <section class="container banner py-7">
+        <section class="container courseInfo-banner py-7">
             <div class="card mb-3 border-0 rounded-5 mx-auto">
                 <!-- 上半部圖片 -->
                 <picture class="mb-5">
@@ -80,7 +87,7 @@
         <!-- main -->
         <main class="bg-primary-100 py-9">
             <div class="container">
-                <div class="wrap rounded-5 border position-relative mx-auto px-5 py-7 bg-white">
+                <div class="main-wrap rounded-5 border position-relative mx-auto px-5 py-7 bg-white">
                     <!-- 課程簡介 -->
                     <section class="course-intro mb-7">
                         <h4 class="fw-bold mb-5">課程簡介</h4>
@@ -319,22 +326,22 @@
                                 </a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link border-0  mx-1" href="#">1</a>
+                                <a class="page-link border-0 rounded-0  mx-1" href="#">1</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link border-0  mx-1" href="#">2</a>
+                                <a class="page-link border-0 rounded-0  mx-1" href="#">2</a>
                             </li>
                             <li class="page-item  active">
-                                <a class="page-link border-0  mx-1" href="#">3</a>
+                                <a class="page-link border-0 rounded-0  mx-1" href="#">3</a>
                             </li>
                             <li class="page-item  ">
-                                <a class="page-link border-0  mx-1" href="#">...</a>
+                                <a class="page-link border-0 rounded-0  mx-1" href="#">...</a>
                             </li>
                             <li class="page-item  ">
-                                <a class="page-link border-0  mx-1" href="#">9</a>
+                                <a class="page-link border-0  rounded-0 mx-1" href="#">9</a>
                             </li>
                             <li class="page-item  ">
-                                <a class="page-link border-0  mx-1" href="#">10</a>
+                                <a class="page-link border-0  rounded-0 mx-1" href="#">10</a>
                             </li>
                             <li class="page-item">
                                 <a class="page-link rounded outline-shadow-sm" href="#" aria-label="Next">
@@ -505,7 +512,7 @@
                                         </li>
                                     </ol>
                                 </nav>
-                                <h5 class="fw-bold">造型美學大師班</h5>
+                                <h5 class="fw-bold text-truncate">造型美學大師班</h5>
                                 <p class="text-neutral-500 mb-3">82 位夥伴學習中</p>
                             </div>
                             <span class="hot-tag d-flex justify-content-end align-items-center"><span
@@ -540,7 +547,7 @@
                                         </li>
                                     </ol>
                                 </nav>
-                                <h5 class="fw-bold">日常美學：發現生活中的美</h5>
+                                <h5 class="fw-bold  text-truncate">日常美學：發現生活中的美</h5>
                                 <p class="text-neutral-500 mb-3">69 位夥伴學習中</p>
                                 <span class="hot-tag d-flex justify-content-end align-items-center"><span
                                         class="material-icons me-2">
@@ -575,7 +582,7 @@
                                         </li>
                                     </ol>
                                 </nav>
-                                <h5 class="fw-bold">藝術史小旅行</h5>
+                                <h5 class="fw-bold  text-truncate">藝術史小旅行</h5>
                                 <p class="text-neutral-500 mb-3">75 位夥伴學習中</p>
                             </div>
                             <span class="hot-tag d-flex justify-content-end align-items-center"><span

@@ -86,6 +86,7 @@
   .banner-img {
     max-width: 100%;
     height: auto;
+
     @include pad-lg {
       max-width: 100%;
       height: auto;
@@ -96,6 +97,7 @@
   .row {
     --bs-gutter-x: 0rem;
   }
+
   // ↑
 
   .slogan {
@@ -168,6 +170,7 @@
       }
     }
   }
+
   // ↑ Github；https://github.com/windj7y/2024-layout-week8/blob/0f7db518b9249afbf32a7441a6c83b22b9c9c593/assets/scss/pages/_index.scss#L15
 
   // 陰影
@@ -186,18 +189,14 @@
 
   // pagination 大小
   .swiper-pagination-bullet {
-    width: var(
-      --swiper-pagination-bullet-width,
-      var(--swiper-pagination-bullet-size, 19px)
-    );
-    height: var(
-      --swiper-pagination-bullet-height,
-      var(--swiper-pagination-bullet-size, 19px)
-    );
+    width: var(--swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 19px));
+    height: var(--swiper-pagination-bullet-height,
+        var(--swiper-pagination-bullet-size, 19px));
   }
 
   // pagination 位置
-  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
@@ -209,9 +208,8 @@
   }
 
   // pagination 點點間距
-  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-  .swiper-pagination-horizontal.swiper-pagination-bullets
-    .swiper-pagination-bullet {
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
   }
 }
@@ -354,6 +352,7 @@
 // 繼續上課
 .view-more {
   color: $neutral-950;
+
   &:hover {
     color: $primary-500;
   }
@@ -438,6 +437,7 @@
       top: 25px;
     }
   }
+
   // Anna ↑
 }
 
@@ -515,6 +515,7 @@
   img {
     width: 98.35px;
     height: 84.48px;
+
     @include pad-lg {
       width: 176.32px;
       height: 154.27px;
@@ -553,36 +554,36 @@
   }
 
   // 點選label時選擇.open input，使.text增加行數
-  .open-review-card1:checked + .text {
+  .open-review-card1:checked+.text {
     -webkit-line-clamp: 999;
   }
 
-  .open-review-card2:checked + .text {
+  .open-review-card2:checked+.text {
     -webkit-line-clamp: 999;
   }
 
-  .open-review-card3:checked + .text {
+  .open-review-card3:checked+.text {
     -webkit-line-clamp: 999;
   }
 
-  .open-review-card4:checked + .text {
+  .open-review-card4:checked+.text {
     -webkit-line-clamp: 999;
   }
 
   // 點選時隱藏遮蔽文字漸層
-  .open-review-card1:checked + .gradient::after {
+  .open-review-card1:checked+.gradient::after {
     display: none;
   }
 
-  .open-review-card2:checked + .gradient::after {
+  .open-review-card2:checked+.gradient::after {
     display: none;
   }
 
-  .open-review-card3:checked + .gradient::after {
+  .open-review-card3:checked+.gradient::after {
     display: none;
   }
 
-  .open-review-card4:checked + .gradient::after {
+  .open-review-card4:checked+.gradient::after {
     display: none;
   }
 
@@ -596,36 +597,36 @@
   }
 
   // 展開文字時按鈕切換文字
-  .open-review-card1:checked + .text .btn::after {
+  .open-review-card1:checked+.text .btn::after {
     content: "收起";
   }
 
-  .open-review-card2:checked + .text .btn::after {
+  .open-review-card2:checked+.text .btn::after {
     content: "收起";
   }
 
-  .open-review-card3:checked + .text .btn::after {
+  .open-review-card3:checked+.text .btn::after {
     content: "收起";
   }
 
-  .open-review-card4:checked + .text .btn::after {
+  .open-review-card4:checked+.text .btn::after {
     content: "收起";
   }
 
   // 展開文字時按鈕切換位置
-  .open-review-card1:checked + .text .btn {
+  .open-review-card1:checked+.text .btn {
     left: 85% !important;
   }
 
-  .open-review-card2:checked + .text .btn {
+  .open-review-card2:checked+.text .btn {
     left: 85% !important;
   }
 
-  .open-review-card3:checked + .text .btn {
+  .open-review-card3:checked+.text .btn {
     left: 85% !important;
   }
 
-  .open-review-card4:checked + .text .btn {
+  .open-review-card4:checked+.text .btn {
     left: 85% !important;
   }
 }
@@ -749,20 +750,15 @@
 
   // pagination 大小
   .swiper-pagination-bullet {
-    width: var(
-      --swiper-pagination-bullet-width,
-      var(--swiper-pagination-bullet-size, 19px)
-    );
-    height: var(
-      --swiper-pagination-bullet-height,
-      var(--swiper-pagination-bullet-size, 19px)
-    );
+    width: var(--swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 19px));
+    height: var(--swiper-pagination-bullet-height,
+        var(--swiper-pagination-bullet-size, 19px));
   }
 
   // pagination 點點間距
-  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-  .swiper-pagination-horizontal.swiper-pagination-bullets
-    .swiper-pagination-bullet {
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
   }
 
