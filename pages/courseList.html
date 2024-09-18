@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 載入Google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>來趣學</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <!-- AI 小幫手 -->
+    <a class="position-fixed AI-helper" href="#">
+      <img
+        src="/assets/images/AI_Robot/AI_robot_floating_Btn.png"
+        alt=""
+        class="mb-1"
+      />
+      <p
+        class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper"
+      >
+        我需要幫忙
+      </p>
+    </a>
+
+    <!-- 麵包屑 -->
+    <div class="container-courseList">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb fs-body-2">
+          <li class="breadcrumb-item">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="breadcrumb-item active text-primary" aria-current="page">
+            美學素養
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner-courseList py-7 py-lg-5">
+      <div class="container-courseList">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="d-flex justify-content-center">
+              <img
+                src="/assets/images/Course_category/Course_List_Aesthetics.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="d-flex justify-content-center align-items-center h-100 text-padding-y"
+            >
+              <!-- 平板 -->
+              <div class="d-flex flex-column d-lg-none">
+                <h1 class="fw-bold fs-3 text-primary mb-2">歡迎加入美學素養</h1>
+                <p class="fs-body-2 text-width">
+                  趕快點選下面你喜歡的課程，找不到想要的課程也可以詢問我們的 AI
+                  小精靈哦~
+                </p>
+              </div>
+              <!-- 電腦 -->
+              <div class="d-flex flex-column d-none d-lg-block">
+                <h1 class="fw-bold fs-3 text-primary mb-4">歡迎來到美學素養</h1>
+                <p class="fs-body-1 text-width">
+                  趕快點選下面你喜歡的課程，找不到想要的課程也可以詢問我們的 AI
+                  小精靈哦~
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 你想了解什麼 ? -->
+    <div class="container-courseList decoration py-7 py-lg-9">
+      <div class="text-center">
+        <h2 class="fs-5 fs-lg-4 fw-bold mb-5">
+          你想了解什麼？點選對話框，讓小幫手來幫助你吧！
+        </h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div
+          class="AI-box bg-primary-100 border outline-shadow-lg rounded-5 w-100"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center h-100 position-relative"
+          >
+            <img
+              src="/assets/images/AI_Robot/AI_Robot_Lg.png"
+              alt=""
+              class="AI-img"
+            />
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-top-left fs-4"
+              href="#"
+              >想聊天</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-top-right fs-4"
+              href="#"
+              >問課程</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-bottom-left fs-4"
+              href="#"
+              >問興趣</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-bottom-right fs-4"
+              href="#"
+              >其他</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

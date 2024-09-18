@@ -1,0 +1,141 @@
+.container-courseList {
+  padding: 0 32px;
+
+  @include pad-xl {
+    padding: 0 120px;
+  }
+}
+
+// 麵包屑
+.breadcrumb {
+  padding: 28px 0;
+
+  a {
+    color: $neutral-950;
+    &:hover {
+      color: $primary-400;
+    }
+    &:active {
+      color: $primary-700;
+    }
+  }
+}
+
+// 課程清單 Banner
+.banner-courseList {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 111.2px;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 119px;
+    height: 304px;
+
+    background: url(/assets/images/Bg_Blob/Bg_Tablet_Course_list_Blob_2.png);
+
+    @include pad-lg {
+      top: -196.8px;
+      width: 211px;
+      height: 413px;
+
+      background: url(/assets/images/Bg_Blob/Bg_Desktop_Course_list_Blob_2.png);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 65.2px;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 196px;
+    height: 336px;
+    background: url(/assets/images/Bg_Blob/Bg_Tablet_Course_list_Blob_1.png);
+
+    @include pad-lg {
+      position: absolute;
+      left: 0;
+      top: 190.2px;
+      z-index: -1;
+      content: "";
+      display: block;
+      width: 310px;
+      height: 626px;
+      background: url(/assets/images/Bg_Blob/Bg_Desktop_Course_list_Blob_1.png);
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 262px;
+    height: auto;
+
+    @include pad-lg {
+      max-width: 623px;
+    }
+  }
+
+  .text-padding-y {
+    padding: 21.5px 0;
+
+    @include pad-lg {
+      padding: 0;
+    }
+  }
+
+  .text-width {
+    width: 378px;
+
+    @include pad-lg {
+      width: 416px;
+    }
+  }
+}
+
+// 你想了解什麼 ?
+.container-courseList.decoration {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 514px;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 147px;
+    height: 217px;
+    background: url(/assets/images/Bg_Blob/Bg_Tablet_Course_list_Blob_4.png);
+
+    @include pad-lg {
+      bottom: 5px;
+      width: 205px;
+      height: 233px;
+      background: url(/assets/images/Bg_Blob/Bg_Desktop_Course_list_Blob_4.png);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: 271px;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 181px;
+    height: 347px;
+    background: url(/assets/images/Bg_Blob/Bg_Tablet_Course_list_Blob_3.png);
+
+    @include pad-lg {
+      bottom: 153px;
+      width: 414px;
+      height: 537px;
+      background: url(/assets/images/Bg_Blob/Bg_Desktop_Course_list_Blob_3.png);
+    }
+  }
+}
