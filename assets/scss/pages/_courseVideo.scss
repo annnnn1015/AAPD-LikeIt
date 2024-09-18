@@ -235,6 +235,7 @@
     // 標題跟副標題中間直線裝飾
     .note {
         margin-left: 34px;
+        padding: 3px 0;
     }
 
     .note::before {
@@ -245,6 +246,20 @@
         background-color: $neutral-200;
         left: -16px;
         top: 0px;
+    }
+
+    .note-sm {
+        margin-left: 17px;
+    }
+
+    .note-sm::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        background-color: $neutral-200;
+        left: 8px;
+        top: 7px;
     }
 
     // 分頁按鈕樣式
@@ -348,5 +363,23 @@
 
     .open-review-card4:checked+.text .btn {
         left: 85% !important;
+    }
+}
+
+.similar-course,
+.recommand-course {
+    .note {
+        margin-left: 34px;
+        padding: 3px 0;
+    }
+
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
     }
 }
