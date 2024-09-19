@@ -7,7 +7,7 @@
 }
 
 // 麵包屑
-.breadcrumb {
+.breadcrumb-style {
   padding: 28px 0;
 
   a {
@@ -93,6 +93,149 @@
 
     @include pad-lg {
       width: 416px;
+    }
+  }
+}
+
+//   課程清單
+.course-list {
+  .tab-bar {
+    border-bottom: 1px solid $neutral-900;
+
+    .btn-light {
+      background-color: #fff;
+      color: $neutral-950;
+      border: 1px solid $neutral-900;
+      border-bottom: none;
+      border-radius: 16px 16px 0 0;
+      width: 100px;
+      height: 40px;
+
+      &:hover {
+        color: $primary-400;
+      }
+
+      &:active {
+        border: 1px solid $neutral-900;
+        background-color: $primary-400;
+        border-bottom: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .link:hover {
+    text-decoration: underline;
+  }
+}
+
+// 課程卡片
+.course-cards {
+  // Anna ↓
+  // 新上架標籤
+  .new-tag {
+    content: "";
+    position: absolute;
+    width: 102px;
+    top: 8.43px;
+    left: 0px;
+    border-radius: 0px 16px 16px 0;
+    background-color: $success-500;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    line-height: 1.8;
+
+    @include pad-lg {
+      top: 25px;
+    }
+  }
+
+  // 愛心標籤
+  .like-tag {
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 16.43px;
+    right: 24px;
+    background-image: url(/assets/images/Like_icon/Like_icon_Default.png);
+    background-size: cover;
+    z-index: 2;
+    cursor: pointer;
+
+    @include pad-lg {
+      width: 49px;
+      height: 48px;
+      top: 24px;
+      right: 19.67px;
+    }
+
+    &:hover {
+      background-image: url(/assets/images/Like_icon/Like_icon_Hover.png);
+    }
+
+    &:active {
+      border-color: transparent !important;
+      box-shadow: transparent !important;
+    }
+
+    &:focus {
+      background-image: url(/assets/images/Like_icon/Like_icon_Clicked.png);
+    }
+  }
+
+  .hot-tag {
+    content: "";
+    position: absolute;
+    width: 120px;
+    top: 8.43px;
+    left: 0px;
+    border-radius: 0px 16px 16px 0;
+    background-color: $primary-500;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    line-height: 1.8;
+
+    @include pad-lg {
+      top: 25px;
+    }
+  }
+  // Anna ↑
+}
+
+// 分類按鈕
+.category-btns {
+  margin: 48px 0;
+
+  @include pad-lg {
+    margin: 92px 0;
+  }
+
+  .row {
+    margin: 0 -24px 0 0;
+  }
+
+  .btn-light {
+    width: 128px;
+    height: 64px;
+    background-color: #fff;
+    color: $neutral-950;
+    border: 1px solid $neutral-900;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px 0px $primary-200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 4px 4px 0px 0px $primary-500;
+    }
+
+    &:active {
+      box-shadow: none;
+      translate: 4px 4px;
     }
   }
 }
