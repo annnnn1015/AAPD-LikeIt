@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 載入Google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>來趣學</title>
+    <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-b323b83e.js"></script>
+    <link rel="stylesheet" href="/AAPD-LikeIt/assets/main-cb497a92.css">
+  </head>
+
+  <body>
+    <div class="container-footer">
+  <footer>
+    <img
+      src="data:image/png;base64,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"
+      alt=""
+      style="width: 204px; height: 99px"
+    />
+  </footer>
+</div>
+
+    <!-- AI 小幫手 -->
+    <a class="position-fixed AI-helper" href="#">
+      <img
+        src="/AAPD-LikeIt/assets/AI_robot_floating_Btn-209d40ee.png"
+        alt=""
+        class="mb-1"
+      />
+      <p
+        class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper"
+      >
+        我需要幫忙
+      </p>
+    </a>
+
+    <!-- 麵包屑 -->
+    <div class="container-courseList">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-style fs-body-2">
+          <li class="breadcrumb-item">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="breadcrumb-item active text-primary" aria-current="page">
+            美學素養
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner-courseList py-7 py-lg-5">
+      <div class="container-courseList">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="d-flex justify-content-center">
+              <img
+                src="/AAPD-LikeIt/assets/Course_List_Aesthetics-b4ee9d15.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="d-flex justify-content-center align-items-center h-100 text-padding-y"
+            >
+              <!-- 平板 -->
+              <div class="d-flex flex-column d-lg-none">
+                <h1 class="fw-bold fs-3 text-primary mb-2">歡迎加入美學素養</h1>
+                <p class="fs-body-2 text-width">
+                  趕快點選下面你喜歡的課程，找不到想要的課程也可以詢問我們的 AI
+                  小精靈哦~
+                </p>
+              </div>
+              <!-- 電腦 -->
+              <div class="d-flex flex-column d-none d-lg-block">
+                <h1 class="fw-bold fs-3 text-primary mb-4">歡迎來到美學素養</h1>
+                <p class="fs-body-1 text-width">
+                  趕快點選下面你喜歡的課程，找不到想要的課程也可以詢問我們的 AI
+                  小精靈哦~
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 課程清單 -->
+    <div class="container-courseList pt-7">
+      <div class="course-list">
+        <!-- 頂部標籤 -->
+        <div class="d-flex tab-bar">
+          <a href="#" class="btn btn-light fs-body-2 overflow-hidden"
+            >全部課程</a
+          >
+          <a href="#" class="btn btn-light fs-body-2 overflow-hidden">初階</a>
+          <a href="#" class="btn btn-light fs-body-2 overflow-hidden">中階</a>
+          <a href="#" class="btn btn-light fs-body-2 overflow-hidden">高階</a>
+        </div>
+
+        <!-- 文字連結 -->
+        <!-- 平板 -->
+        <div class="d-flex justify-content-end">
+          <div class="py-4 me-9 d-lg-none">
+            <a href="#" class="text-primary-700 me-3 link">最多人學</a>
+            <span class="text-neutral-200 me-3">|</span>
+            <a href="#" class="text-neutral-950 link">最近更新</a>
+          </div>
+          <!-- 電腦 -->
+          <div class="py-4 me-9 d-none d-lg-block">
+            <a href="#" class="text-primary-700 me-3 link">學習人數</a>
+            <span class="text-neutral-200 me-3">|</span>
+            <a href="#" class="text-neutral-950 link">最新上架</a>
+          </div>
+        </div>
+
+        <!-- 課程卡片 -->
+        <div class="course-cards">
+          <!-- By Anna ↓ -->
+          <div class="row row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_色彩魔法師2-1e601b02.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_色彩魔法師2-1e601b02.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >初階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >色彩學</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">色彩魔法師</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">62</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">70%</p>
+                  </div>
+                </div>
+                <span
+                  class="hot-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2">
+                    local_fire_department </span
+                  >熱門排行</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-42006f45.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-42006f45.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >高階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >色彩學</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">數位色彩世界</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">93</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 40%"
+                        aria-valuenow="40"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">40%</p>
+                  </div>
+                </div>
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-1e7cba1a.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-1e7cba1a.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >高階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >色彩學</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">色彩與文化之旅</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">139</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <span
+                  class="hot-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2">
+                    local_fire_department </span
+                  >熱門排行</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-c3058d2d.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-c3058d2d.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >初階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >藝術鑑賞</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">藝術史小旅行</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">75</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <span
+                  class="hot-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2">
+                    local_fire_department </span
+                  >熱門排行</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-4a98c89c.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-4a98c89c.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >初階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >攝影</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">日常美學：發現生活中的美</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">69</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <span
+                  class="hot-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2">
+                    local_fire_department </span
+                  >熱門排行</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-703f60d2.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-703f60d2.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >高階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >視覺設計</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">造型美學大師班</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">82</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <span
+                  class="hot-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2">
+                    local_fire_department </span
+                  >熱門排行</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_小小建築師的夢想城市-96e608e4.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_小小建築師的夢想城市-96e608e4.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >初階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >建築設計</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">小小建築師的夢想城市</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">59</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_小小時尚設計師-0152911b.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_小小時尚設計師-0152911b.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >初階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >時尚設計</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">小小時尚設計師</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">384</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 1%"
+                        aria-valuenow="1"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">1%</p>
+                  </div>
+                </div>
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_童話插畫大冒險-1610a56d.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_童話插畫大冒險-1610a56d.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >初階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >插畫藝術</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">童話插畫大冒險</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">94</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">70%</p>
+                  </div>
+                </div>
+                <span
+                  class="new-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2"> auto_awesome </span
+                  >新上架</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_大自然的藝術盒子-ae0360c3.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_大自然的藝術盒子-ae0360c3.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >高階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >環境藝術</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">大自然的藝術盒子</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">49</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <span
+                  class="hot-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2">
+                    local_fire_department </span
+                  >熱門排行</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_光影魔法師-b92c3e81.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_光影魔法師-b92c3e81.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >中階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >光影藝術</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">光影魔法師</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">174</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">0%</p>
+                  </div>
+                </div>
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+              >
+                <!-- 平板圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png"
+                  class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                  alt="..."
+                />
+                <!-- 電腦圖片 -->
+                <img
+                  src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png"
+                  class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                  alt="..."
+                />
+                <div class="card-body col-7 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: ''"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >美學素養</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >高階</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a
+                          href="#"
+                          class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                          >色彩學</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">自然界的調色盤</h5>
+                  <p class="text-neutral-500 mb-3">
+                    <span class="me-1">38</span> 位夥伴學習中
+                  </p>
+                  <p class="fs-body-3 text-neutral-500 mb-2">學習進度</p>
+                  <!-- progress -->
+                  <div class="d-flex align-items-center mb-0 mb-lg-3">
+                    <div class="progress w-100 me-3" style="height: 15px">
+                      <div
+                        class="progress-bar bg-primary-300"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-neutral-500">70%</p>
+                  </div>
+                </div>
+                <span
+                  class="new-tag d-flex justify-content-end align-items-center"
+                  ><span class="material-icons me-2"> auto_awesome </span
+                  >新上架</span
+                >
+                <button class="btn like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 頁碼 -->
+          <nav class="course-page mt-5">
+            <ul class="pagination justify-content-center fs-body-2">
+              <li class="page-item">
+                <a
+                  class="page-link rounded outline-shadow-sm"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <span aria-hidden="true"
+                    ><i class="bi bi-chevron-left"></i
+                  ></span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-0 mx-1" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-0 mx-1" href="#">2</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link border-0 mx-1" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-0 mx-1" href="#">...</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-0 mx-1" href="#">9</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-0 mx-1" href="#">10</a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link rounded outline-shadow-sm"
+                  href="#"
+                  aria-label="Next"
+                >
+                  <span aria-hidden="true"
+                    ><i class="bi bi-chevron-right"></i
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- By Anna ↑ -->
+        </div>
+
+        <!-- 分類按鈕 -->
+        <div class="category-btns px-lg-1">
+          <div class="row justify-content-lg-center">
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >自然探索</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >理財管理</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >認識文化</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >音樂素養</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >科技應用</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >美學素養</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >心靈成長</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >人際關係</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >邏輯推理</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >創意訓練</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >媒體識別</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >健康營養</a
+            >
+            <a href="#" class="btn btn-light fs-body-2 me-2 me-lg-4 mb-4"
+              >所有課程</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 你想了解什麼 ? -->
+    <div class="container-courseList decoration py-7 py-lg-9">
+      <div class="text-center">
+        <h2 class="fs-5 fs-lg-4 fw-bold mb-5">
+          你想了解什麼？點選對話框，讓小幫手來幫助你吧！
+        </h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div
+          class="AI-box bg-primary-100 border outline-shadow-lg rounded-5 w-100"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center h-100 position-relative"
+          >
+            <img
+              src="/AAPD-LikeIt/assets/AI_Robot_Lg-a53e35b8.png"
+              alt=""
+              class="AI-img"
+            />
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-top-left fs-4"
+              href="#"
+              >想聊天</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-top-right fs-4"
+              href="#"
+              >問課程</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-bottom-left fs-4"
+              href="#"
+              >問興趣</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-bottom-right fs-4"
+              href="#"
+              >其他</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">我是 footer</footer>
+    
+  </body>
+</html>
