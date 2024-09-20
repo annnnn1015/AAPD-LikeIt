@@ -1,4 +1,43 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.container-footer {
+  background: $primary-300;
+  padding: 0 32px;
+  border-radius: 0 200px 0 0;
+
+  @include pad-xl {
+    padding: 0 120px;
+  }
+
+  .me-36 {
+    margin-right: 36px;
+  }
+
+  .link-title {
+    padding: 10px;
+    font-weight: 700;
+  }
+
+  .link {
+    padding: 10px 6px;
+    color: $neutral-950;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .btn-primary {
+    background-color: $primary-500;
+    color: white;
+    border: 1px solid $neutral-900;
+    border-radius: 16px;
+    padding: 16px 32px;
+  }
+
+  hr {
+    background-color: $neutral-900;
+
+    @include pad-lg {
+      margin: 2rem 0;
+    }
+  }
 }
