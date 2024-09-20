@@ -1,11 +1,39 @@
-.banner {
+.AI-helper {
+    bottom: 16px;
+    right: 80px;
+    z-index: 4;
+    color: $neutral-950;
+
+    &:active {
+        translate: 4px 4px;
+    }
+
+    .helper {
+        box-shadow: 4px 4px 0px 0px $primary-200;
+    }
+
+    &:hover {
+        .helper {
+            box-shadow: 4px 4px 0px 0px $primary-500;
+        }
+    }
+
+    &:active {
+        .helper {
+            box-shadow: none;
+        }
+    }
+}
+
+
+.courseInfo-banner {
     .card {
         max-width: 680px;
     }
 }
 
 @include media-breakpoint-up(lg) {
-    .banner {
+    .courseInfo-banner {
         .card {
             max-width: 100%;
         }
@@ -13,12 +41,12 @@
 }
 
 main {
-    .wrap {
+    .main-wrap {
         max-width: 680px;
     }
 
     // 課程介紹區域外框上方藍色裝飾
-    .wrap::after {
+    .main-wrap::after {
         content: "";
         width: 100%;
         height: 38px;
@@ -33,7 +61,7 @@ main {
 
 @include media-breakpoint-up(lg) {
     main {
-        .wrap {
+        .main-wrap {
             max-width: 100%;
             padding-left: 114px !important;
             padding-right: 114px !important;
@@ -44,7 +72,7 @@ main {
 
 @include media-breakpoint-up(xl) {
     main {
-        .wrap {
+        .main-wrap {
             padding-left: 171px !important;
             padding-right: 171px !important;
         }
@@ -53,7 +81,7 @@ main {
 
 @include media-breakpoint-up(xxl) {
     main {
-        .wrap {
+        .main-wrap {
             padding-left: 228px !important;
             padding-right: 228px !important;
         }
@@ -126,6 +154,7 @@ main {
 .course-unit {
     .note {
         margin-left: 34px;
+        padding: 3px 0;
     }
 
     // 標題跟副標題中間直線裝飾
@@ -197,6 +226,7 @@ main {
 .course-review {
     .note {
         margin-left: 34px;
+        padding: 3px 0;
     }
 
     // 標題跟副標題中間直線裝飾
