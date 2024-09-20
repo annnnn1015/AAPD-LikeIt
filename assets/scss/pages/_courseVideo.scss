@@ -165,6 +165,22 @@
     }
 }
 
+.course-progress {
+    .container {
+        max-width: 808px;
+        padding: 0 32px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .course-progress {
+        .container {
+            max-width: 1200px;
+        }
+    }
+}
+
+
 .course-video-review {
     .video-review {
         max-width: 808px;
@@ -208,11 +224,12 @@
 
     .input-review:checked+.switch-toggle {
         left: 43px;
-        background-color: $neutral-100;
+        background-color: $neutral-500;
+        color: white;
     }
 
     .input-review:checked+.switch-toggle::before {
-        content: "隱藏";
+        content: "私人";
     }
 
     // 送出留言按鈕樣式
