@@ -4,106 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+
+    <link rel="icon" href="../assets/images/Favicon/Favicon 32x32.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,1,0" />
+
     <title>來趣學Like it 課程大綱</title>
   </head>
 
   <body>
     <%- include('./layout/header'); -%>
-    <!-- AI 小幫手 -->
-    <a class="position-fixed AI-helper" href="#">
-      <img
-        src="/assets/images/AI_Robot/AI_robot_floating_Btn.png"
-        alt=""
-        class="mb-1"
-      />
-      <p
-        class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper"
-      >
-        我需要幫忙
-      </p>
-    </a>
-    <!-- banner -->
-    <section class="container courseInfo-banner py-7">
-      <div class="card mb-3 border-0 rounded-5 mx-auto">
-        <!-- 上半部圖片 -->
-        <picture class="mb-5">
-          <source
-            srcset="../assets\images\Course_Cover\Course-cover-sm.png"
-            media="(max-width: 774px)"
-          />
-          <img
-            class="img-fluid rounded-5"
-            src="../assets/images/Course_Cover/色彩魔法師-2.png"
-            alt="色彩魔法師2"
-          />
-        </picture>
-        <!-- 下半部文字按鈕-->
-        <div class="card-body px-0 py-0">
-          <div
-            class="row d-flex flex-column flex-lg-row justify-content-lg-between"
-          >
-            <div class="col-xl-4 col-lg-5 pe-0 mb-5 mb-lg-0">
-              <!-- tag -->
-              <ul class="d-flex">
-                <li>
-                  <a
-                    href="#"
-                    class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1"
-                    >美學素養</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1"
-                    >初階</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
-                    >色彩學</a
-                  >
-                </li>
-              </ul>
-              <!-- 標題 進度條 -->
-              <div class="card-title">
-                <h3 class="mb-3 fw-bold">色彩魔法師</h3>
-                <ul class="d-flex fs-body-1 text-nowrap">
-                  <li class="me-3">
-                    <i class="bi bi-clock-fill me-2 text-primary"></i>總時長 95
-                    分鐘
-                  </li>
-                  <li>
-                    <i class="bi bi-bookmark-fill me-2 text-primary"></i>2
-                    個章節 5 個單元
-                  </li>
-                </ul>
-                <p class="fs-body-1 fw-bold text-neutral-500 mb-2">學習進度</p>
-                <!-- progress -->
-                <div class="d-flex align-items-center">
-                  <div class="progress w-100 me-3" style="height: 15px">
-                    <div
-                      class="progress-bar bg-primary-300"
-                      role="progressbar"
-                      style="width: 70%"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                  <p class="text-neutral-500">70%</p>
+
+        <!-- AI 小幫手 -->
+        <a class="position-fixed AI-helper" href="#">
+            <img src="/assets/images/AI_Robot/AI_robot_floating_Btn.png" alt="" class="mb-1" />
+            <p class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper">
+                我需要幫忙
+            </p>
+        </a>
+        <!-- banner -->
+        <section class="courseInfo-banner header-spacer pb-7">
+            <div class="container  d-flex pt-7">
+                <div class="card mb-3 border-0 rounded-5 mx-auto">
+                    <!-- breadcrumb -->
+                    <nav class="mb-5"
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='black'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb fs-body-2 text-neutral-950 fw-normal">
+                            <li class="breadcrumb-item"><a class=" text-neutral-950" href="index.html">首頁</a></li>
+                            <li class="breadcrumb-item"><a class=" text-neutral-950" href="#">美學素養</a></li>
+                            <li class="breadcrumb-item active"><a class="text-primary" href="courseInfo.html">課程大綱</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <!-- 上半部圖片 -->
+                    <picture class="mb-5">
+                        <source srcset="../assets\images\Course_Cover\Course-cover-sm.png" media="(max-width: 774px)">
+                        <img class="img-fluid rounded-5" src="../assets/images/Course_Cover/色彩魔法師-2.png" alt="色彩魔法師2">
+                    </picture>
+                    <!-- 下半部文字按鈕-->
+                    <div class="card-body px-0 py-0">
+                        <div class="row  d-flex flex-column flex-lg-row justify-content-lg-between">
+                            <div class="col-xl-4 col-lg-5 pe-0 mb-5 mb-lg-0">
+                                <!-- tag -->
+                                <ul class="d-flex">
+                                    <li><a href="#"
+                                            class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1 ">美學素養</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1">初階</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
+                                    </li>
+                                </ul>
+                                <!-- 標題 進度條 -->
+                                <div class="card-title">
+                                    <h3 class="mb-3 fw-bold">色彩魔法師</h3>
+                                    <ul class="d-flex fs-body-1 text-nowrap">
+                                        <li class="me-3"><i class="bi bi-clock-fill me-2 text-primary"></i>總時長 95 分鐘
+                                        </li>
+                                        <li><i class="bi bi-bookmark-fill me-2 text-primary"></i>2 個章節 5 個單元</li>
+                                    </ul>
+                                    <p class="fs-body-1 fw-bold text-neutral-500 mb-2">學習進度</p>
+                                    <!-- progress -->
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress w-100 me-3" style="height: 15px;">
+                                            <div class="progress-bar bg-primary-300" role="progressbar"
+                                                style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="text-neutral-500">70%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="col-lg-6 d-lg-flex align-items-lg-end">
+                                <div class="card-body py-0 px-2">
+                                    <div class="row mt-auto">
+                                        <div class="col-3 col-lg-3 ps-0">
+                                            <button type="button"
+                                                class="btn btn-outline-danger fs-body-2 w-100 py-3 rounded-3"><i
+                                                    class="bi bi-heart-fill me-2"></i><span
+                                                    class="d-none d-xxl-inline">加入</span>收藏</button>
+                                        </div>
+                                        <div class="col-9 col-lg-9 pe-0">
+                                            <a href="courseVideo.html" type="button"
+                                                class="btn btn-primary border fs-body-2 w-100 text-white fw-bold py-3 rounded-3">立即觀看</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
             </div>
             <!-- button -->
             <div class="col-lg-6 d-lg-flex align-items-lg-end">

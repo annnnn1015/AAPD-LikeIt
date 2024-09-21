@@ -1,4 +1,220 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+// 其他頁開頭向上推navbar空間
+.header-spacer {
+  padding-top: 80px;
 }
+
+@include media-breakpoint-up(lg) {
+  .header-spacer {
+    padding-top: 170px;
+  }
+}
+
+.tablet-header {
+  z-index: 9999;
+  border-bottom: 1px solid $neutral-900;
+  --bs-accordion-border-color: white !important;
+
+  h1 {
+    line-height: 0;
+  }
+
+  .accordion {
+    width: 627px;
+    top: 32.6px;
+    right: 16px;
+    --bs-accordion-active-bg: white !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    border-bottom: none !important;
+  }
+
+  // 修改手風琴右側開合icon
+  .accordion-button::after {
+    background-image: url(/assets/images/Icon/arrow_blue.png) !important;
+    margin-top: 0px !important;
+    padding-left: 25px;
+    background-size: 11px 6.5px !important;
+    background-position: center !important;
+    z-index: 3;
+  }
+
+  .user-btn {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:not(.collapsed) {
+      border-bottom: none !important;
+    }
+  }
+}
+
+.header-title {
+  background-image: url(/assets/images/Logo/Logo_sm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 158px;
+  height: 32px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+@include media-breakpoint-up(lg) {
+
+  .header-title {
+    background-image: url(/assets/images/Logo/Logo_lg.png);
+    background-size: 386px 73px;
+    background-position: center;
+    width: 438px;
+    height: 168px;
+  }
+}
+
+// btn預設樣式修改
+.search-btn {
+  --bs-btn-box-shadow: none !important;
+  --bs-btn-border-width: 0 !important;
+
+  &:active {
+    border: none !important;
+  }
+// search icon旁邊直線裝飾
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    background-color: $neutral-400;
+    top: 35px;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+
+  .material-symbols-outlined{
+    font-size: 32px;
+  &:hover {
+    color: $primary !important;
+  }}
+}
+
+// school跟notification icon hover效果
+.notifications-btn:hover,.school-btn:hover{
+color: $primary !important;
+}
+
+// notification通知紅點樣式
+.notifications-btn::after{
+  content: "";
+  position: absolute;
+  width: 5.33px;
+  height: 5.33px;
+  border-radius: 50%;
+  top: 0px;
+  right: 3.22px;
+  translate: 50% 50%;
+  background-color: $danger;
+}
+
+// 用戶照片
+.user-img {
+  background-image: url(/assets/images/PFP/PFP_MiiMom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  margin: 2.5px;
+}
+
+// 用戶照片外框
+.img-border{
+  border-radius: 50%;
+  border: 1px solid $neutral-900;
+}
+
+.search-bar-icon{
+  top: 20px;
+  left: 24px;
+}
+
+.search-bar-placeholder::placeholder{
+  font-size: 18px !important;
+}
+
+// PC nav
+.pc-header {
+  z-index: 9999;
+  border-bottom: 1px solid $neutral-900;
+  --bs-accordion-border-color: white !important;
+
+  h1 {
+    line-height: 0;
+  }
+
+  .accordion {
+    width: 530px;
+    top: 32.6px;
+    right: 16px;
+    --bs-accordion-active-bg: white !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    border-bottom: 1px solid $neutral-200 !important;
+  }
+
+  // 修改手風琴右側開合icon
+  .accordion-button::after {
+    background-image: url(/assets/images/Icon/arrow_blue.png) !important;
+    margin-top: 0px !important;
+    padding-left: 25px;
+    background-size: 11px 6.5px !important;
+    background-position: center !important;
+    z-index: 3;
+  }
+
+  .user-btn {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:not(.collapsed) {
+      border-bottom: none !important;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .pc-header{
+  .accordion {
+    width: 811px;
+    }
+}
+}
+
+.pc-search-btn {
+  --bs-btn-box-shadow: none !important;
+  --bs-btn-border-width: 0 !important;
+
+  &:active {
+    border: none !important;
+  }
+
+  .search-icon-border{
+    border-radius: 50%;
+    border: 1px solid $neutral-900;
+  }
+
+  .material-symbols-outlined{
+    font-size: 29px !important;
+    padding: 11px 12px;
+  }
+}
+
+
