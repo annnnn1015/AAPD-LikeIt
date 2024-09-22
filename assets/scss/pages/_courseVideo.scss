@@ -1,0 +1,402 @@
+.AI-helper {
+    bottom: 16px;
+    right: 80px;
+    z-index: 4;
+    color: $neutral-950;
+
+    &:active {
+        translate: 4px 4px;
+    }
+
+    .helper {
+        box-shadow: 4px 4px 0px 0px $primary-200;
+    }
+
+    &:hover {
+        .helper {
+            box-shadow: 4px 4px 0px 0px $primary-500;
+        }
+    }
+
+    &:active {
+        .helper {
+            box-shadow: none;
+        }
+    }
+}
+
+.course-video {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .breadcrumb-item {
+        a {
+            color: white;
+        }
+
+        &.active {
+            color: $primary;
+        }
+    }
+
+    iframe {
+        vertical-align: bottom;
+    }
+
+    .accordion,
+    .accordion-button {
+        width: 320px;
+    }
+
+
+    // 修改手風琴標題欄打開時的樣式
+    .accordion-button:not(.collapsed) {
+        border-radius: 16px 16px 0 0 !important;
+        box-shadow: none !important;
+    }
+
+    .accordion-button {
+        line-height: 35.2px;
+    }
+
+    // 修改手風琴右側開合icon
+    .accordion-button::after {
+        background-image: url(/assets/images/Icon/arrow_black.png) !important;
+        margin-top: 12px !important;
+        background-size: 11px 6.5px !important;
+        background-position: center !important;
+        z-index: 3;
+    }
+
+
+    .accordion-unit2 {
+        .accordion-button::after {
+            background-image: url(/assets/images/Icon/arrow_black.png) !important;
+            margin-left: 4px !important;
+            background-size: 11px 6.5px !important;
+            background-position: center !important;
+            z-index: 3;
+        }
+
+        .accordion-button:not(.collapsed) {
+            border-radius: 0px 0px 0 0 !important;
+        }
+    }
+
+    .active {
+
+        a,
+        span {
+            color: $primary-600 !important;
+        }
+    }
+
+    // 滾動條樣式
+    .scroll-y {
+        &::-webkit-scrollbar {
+            background-color: $neutral-100;
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $primary;
+            border-radius: 50px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        iframe {
+            height: 480px;
+        }
+    }
+}
+
+.course-list-tablet {
+    .course-list-title {
+        line-height: 35px;
+
+        .accordion-button::after {
+            background-image: url(/assets/images/Icon/arrow_white.png) !important;
+            margin-top: 7px !important;
+            margin-bottom: 8px;
+            margin-right: auto;
+            margin-left: 4px !important;
+            background-size: 35px 35px !important;
+            background-position: center !important;
+            z-index: 3;
+        }
+    }
+
+
+    // 修改手風琴右側開合icon
+    .accordion-button::after {
+        background-image: url(/assets/images/Icon/arrow_black.png) !important;
+        margin-left: 4px !important;
+        background-size: 11px 6.5px !important;
+        background-position: center !important;
+        z-index: 3;
+    }
+
+    .accordion-button:not(.collapsed) {
+        box-shadow: none;
+    }
+
+    .accordion-unit2 {
+        .accordion-button::after {
+            box-shadow: none;
+
+        }
+    }
+
+    .accordion-body {
+        .active {
+            font-size: 20px !important;
+            color: $primary-600 !important;
+        }
+
+        .btn-hover:hover {
+            font-size: 20px !important;
+            color: $primary-600 !important;
+
+            a {
+                color: $primary-600 !important;
+            }
+        }
+    }
+}
+
+.course-progress {
+    .container {
+        max-width: 808px;
+        padding: 0 32px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .course-progress {
+        .container {
+            max-width: 1200px;
+        }
+    }
+}
+
+
+.course-video-review {
+    .video-review {
+        max-width: 808px;
+    }
+
+    // 滾動條樣式
+    .scroll-y {
+        &::-webkit-scrollbar {
+            background-color: $neutral-100;
+            width: 5px;
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $primary;
+            border-radius: 50px;
+        }
+
+    }
+
+    // 公開留言按鈕樣式
+    .review-switch-btn {
+        width: 116px;
+        height: 50px;
+    }
+
+    .switch-toggle {
+        width: 68px;
+        height: 40px;
+        top: 4px;
+        left: 4px;
+        background-color: $secondary-300;
+
+        &::before {
+            content: "公開";
+            position: absolute;
+            top: 4px;
+            left: 14px;
+        }
+    }
+
+    .input-review:checked+.switch-toggle {
+        left: 43px;
+        background-color: $neutral-500;
+        color: white;
+    }
+
+    .input-review:checked+.switch-toggle::before {
+        content: "私人";
+    }
+
+    // 送出留言按鈕樣式
+    .review-btn {
+        &:hover {
+            background-color: $primary-500;
+            box-shadow: 3px 3px 0 0 $primary-200 !important;
+        }
+
+        &:active {
+            box-shadow: none !important;
+            translate: 3px 3px;
+        }
+    }
+
+    .course-review {
+        max-width: 808px;
+    }
+
+    // 標題跟副標題中間直線裝飾
+    .note {
+        margin-left: 34px;
+        padding: 3px 0;
+    }
+
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
+    }
+
+    .note-sm {
+        margin-left: 17px;
+    }
+
+    .note-sm::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        background-color: $neutral-200;
+        left: 8px;
+        top: 7px;
+    }
+
+    // 分頁按鈕樣式
+    .pagination {
+        .page-link {
+            background-color: $primary-100;
+            color: $neutral-950 !important;
+        }
+
+        .active>.page-link {
+            background-color: $primary-100 !important;
+            border-bottom: $primary-600 2px solid !important;
+            color: $primary-600 !important;
+        }
+    }
+}
+
+
+
+.recommand-course {
+
+    // 限制文字行數
+    .text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    // 點選label時選擇.open input，使.text增加行數
+    .open-review-card1:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    .open-review-card2:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    .open-review-card3:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    .open-review-card4:checked+.text {
+        -webkit-line-clamp: 999;
+    }
+
+    // 點選時隱藏遮蔽文字漸層
+    .open-review-card1:checked+.gradient::after {
+        display: none;
+    }
+
+    .open-review-card2:checked+.gradient::after {
+        display: none;
+    }
+
+    .open-review-card3:checked+.gradient::after {
+        display: none;
+    }
+
+    .open-review-card4:checked+.gradient::after {
+        display: none;
+    }
+
+    .card-btn {
+        z-index: 2;
+    }
+
+    .card-btn::after {
+        content: "展開留言";
+    }
+
+    // 展開文字時按鈕切換文字
+    .open-review-card1:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    .open-review-card2:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    .open-review-card3:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    .open-review-card4:checked+.text .btn::after {
+        content: "收起";
+    }
+
+    // 展開文字時按鈕切換位置
+    .open-review-card1:checked+.text .btn {
+        left: 85% !important;
+    }
+
+    .open-review-card2:checked+.text .btn {
+        left: 85% !important;
+    }
+
+    .open-review-card3:checked+.text .btn {
+        left: 85% !important;
+    }
+
+    .open-review-card4:checked+.text .btn {
+        left: 85% !important;
+    }
+}
+
+.similar-course,
+.recommand-course {
+    .note {
+        margin-left: 34px;
+        padding: 3px 0;
+    }
+
+    .note::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        background-color: $neutral-200;
+        left: -16px;
+        top: 0px;
+    }
+}
