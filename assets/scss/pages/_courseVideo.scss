@@ -399,4 +399,69 @@
         left: -16px;
         top: 0px;
     }
+
+    // 愛心標籤
+    .like-tag {
+        content: "";
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        background-image: url(/assets/images/Like_icon/Like_icon_Default.png);
+        background-size: cover;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover {
+            background-image: url(/assets/images/Like_icon/Like_icon_Hover.png);
+        }
+
+        &:active {
+            border-color: transparent !important;
+            box-shadow: transparent !important;
+        }
+
+        &:focus {
+            background-image: url(/assets/images/Like_icon/Like_icon_Clicked.png);
+        }
+    }
+
+    .hot-tag {
+        content: "";
+        position: absolute;
+        width: 120px;
+        top: 8px;
+        left: 0px;
+        border-radius: 0px 16px 16px 0;
+        background-color: $primary-500;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 8px;
+        line-height: 1.8;
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+
+    .similar-course,
+    .recommand-course {
+        .new-tag {
+            top: 25px;
+            border-radius: 0px 16px 16px 0;
+        }
+
+        .like-tag {
+            width: 49px;
+            height: 49px;
+            top: 24px;
+            right: 20px;
+        }
+
+        .hot-tag {
+            top: 25px;
+            border-radius: 0px 16px 16px 0;
+        }
+    }
 }
