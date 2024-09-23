@@ -188,12 +188,33 @@ color: $primary !important;
       border-bottom: none !important;
     }
   }
+
+  .deco-line::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    background-color: transparent;
+    top: 35px;
+    right: 0px;
+    transform: translateY(-50%);
+  }
 }
 
 @include media-breakpoint-up(xxl) {
   .pc-header{
   .accordion {
     width: 811px;
+    }
+    .deco-line::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 22px;
+      background-color: $neutral-400;
+      top: 38px;
+      right: -9px;
+      transform: translateY(-50%);
     }
 }
 }
