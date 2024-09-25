@@ -161,6 +161,11 @@ color: $primary !important;
     right: 16px;
     --bs-accordion-active-bg: white !important;
     --bs-accordion-btn-focus-box-shadow: none !important;
+    border-radius: 50px;
+  }
+
+  .accordion-item{
+    border-radius: 50px;
   }
 
   .accordion-button:not(.collapsed) {
