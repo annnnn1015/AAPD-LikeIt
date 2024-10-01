@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 載入 Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 載入Google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,1,0"
+    />
+    <link
+      rel="icon"
+      href="../assets/images/Favicon/Favicon 32x32.png"
+      type="image/x-icon"
+    />
+    <title>來趣學</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 載入 Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- 載入Google icon -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,1,0" />
-  <link rel="icon" href="../assets/images/Favicon/Favicon 32x32.png" type="image/x-icon" />
-  <title>來趣學</title>
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
 
     <!-- AI 小幫手 -->
     <a class="position-fixed AI-helper" href="#">
-      <img src="/assets/images/AI_Robot/AI_robot_floating_Btn.png" alt="" class="mb-1" />
-      <p class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper">
+      <img
+        src="/assets/images/AI_Robot/AI_robot_floating_Btn.png"
+        alt=""
+        class="mb-1"
+      />
+      <p
+        class="px-3 py-2 bg-white border rounded-3 fs-body-2 text-center helper"
+      >
         我需要幫忙
       </p>
     </a>
@@ -34,7 +53,8 @@
         <div class="row">
           <div class="col-lg-5 col-xl-4">
             <h1
-              class="slogan text-primary d-flex justify-content-center justify-content-lg-start fs-3 fs-lg-2 mb-7 mt-lg-10">
+              class="slogan text-primary d-flex justify-content-center justify-content-lg-start fs-3 fs-lg-2 mb-7 mt-lg-10"
+            >
               孩子學習的最佳良伴 !
             </h1>
           </div>
@@ -43,20 +63,37 @@
               <div class="swiper swiperBanner swiperBanner-shadow">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide swiperBanner-overlay">
-                    <img src="/assets/images/Home_Header_Banner.png" alt="" class="banner-img img-fluid" />
+                    <img
+                      src="/assets/images/Home_Header_Banner.png"
+                      alt=""
+                      class="banner-img img-fluid"
+                    />
                   </div>
                   <div class="swiper-slide swiperBanner-overlay">
-                    <img src="/assets/images/Home_Header_Banner.png" alt="" class="banner-img img-fluid" />
+                    <img
+                      src="/assets/images/Home_Header_Banner.png"
+                      alt=""
+                      class="banner-img img-fluid"
+                    />
                   </div>
                   <div class="swiper-slide swiperBanner-overlay">
-                    <img src="/assets/images/Home_Header_Banner.png" alt="" class="banner-img img-fluid" />
+                    <img
+                      src="/assets/images/Home_Header_Banner.png"
+                      alt=""
+                      class="banner-img img-fluid"
+                    />
                   </div>
                 </div>
               </div>
-              <div class="swiper-next position-absolute translate-middle top-50 z-1 ms-7 ms-lg-0">
-                <span class="ic--round-keyboard-arrow-left"></span><span class="swiper-arrow translate-middle"></span>
+              <div
+                class="swiper-next position-absolute translate-middle top-50 z-1 ms-7 ms-lg-0"
+              >
+                <span class="ic--round-keyboard-arrow-left"></span
+                ><span class="swiper-arrow translate-middle"></span>
               </div>
-              <div class="swiper-pagination pagination-color translate-middle"></div>
+              <div
+                class="swiper-pagination pagination-color translate-middle"
+              ></div>
             </div>
           </div>
         </div>
@@ -72,13 +109,37 @@
         </h2>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="AI-box bg-primary-100 border outline-shadow-lg rounded-5 w-100">
-          <div class="d-flex justify-content-center align-items-center h-100 position-relative">
-            <img src="/assets/images/AI_Robot/AI_Robot_Lg.png" alt="" class="AI-img" />
-            <a class="btn btn-light dialog-box dialog-left dialog-top-left fs-4" href="#">想聊天</a>
-            <a class="btn btn-light dialog-box dialog-right dialog-top-right fs-4" href="#">問課程</a>
-            <a class="btn btn-light dialog-box dialog-left dialog-bottom-left fs-4" href="#">問興趣</a>
-            <a class="btn btn-light dialog-box dialog-right dialog-bottom-right fs-4" href="#">其他</a>
+        <div
+          class="AI-box bg-primary-100 border outline-shadow-lg rounded-5 w-100"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center h-100 position-relative"
+          >
+            <img
+              src="/assets/images/AI_Robot/AI_Robot_Lg.png"
+              alt=""
+              class="AI-img"
+            />
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-top-left fs-4"
+              href="#"
+              >想聊天</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-top-right fs-4"
+              href="#"
+              >問課程</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-left dialog-bottom-left fs-4"
+              href="#"
+              >問興趣</a
+            >
+            <a
+              class="btn btn-light dialog-box dialog-right dialog-bottom-right fs-4"
+              href="#"
+              >其他</a
+            >
           </div>
         </div>
       </div>
@@ -93,31 +154,55 @@
             <p class="fs-4 text-neutral-200 me-3">|</p>
             <p class="text-neutral-500 fs-body-1">延續進度，讓學習不中斷！</p>
           </div>
-          <a href="#" class="d-flex align-items-center view-more">查看更多
-            <span class="material-symbols-outlined"> chevron_right </span></a>
+          <a href="#" class="d-flex align-items-center view-more"
+            >查看更多
+            <span class="material-symbols-outlined"> chevron_right </span></a
+          >
         </div>
         <!-- By Anna ↓ -->
         <div class="row row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
           <div class="col">
             <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+            >
               <!-- 平板圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_色彩魔法師2.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_色彩魔法師2.png"
+                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                alt="..."
+              />
               <!-- 電腦圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_色彩魔法師2.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_色彩魔法師2.png"
+                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                alt="..."
+              />
               <div class="card-body col-7 col-lg-12">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >美學素養</a
+                      >
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >初階</a
+                      >
                     </li>
                     <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >色彩學</a
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -129,38 +214,69 @@
                 <!-- progress -->
                 <div class="d-flex align-items-center mb-0 mb-lg-3">
                   <div class="progress w-100 me-3" style="height: 15px">
-                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 70%" aria-valuenow="70"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div
+                      class="progress-bar bg-primary-300"
+                      role="progressbar"
+                      style="width: 70%"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                   <p class="text-neutral-500">70%</p>
                 </div>
               </div>
-              <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  local_fire_department </span>熱門排行</span>
+              <span
+                class="hot-tag d-flex justify-content-end align-items-center"
+                ><span class="material-icons me-2"> local_fire_department </span
+                >熱門排行</span
+              >
               <button class="btn like-tag"></button>
               <a href="courseVideo.html" class="stretched-link"></a>
             </div>
           </div>
           <div class="col">
             <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+            >
               <!-- 平板圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_情緒管理小高手.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_情緒管理小高手.png"
+                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                alt="..."
+              />
               <!-- 電腦圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_情緒管理小高手.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_情緒管理小高手.png"
+                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                alt="..."
+              />
               <div class="card-body col-7 col-lg-12">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">心靈成長</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >心靈成長</a
+                      >
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >初階</a
+                      >
                     </li>
                     <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">情緒智商</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >情緒智商</a
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -170,8 +286,14 @@
                 <!-- progress -->
                 <div class="d-flex align-items-center mb-0 mb-lg-3">
                   <div class="progress w-100 me-3" style="height: 15px">
-                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 1%" aria-valuenow="1"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div
+                      class="progress-bar bg-primary-300"
+                      role="progressbar"
+                      style="width: 1%"
+                      aria-valuenow="1"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                   <p class="text-neutral-500">1%</p>
                 </div>
@@ -182,24 +304,46 @@
           </div>
           <div class="col">
             <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+            >
               <!-- 平板圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_AI探索之旅.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_AI探索之旅.png"
+                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                alt="..."
+              />
               <!-- 電腦圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_AI探索之旅.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_AI探索之旅.png"
+                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                alt="..."
+              />
               <div class="card-body col-7 col-lg-12">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">科技應用</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >科技應用</a
+                      >
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >高階</a
+                      >
                     </li>
                     <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">人工智能</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >人工智能</a
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -211,14 +355,23 @@
                 <!-- progress -->
                 <div class="d-flex align-items-center mb-0 mb-lg-3">
                   <div class="progress w-100 me-3" style="height: 15px">
-                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 40%" aria-valuenow="40"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div
+                      class="progress-bar bg-primary-300"
+                      role="progressbar"
+                      style="width: 40%"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                   <p class="text-neutral-500">40%</p>
                 </div>
               </div>
-              <span class="new-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  auto_awesome </span>新上架</span>
+              <span
+                class="new-tag d-flex justify-content-end align-items-center"
+                ><span class="material-icons me-2"> auto_awesome </span
+                >新上架</span
+              >
               <button class="btn like-tag"></button>
               <a href="#" class="stretched-link"></a>
             </div>
@@ -238,31 +391,55 @@
               現在正熱門，看看大家都在學什麼！
             </p>
           </div>
-          <a href="#" class="d-flex align-items-center view-more">查看更多
-            <span class="material-symbols-outlined"> chevron_right </span></a>
+          <a href="#" class="d-flex align-items-center view-more"
+            >查看更多
+            <span class="material-symbols-outlined"> chevron_right </span></a
+          >
         </div>
         <!-- By Anna ↓ -->
         <div class="row row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
           <div class="col">
             <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+            >
               <!-- 平板圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_小小廚神的健康餐盤.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_小小廚神的健康餐盤.png"
+                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                alt="..."
+              />
               <!-- 電腦圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_小小廚神的健康餐盤.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_小小廚神的健康餐盤.png"
+                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                alt="..."
+              />
               <div class="card-body col-7 col-lg-12">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">健康營養</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >健康營養</a
+                      >
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >初階</a
+                      >
                     </li>
                     <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">健康飲食</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >健康飲食</a
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -274,38 +451,69 @@
                 <!-- progress -->
                 <div class="d-flex align-items-center mb-0 mb-lg-3">
                   <div class="progress w-100 me-3" style="height: 15px">
-                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="0"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div
+                      class="progress-bar bg-primary-300"
+                      role="progressbar"
+                      style="width: 0%"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                   <p class="text-neutral-500">0%</p>
                 </div>
               </div>
-              <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  local_fire_department </span>熱門排行</span>
+              <span
+                class="hot-tag d-flex justify-content-end align-items-center"
+                ><span class="material-icons me-2"> local_fire_department </span
+                >熱門排行</span
+              >
               <button class="btn like-tag"></button>
               <a href="#" class="stretched-link"></a>
             </div>
           </div>
           <div class="col">
             <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+            >
               <!-- 平板圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_自信心培養班.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_自信心培養班.png"
+                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                alt="..."
+              />
               <!-- 電腦圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_自信心培養班.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_自信心培養班.png"
+                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                alt="..."
+              />
               <div class="card-body col-7 col-lg-12">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">心靈成長</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >心靈成長</a
+                      >
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">中階</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >中階</a
+                      >
                     </li>
                     <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">自信建立</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >自信建立</a
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -317,38 +525,69 @@
                 <!-- progress -->
                 <div class="d-flex align-items-center mb-0 mb-lg-3">
                   <div class="progress w-100 me-3" style="height: 15px">
-                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="0"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div
+                      class="progress-bar bg-primary-300"
+                      role="progressbar"
+                      style="width: 0%"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                   <p class="text-neutral-500">0%</p>
                 </div>
               </div>
-              <span class="new-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  auto_awesome </span>新上架</span>
+              <span
+                class="new-tag d-flex justify-content-end align-items-center"
+                ><span class="material-icons me-2"> auto_awesome </span
+                >新上架</span
+              >
               <button class="btn like-tag"></button>
               <a href="#" class="stretched-link"></a>
             </div>
           </div>
           <div class="col">
             <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden"
+            >
               <!-- 平板圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_程式設計小達人.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_程式設計小達人.png"
+                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none img-45"
+                alt="..."
+              />
               <!-- 電腦圖片 -->
-              <img src="/assets/images/Course_Cover/Course_Cover_程式設計小達人.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <img
+                src="/assets/images/Course_Cover/Course_Cover_程式設計小達人.png"
+                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block"
+                alt="..."
+              />
               <div class="card-body col-7 col-lg-12">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">科技應用</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >科技應用</a
+                      >
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >高階</a
+                      >
                     </li>
                     <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">程式設計</a>
+                      <a
+                        href="#"
+                        class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1"
+                        >程式設計</a
+                      >
                     </li>
                   </ol>
                 </nav>
@@ -360,14 +599,23 @@
                 <!-- progress -->
                 <div class="d-flex align-items-center mb-0 mb-lg-3">
                   <div class="progress w-100 me-3" style="height: 15px">
-                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="0"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div
+                      class="progress-bar bg-primary-300"
+                      role="progressbar"
+                      style="width: 0%"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                   <p class="text-neutral-500">0%</p>
                 </div>
               </div>
-              <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  local_fire_department </span>熱門排行</span>
+              <span
+                class="hot-tag d-flex justify-content-end align-items-center"
+                ><span class="material-icons me-2"> local_fire_department </span
+                >熱門排行</span
+              >
               <button class="btn like-tag"></button>
               <a href="#" class="stretched-link"></a>
             </div>
@@ -380,144 +628,230 @@
     <div class="container-index py-7">
       <div class="d-flex justify-content-center">
         <div class="category border rounded-5 outline-shadow-lg w-100">
-          <div class="category-header bg-primary-400 text-white text-center py-4">
+          <div
+            class="category-header bg-primary-400 text-white text-center py-4"
+          >
             <h3 class="fs-4 mb-1">12 大領域，開啟你的精采之旅</h3>
             <p class="fs-body-1">前往探索你的興趣</p>
           </div>
           <div class="d-flex justify-content-end py-4 me-9">
-            <a href="#" class="text-primary-700 me-3 link">最多人學</a>
+            <a href="#" class="me-3 link">最多人學</a>
             <span class="text-neutral-200 me-3">|</span>
-            <a href="#" class="text-neutral-950 link">最近更新</a>
+            <a href="#" class="link">最近更新</a>
           </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-5 mb-7 px-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 mb-7 px-5">
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Aesthetics.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="courseList.html"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Aesthetics.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">美學素養</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">美學素養</h4>
                   <p class="fs-body-1 text-neutral-500">Aesthetics</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Nature.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Nature.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">自然探索</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">自然探索</h4>
                   <p class="fs-body-1 text-neutral-500">Nature</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Relationship.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Relationship.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">人際關係</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">人際關係</h4>
                   <p class="fs-body-1 text-neutral-500">Relationship</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Health.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Health.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">健康營養</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">健康營養</h4>
                   <p class="fs-body-1 text-neutral-500">Health</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Ideas.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Ideas.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">創意訓練</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">創意訓練</h4>
                   <p class="fs-body-1 text-neutral-500">Idea</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Press.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Press.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">媒體識別</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">媒體識別</h4>
                   <p class="fs-body-1 text-neutral-500">Press</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Spirit.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Spirit.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">心靈成長</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">心靈成長</h4>
                   <p class="fs-body-1 text-neutral-500">Spirit</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Finance.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Finance.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">理財管理</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">理財管理</h4>
                   <p class="fs-body-1 text-neutral-500">Finance</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Logic.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Logic.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">邏輯推理</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">邏輯推理</h4>
                   <p class="fs-body-1 text-neutral-500">Logic</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Culture.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Culture.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">認識文化</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">認識文化</h4>
                   <p class="fs-body-1 text-neutral-500">Culture</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Technology.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Technology.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">科技應用</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">科技應用</h4>
                   <p class="fs-body-1 text-neutral-500">Technology</p>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a class="category-card d-flex justify-content-center flex-lg-column align-items-center" href="#">
-                <div class="bg-white border rounded-circle circle my-3">
-                  <img src="/assets/images/Course_category/Course_category_Music.png" alt="" class="" />
+              <a
+                class="category-card d-flex justify-content-center flex-lg-column align-items-center"
+                href="#"
+              >
+                <div class="circle">
+                  <img
+                    src="/assets/images/Course_category/Course_category_Music.png"
+                    alt=""
+                    class=""
+                  />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">音樂素養</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">音樂素養</h4>
                   <p class="fs-body-1 text-neutral-500">Music</p>
                 </div>
               </a>
@@ -536,8 +870,10 @@
             <p class="fs-4 text-neutral-200 me-3">|</p>
             <p class="text-neutral-500 fs-body-1">專屬指導，讓學習更精準！</p>
           </div>
-          <a href="#" class="d-flex align-items-center view-more">查看更多
-            <span class="material-symbols-outlined"> chevron_right </span></a>
+          <a href="#" class="d-flex align-items-center view-more"
+            >查看更多
+            <span class="material-symbols-outlined"> chevron_right </span></a
+          >
         </div>
 
         <!-- 心得卡片 By Anna -->
@@ -545,12 +881,21 @@
           <div class="col">
             <div class="position-relative">
               <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card1" class="open-review-card1 d-none" />
+              <input
+                type="checkbox"
+                id="open-review-card1"
+                class="open-review-card1 d-none"
+              />
               <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative gradient">
+                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative gradient"
+              >
                 <!-- 卡片標題 -->
                 <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="../assets/images/PFP/PFP_MeiMom.png" alt="user photo" />
+                  <img
+                    class="me-3"
+                    src="../assets/images/PFP/PFP_MeiMom.png"
+                    alt="user photo"
+                  />
                   <div class="d-flex flex-column">
                     <small>@jfsojf9</small>
                     <p class="fs-body-3">
@@ -568,7 +913,8 @@
                 <!-- 展開按鈕(文字) -->
                 <label
                   class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap"
-                  for="open-review-card1">
+                  for="open-review-card1"
+                >
                 </label>
               </div>
             </div>
@@ -576,12 +922,21 @@
           <div class="col">
             <div class="position-relative">
               <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card2" class="open-review-card2 d-none" />
+              <input
+                type="checkbox"
+                id="open-review-card2"
+                class="open-review-card2 d-none"
+              />
               <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative gradient">
+                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative gradient"
+              >
                 <!-- 卡片標題 -->
                 <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="../assets/images/PFP/PFP_BaoDad.png" alt="user photo" />
+                  <img
+                    class="me-3"
+                    src="../assets/images/PFP/PFP_BaoDad.png"
+                    alt="user photo"
+                  />
                   <div class="d-flex flex-column">
                     <small>@ajko39</small>
                     <p class="fs-body-3">
@@ -599,7 +954,8 @@
                 <!-- 展開按鈕(文字) -->
                 <label
                   class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap"
-                  for="open-review-card2">
+                  for="open-review-card2"
+                >
                 </label>
               </div>
             </div>
@@ -607,12 +963,21 @@
           <div class="col d-none d-xl-block">
             <div class="position-relative">
               <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card3" class="open-review-card3 d-none" />
+              <input
+                type="checkbox"
+                id="open-review-card3"
+                class="open-review-card3 d-none"
+              />
               <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative gradient">
+                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative gradient"
+              >
                 <!-- 卡片標題 -->
                 <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="../assets/images/PFP/PFP_MiiMom.png" alt="user photo" />
+                  <img
+                    class="me-3"
+                    src="../assets/images/PFP/PFP_MiiMom.png"
+                    alt="user photo"
+                  />
                   <div class="d-flex flex-column">
                     <small>@Yajidji dji</small>
                     <p class="fs-body-3">
@@ -630,7 +995,8 @@
                 <!-- 展開按鈕(文字) -->
                 <label
                   class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap"
-                  for="open-review-card3">
+                  for="open-review-card3"
+                >
                 </label>
               </div>
             </div>
@@ -648,8 +1014,10 @@
             <p class="fs-4 text-neutral-200 me-3">|</p>
             <p class="text-neutral-500 fs-body-1">專屬指導，讓學習更精準！</p>
           </div>
-          <a href="#" class="d-flex align-items-center view-more">查看更多
-            <span class="material-symbols-outlined"> chevron_right </span></a>
+          <a href="#" class="d-flex align-items-center view-more"
+            >查看更多
+            <span class="material-symbols-outlined"> chevron_right </span></a
+          >
         </div>
 
         <!-- 平板 swiper -->
@@ -658,8 +1026,14 @@
             <div class="swiper-slide">
               <div class="lecturer-card rounded-5">
                 <div class="d-flex">
-                  <img src="/assets/images/Teacher/teacher_Lisa_lg.png" class="card-img-left" alt="..." />
-                  <div class="card-body d-flex flex-column justify-content-between">
+                  <img
+                    src="/assets/images/Teacher/teacher_Lisa_lg.png"
+                    class="card-img-left"
+                    alt="..."
+                  />
+                  <div
+                    class="card-body d-flex flex-column justify-content-between"
+                  >
                     <div class="">
                       <h4 class="fw-bold mb-3">陳美玲</h4>
                       <p class="fs-body-2 overflow-hidden text mb-2">
@@ -668,10 +1042,14 @@
                       </p>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <a href="#" class="btn btn-light d-flex align-items-center">
+                      <a
+                        href="#"
+                        class="btn btn-light d-flex align-items-center"
+                      >
                         前往了解<span class="material-symbols-outlined ms-1">
                           chevron_right
-                        </span></a>
+                        </span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -680,8 +1058,14 @@
             <div class="swiper-slide">
               <div class="lecturer-card rounded-5">
                 <div class="d-flex">
-                  <img src="/assets/images/Teacher/Teacher_Emily.png" class="card-img-left right-center" alt="..." />
-                  <div class="card-body d-flex flex-column justify-content-between">
+                  <img
+                    src="/assets/images/Teacher/Teacher_Emily.png"
+                    class="card-img-left right-center"
+                    alt="..."
+                  />
+                  <div
+                    class="card-body d-flex flex-column justify-content-between"
+                  >
                     <div class="">
                       <h4 class="fw-bold mb-3">趙夢琳</h4>
                       <p class="fs-body-2 overflow-hidden text mb-2">
@@ -689,10 +1073,14 @@
                       </p>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <a href="#" class="btn btn-light d-flex align-items-center">
+                      <a
+                        href="#"
+                        class="btn btn-light d-flex align-items-center"
+                      >
                         前往了解<span class="material-symbols-outlined ms-1">
                           chevron_right
-                        </span></a>
+                        </span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -701,8 +1089,14 @@
             <div class="swiper-slide">
               <div class="lecturer-card rounded-5">
                 <div class="d-flex">
-                  <img src="/assets/images/Teacher/Teacher_Steve.png" class="card-img-left" alt="..." />
-                  <div class="card-body d-flex flex-column justify-content-between">
+                  <img
+                    src="/assets/images/Teacher/Teacher_Steve.png"
+                    class="card-img-left"
+                    alt="..."
+                  />
+                  <div
+                    class="card-body d-flex flex-column justify-content-between"
+                  >
                     <div class="">
                       <h4 class="fw-bold mb-3">李博文</h4>
                       <p class="fs-body-2 overflow-hidden text mb-2">
@@ -710,10 +1104,14 @@
                       </p>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <a href="#" class="btn btn-light d-flex align-items-center">
+                      <a
+                        href="#"
+                        class="btn btn-light d-flex align-items-center"
+                      >
                         前往了解<span class="material-symbols-outlined ms-1">
                           chevron_right
-                        </span></a>
+                        </span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -728,8 +1126,14 @@
           <div class="swiper-slide swiperLecturers-overlay swiper-slide-20">
             <div class="lecturer-card rounded-5">
               <div class="d-flex">
-                <img src="/assets/images/Teacher/Teacher_Lisa.png" class="card-img-left" alt="..." />
-                <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  src="/assets/images/Teacher/Teacher_Lisa.png"
+                  class="card-img-left"
+                  alt="..."
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
                   <div class="">
                     <h4 class="fw-bold mb-3">陳美玲</h4>
                     <p class="fs-body-2 overflow-hidden text mb-2">
@@ -741,7 +1145,8 @@
                     <a href="#" class="btn btn-light d-flex align-items-center">
                       前往了解<span class="material-symbols-outlined ms-1">
                         chevron_right
-                      </span></a>
+                      </span></a
+                    >
                   </div>
                 </div>
               </div>
@@ -750,8 +1155,14 @@
           <div class="swiper-slide swiperLecturers-overlay swiper-slide-20">
             <div class="lecturer-card rounded-5">
               <div class="d-flex">
-                <img src="/assets/images/Teacher/Teacher_Emily.png" class="card-img-left right-center" alt="..." />
-                <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  src="/assets/images/Teacher/Teacher_Emily.png"
+                  class="card-img-left right-center"
+                  alt="..."
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
                   <div class="">
                     <h4 class="fw-bold mb-3">趙夢琳</h4>
                     <p class="fs-body-2 overflow-hidden text mb-2">
@@ -762,7 +1173,8 @@
                     <a href="#" class="btn btn-light d-flex align-items-center">
                       前往了解<span class="material-symbols-outlined ms-1">
                         chevron_right
-                      </span></a>
+                      </span></a
+                    >
                   </div>
                 </div>
               </div>
@@ -771,8 +1183,14 @@
           <div class="swiper-slide swiperLecturers-overlay swiper-slide-20">
             <div class="lecturer-card rounded-5">
               <div class="d-flex">
-                <img src="/assets/images/Teacher/Teacher_Steve.png" class="card-img-left" alt="..." />
-                <div class="card-body d-flex flex-column justify-content-between">
+                <img
+                  src="/assets/images/Teacher/Teacher_Steve.png"
+                  class="card-img-left"
+                  alt="..."
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
                   <div class="">
                     <h4 class="fw-bold mb-3">李博文</h4>
                     <p class="fs-body-2 overflow-hidden text mb-2">
@@ -783,7 +1201,8 @@
                     <a href="#" class="btn btn-light d-flex align-items-center">
                       前往了解<span class="material-symbols-outlined ms-1">
                         chevron_right
-                      </span></a>
+                      </span></a
+                    >
                   </div>
                 </div>
               </div>
@@ -791,11 +1210,17 @@
           </div>
         </div>
         <!-- Swiper navigation -->
-        <div class="swiper-lecturers-next position-absolute translate-middle top-50 end-0 z-1">
-          <span class="ic--round-keyboard-arrow-right"></span><span class="swiper-arrow translate-middle"></span>
+        <div
+          class="swiper-lecturers-next position-absolute translate-middle top-50 end-0 z-1"
+        >
+          <span class="ic--round-keyboard-arrow-right"></span
+          ><span class="swiper-arrow translate-middle"></span>
         </div>
-        <div class="swiper-lecturers-prev position-absolute translate-middle top-50 z-1">
-          <span class="ic--round-keyboard-arrow-left"></span><span class="swiper-arrow translate-middle"></span>
+        <div
+          class="swiper-lecturers-prev position-absolute translate-middle top-50 z-1"
+        >
+          <span class="ic--round-keyboard-arrow-left"></span
+          ><span class="swiper-arrow translate-middle"></span>
         </div>
       </div>
       <!-- Swiper pagination -->
@@ -805,8 +1230,11 @@
     </div>
 
     <div class="bg-primary-100"><%- include('./layout/footer'); -%></div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="../main.js"></script>
     <!-- 載入 Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -872,6 +1300,5 @@
         },
       });
     </script>
-</body>
-
+  </body>
 </html>

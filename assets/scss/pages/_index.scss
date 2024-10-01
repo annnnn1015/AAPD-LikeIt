@@ -115,6 +115,7 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     position: relative;
+    transition: 0.1s;
   }
 
   .swiper-arrow {
@@ -127,6 +128,22 @@
     top: 45%;
     left: 50%;
     z-index: -1;
+    transition: 0.2s;
+  }
+
+  // swiper 箭頭 hover
+  .swiper-next {
+    &:hover {
+      .ic--round-keyboard-arrow-left {
+        width: 72px;
+        height: 72px;
+      }
+      .swiper-arrow {
+        width: 86px;
+        height: 86px;
+        background-color: $secondary-200;
+      }
+    }
   }
 
   // swiper 覆蓋
@@ -340,7 +357,12 @@
   color: $neutral-950;
 
   &:hover {
-    color: $primary-500;
+    color: $primary-600;
+    font-weight: 700;
+  }
+
+  &:active {
+    color: $primary-700;
   }
 }
 
@@ -439,8 +461,17 @@
     border-radius: 32px 32px 0 0;
   }
 
-  .link:hover {
-    text-decoration: underline;
+  .link {
+    color: $neutral-950;
+
+    &:hover {
+      color: $primary-600;
+    }
+
+    &:active {
+      color: $primary-700;
+      font-weight: 700;
+    }
   }
 
   .category-card {
@@ -449,13 +480,40 @@
     box-shadow: 7px 7px 0px 0px $primary-200;
     border: 1px solid $neutral-900;
     border-radius: 16px;
+    transition: 0.2s;
 
     @include pad-lg {
       height: 361px;
     }
 
+    // 卡片 hover
     &:hover {
-      box-shadow: 7px 7px 0px 0px $primary-500;
+      box-shadow: 7px 7px 0px 0px $secondary-500;
+
+      &::after {
+        background-color: $secondary-200;
+      }
+
+      // 背景圓圈縮小
+      .circle {
+        width: 81px;
+        height: 81px;
+        margin-left: 12.5px;
+        margin-right: 27.5px;
+
+        @include pad-lg {
+          width: 155px;
+          height: 155px;
+          margin: 48.5px 0;
+        }
+      }
+
+      // 圖片變大
+      img {
+        @include pad-lg {
+          width: 261.39px;
+        }
+      }
     }
 
     &:active {
@@ -474,6 +532,7 @@
       left: 0;
       border-radius: 16px;
       z-index: -1;
+      transition: 0.2s;
 
       @include pad-lg {
         height: 345px;
@@ -486,10 +545,16 @@
   .circle {
     width: 106px;
     height: 106px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid $neutral-900;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 15px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: 0.2s;
 
     @include pad-lg {
       width: 220px;
@@ -500,11 +565,11 @@
 
   img {
     width: 98.35px;
-    height: 84.48px;
+    height: auto;
+    object-fit: cover;
 
     @include pad-lg {
       width: 176.32px;
-      height: 154.27px;
     }
   }
 }
@@ -753,17 +818,41 @@
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
   }
 
-  .swiper-lecturers-next,
-  .swiper-lecturers-prev {
-    color: $neutral-950;
-  }
-
+  // swiper 箭頭 hover
   .swiper-lecturers-next {
-    margin-right: 52px;
+    translate: -52px;
+
+    &:hover {
+      translate: -35px;
+
+      .ic--round-keyboard-arrow-right {
+        width: 72px;
+        height: 72px;
+      }
+
+      .swiper-arrow {
+        background-color: $secondary-200;
+        width: 86px;
+        height: 86px;
+      }
+    }
   }
 
   .swiper-lecturers-prev {
     margin-left: 93px;
+
+    &:hover {
+      .ic--round-keyboard-arrow-left {
+        width: 72px;
+        height: 72px;
+      }
+
+      .swiper-arrow {
+        background-color: $secondary-200;
+        width: 86px;
+        height: 86px;
+      }
+    }
   }
 
   .ic--round-keyboard-arrow-left {
