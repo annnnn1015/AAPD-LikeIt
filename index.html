@@ -28,8 +28,8 @@
       type="image/x-icon"
     />
     <title>來趣學</title>
-    <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-0fdcd817.js"></script>
-    <link rel="stylesheet" href="/AAPD-LikeIt/assets/main-89bbf72a.css">
+    <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-f5082620.js"></script>
+    <link rel="stylesheet" href="/AAPD-LikeIt/assets/main-c6b31725.css">
   </head>
 
   <body>
@@ -177,15 +177,14 @@
 <nav
     class="pc-header w-100 bg-primary-100 justify-content-between align-items-center position-sticky top-0 d-none d-lg-flex float-start">
     <h1 class="fs-6">
-        <a href="index.html" class="header-title bg-white rounded-pill rounded-start-0">來趣學 Like it</a>
+        <a href="index.html" class="header-title bg-white rounded-start-0">來趣學 Like it</a>
     </h1>
-    <div class="accordion position-fixed overflow-hidden  outline-shadow-lg" id="accordionExample">
+    <div class="accordion position-fixed overflow-hidden  outline-shadow-lg" id="accordionPc">
         <div class="accordion-item overflow-hidden">
             <!-- 標題選單 -->
-            <div
-                class="d-flex align-items-center justify-content-center  rounded-bottom-0 overflow-hidden border-bottom border-neutral-200 mx-3">
-                <div class="accordion-header d-flex gap-2 gap-xxl-3 w-100 " id="headingOne">
-                    <button class="btn pc-search-btn position-relative ps-2 pe-0  py-3" type="button"
+            <div class="rounded-bottom-0 overflow-hidden border-bottom border-neutral-200 mx-3">
+                <div class="accordion-header d-flex align-items-center w-100 " id="headingOne">
+                    <button class="btn pc-search-btn position-relative ps-2 pe-2 pe-xxl-3 py-3" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseSearch" aria-expanded="true"
                         aria-controls="collapseSearch">
                         <div class="search-icon-border">
@@ -194,44 +193,58 @@
                             </span>
                         </div>
                     </button>
-                    <a class="w-100 text-neutral-950 d-flex align-items-center justify-content-center text-nowrap fs-body-2"
-                        href="index.html">
-                        關於網站
-                    </a>
-                    <a class="w-100 text-neutral-950 d-flex align-items-center justify-content-center text-nowrap fs-body-2"
-                        href="courseList.html">
-                        課程探索
-                    </a>
-                    <a class="position-relative deco-line w-100 text-neutral-950 d-flex align-items-center justify-content-center text-nowrap fs-body-2 me-2"
-                        type="button">
-                        訂閱方案
-                    </a>
-                    <a class="py-3 w-100 bg-white border-0 d-flex align-items-center fs-body-2 text-nowrap text-primary-600 school-btn"
-                        type="button" href="courseInfo.html">
-                        <span class="material-symbols-rounded fs-4 me-1">
-                            school
-                        </span>
-                        <span class="d-none d-xxl-inline">我的課程</span>
-                    </a>
-                    <a class="py-3 w-100 bg-white border-0 d-flex align-items-center fs-body-2 text-nowrap text-primary-600"
-                        type="button">
-                        <span class="material-symbols-rounded position-relative notifications-btn fs-4">
-                            notifications
-                        </span>
-                        <span class="d-none d-xxl-inline">訊息通知</span>
-                    </a>
-                    <button class="accordion-button user-btn ps-2 py-3 w-100 bg-white" type="button"
+                    <ul class="d-flex align-items-center  gap-2 gap-xxl-3 my-auto">
+                        <li class="header-list-item">
+                            <a class="w-100 text-neutral-950 d-flex align-items-center
+                        justify-content-center text-nowrap fs-body-2 p-1" href="index.html">
+                                關於網站
+                            </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a class="w-100 text-neutral-950 d-flex align-items-center justify-content-center text-nowrap fs-body-2 p-1"
+                                href="#" data-bs-toggle="collapse" data-bs-target="#collapseList" aria-expanded="true"
+                                aria-controls="collapseList">
+                                課程探索
+                            </a>
+                        </li>
+                        <li class="header-list-item me-xxl-5">
+                            <a class="position-relative deco-line w-100 text-neutral-950 d-flex align-items-center justify-content-center text-nowrap fs-body-2 p-1"
+                                type="button">
+                                訂閱方案
+                            </a>
+                        </li>
+                        <li>
+                            <a class="py-3 w-100 bg-white border-0 d-flex align-items-center fs-body-2 text-nowrap text-primary-600 school-btn"
+                                type="button" href="courseInfo.html">
+                                <span class="material-symbols-rounded fs-4 me-1">
+                                    school
+                                </span>
+                                <span class="d-none d-xxl-inline">我的課程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="py-3 w-100 bg-white border-0 d-flex align-items-center fs-body-2 text-nowrap text-primary-600 notifications-btn"
+                                type="button">
+                                <span class="material-symbols-rounded position-relative notifications-dot fs-4">
+                                    notifications
+                                </span>
+                                <span class="d-none d-xxl-inline">訊息通知</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="accordion-button user-btn py-3 w-100 bg-white" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseMain" aria-expanded="true"
                         aria-controls="collapseMain">
-                        <div class="img-border">
-                            <div class="user-img"></div>
+                        <div class="img-border  ms-auto">
+                            <div class="user-img-lg d-xxl-block d-lg-none"></div>
+                            <div class="user-img d-lg-block d-xxl-none"></div>
                         </div>
                     </button>
                 </div>
             </div>
             <!-- 主要內容 -->
             <div id="collapseMain" class="accordion-collapse collapse" aria-labelledby="headingMain"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionPc">
                 <div class="accordion-body">
                     <!-- 學習星星 -->
                     <div class="row mx-3 border-bottom border-primary-200 pb-3">
@@ -311,7 +324,7 @@
             </div>
             <!-- 搜尋 -->
             <div id="collapseSearch" class="accordion-collapse collapse" aria-labelledby="collapseSearch"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionPc">
                 <div class="accordion-body p-5">
                     <!-- 搜尋欄 -->
                     <form class="d-flex position-relative mb-5" role="search">
@@ -332,6 +345,27 @@
                         </li>
                         <li><a class="text-primary-700 fs-body-3 bg-primary-100 rounded-3 py-1 px-2" href="#">#寫書法</a>
                         </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 課程探索清單 -->
+            <div id="collapseList" class="accordion-collapse collapse" aria-labelledby="collapseList"
+                data-bs-parent="#accordionPc">
+                <div class="accordion-body px-5 py-4">
+                    <ul class="collapse-list-item d-flex flex-wrap gap-2 my-auto">
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">自然探索</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">理財管理</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">認識文化</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">音樂素養</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">科技應用</a></li>
+                        <li><a href="courseList.html" class="text-neutral-950 p-1 fs-body-2">美學素養</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">心靈成長</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">人際關係</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">邏輯推理</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">創意訓練</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">媒體識別</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">健康營養</a></li>
+                        <li><a href="#" class="text-neutral-950 p-1 fs-body-2">所有課程</a></li>
                     </ul>
                 </div>
             </div>
@@ -940,17 +974,17 @@
             <p class="fs-body-1">前往探索你的興趣</p>
           </div>
           <div class="d-flex justify-content-end py-4 me-9">
-            <a href="#" class="text-primary-700 me-3 link">最多人學</a>
+            <a href="#" class="me-3 link">最多人學</a>
             <span class="text-neutral-200 me-3">|</span>
-            <a href="#" class="text-neutral-950 link">最近更新</a>
+            <a href="#" class="link">最近更新</a>
           </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-5 mb-7 px-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 mb-7 px-5">
             <div class="col">
               <a
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
-                href="#"
+                href="courseList.html"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Aesthetics-f4c271fc.png"
                     alt=""
@@ -958,7 +992,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">美學素養</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">美學素養</h4>
                   <p class="fs-body-1 text-neutral-500">Aesthetics</p>
                 </div>
               </a>
@@ -968,7 +1002,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Nature-d73222e2.png"
                     alt=""
@@ -976,7 +1010,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">自然探索</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">自然探索</h4>
                   <p class="fs-body-1 text-neutral-500">Nature</p>
                 </div>
               </a>
@@ -986,7 +1020,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Relationship-0891d625.png"
                     alt=""
@@ -994,7 +1028,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">人際關係</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">人際關係</h4>
                   <p class="fs-body-1 text-neutral-500">Relationship</p>
                 </div>
               </a>
@@ -1004,7 +1038,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Health-8a0f240f.png"
                     alt=""
@@ -1012,7 +1046,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">健康營養</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">健康營養</h4>
                   <p class="fs-body-1 text-neutral-500">Health</p>
                 </div>
               </a>
@@ -1022,7 +1056,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Ideas-d03c198b.png"
                     alt=""
@@ -1030,7 +1064,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">創意訓練</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">創意訓練</h4>
                   <p class="fs-body-1 text-neutral-500">Idea</p>
                 </div>
               </a>
@@ -1040,7 +1074,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Press-cb73c1be.png"
                     alt=""
@@ -1048,7 +1082,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">媒體識別</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">媒體識別</h4>
                   <p class="fs-body-1 text-neutral-500">Press</p>
                 </div>
               </a>
@@ -1058,7 +1092,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Spirit-bf3a9731.png"
                     alt=""
@@ -1066,7 +1100,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">心靈成長</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">心靈成長</h4>
                   <p class="fs-body-1 text-neutral-500">Spirit</p>
                 </div>
               </a>
@@ -1076,7 +1110,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Finance-ba9af5f3.png"
                     alt=""
@@ -1084,7 +1118,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">理財管理</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">理財管理</h4>
                   <p class="fs-body-1 text-neutral-500">Finance</p>
                 </div>
               </a>
@@ -1094,7 +1128,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Logic-7b1e47c1.png"
                     alt=""
@@ -1102,7 +1136,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">邏輯推理</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">邏輯推理</h4>
                   <p class="fs-body-1 text-neutral-500">Logic</p>
                 </div>
               </a>
@@ -1112,7 +1146,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Culture-ea291e7f.png"
                     alt=""
@@ -1120,7 +1154,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">認識文化</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">認識文化</h4>
                   <p class="fs-body-1 text-neutral-500">Culture</p>
                 </div>
               </a>
@@ -1130,7 +1164,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Technology-db0027d9.png"
                     alt=""
@@ -1138,7 +1172,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">科技應用</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">科技應用</h4>
                   <p class="fs-body-1 text-neutral-500">Technology</p>
                 </div>
               </a>
@@ -1148,7 +1182,7 @@
                 class="category-card d-flex justify-content-center flex-lg-column align-items-center"
                 href="#"
               >
-                <div class="bg-white border rounded-circle circle my-3">
+                <div class="circle">
                   <img
                     src="/AAPD-LikeIt/assets/Course_category_Music-964c138f.png"
                     alt=""
@@ -1156,7 +1190,7 @@
                   />
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                  <h4 class="fs-4 mb-1">音樂素養</h4>
+                  <h4 class="fs-4 mb-1 text-neutral-950">音樂素養</h4>
                   <p class="fs-body-1 text-neutral-500">Music</p>
                 </div>
               </a>
@@ -1587,7 +1621,11 @@
   </div>
 </footer>
 </div>
-
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     
     <!-- 載入 Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
