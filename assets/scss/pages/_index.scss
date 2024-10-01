@@ -374,9 +374,11 @@
 
 .continue-courses,
 .recommand-courses {
+  max-width: 1200px;
+
   // 卡片 hover 圖片放大效果
   .img-h {
-    height: 218px;
+    max-height: 218px;
     overflow: hidden;
   }
 
@@ -479,6 +481,8 @@
 
 // 12 大領域
 .category {
+  max-width: 1200px;
+
   .category-header {
     height: 125px;
     width: 100%;
