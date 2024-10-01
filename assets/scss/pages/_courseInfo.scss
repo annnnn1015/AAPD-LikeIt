@@ -30,6 +30,13 @@
     .card {
         max-width: 680px;
     }
+    .add-btn{
+        transition: ease 0.5s;
+    &:hover{
+        color: $danger !important;
+        background-color: #FFF !important;
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -40,7 +47,7 @@
     }
 }
 
-main {
+.info-main {
     .main-wrap {
         max-width: 680px;
     }
@@ -56,11 +63,15 @@ main {
         top: 0;
         left: 0;
     }
-}
+
+    .accordion-button:focus {
+        box-shadow: none !important;
+    }
+    }
 
 
 @include media-breakpoint-up(lg) {
-    main {
+    .info-main {
         .main-wrap {
             max-width: 100%;
             padding-left: 114px !important;
@@ -71,7 +82,7 @@ main {
 }
 
 @include media-breakpoint-up(xl) {
-    main {
+    .info-main {
         .main-wrap {
             padding-left: 171px !important;
             padding-right: 171px !important;
@@ -80,7 +91,7 @@ main {
 }
 
 @include media-breakpoint-up(xxl) {
-    main {
+    .info-main {
         .main-wrap {
             padding-left: 228px !important;
             padding-right: 228px !important;
@@ -141,6 +152,10 @@ main {
         left: 85% !important;
     }
 
+    .outline-shadow-sm:hover{
+        box-shadow: 4px 4px 0px 0px $primary-200 !important
+    }
+
 }
 
 @include media-breakpoint-up(md) {
@@ -172,6 +187,7 @@ main {
     .accordion-button:not(.collapsed) {
         border-radius: 32px 32px 0 0 !important;
         box-shadow: none !important;
+        color:$neutral-950 !important;
     }
 
     .accordion-button {
@@ -195,6 +211,42 @@ main {
             background-size: 11px 6.5px !important;
             background-position: center !important;
             z-index: 3;
+        }
+    }
+
+    .link-style{
+    //  單元a連結hover樣式
+        &:hover{
+            a{
+            color: $primary-600 !important;
+            }
+        }
+    //  單元a連結active樣式
+        &:active{
+            a{
+            color: $primary-600 !important;
+            }
+        }
+    }
+    // 單元a連結active樣式
+    .unit-link-active{
+        a{
+            color: $primary-600 !important;
+        }
+    }
+
+    // 單元a連結禁用+hover樣式
+    .link-disabled{
+        background-color: $neutral-100;
+        a{
+        pointer-events: none;
+        color: $neutral-500 !important;
+        }
+
+        &:hover{
+            a{
+            color: $neutral-950 !important;
+            }
         }
     }
 }
@@ -427,6 +479,18 @@ main {
         padding: 8px;
         line-height: 1.8;
     }
+
+    .more-link{
+        &:hover{
+        font-weight: 700;
+        color: $primary-700 !important;
+        }
+        &:active{
+            color:$primary-600;
+            background-color: $primary-50;
+            border-radius: 16px;
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -450,23 +514,4 @@ main {
             border-radius: 0px 16px 16px 0;
         }
     }
-}
-
-.recommand-course {
-    .note {
-        margin-left: 34px;
-    }
-
-    // 標題跟副標題中間直線裝飾
-    .note::before {
-        content: "";
-        position: absolute;
-        width: 2px;
-        height: 32px;
-        background-color: $neutral-200;
-        left: -16px;
-        top: 0px;
-    }
-
-
 }

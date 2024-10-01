@@ -12,6 +12,16 @@ $('.collapse-list-item li a').click(function (event) {
 });
 
 
+// courseInfo.html 收藏按紐切換
+$('.courseInfo-banner .add-btn').click(function(event){
+    $(this).addClass('d-none').siblings().removeClass('d-none');
+});
+
+// courseInfo.html 章節單元點擊樣式
+$('.course-unit .link-style').click(function(event){
+    $(this).toggleClass('unit-link-active').siblings().removeClass('unit-link-active');
+});
+
 // courseVideo.html header影片右邊選單，點擊加active換color顏色
 $('.course-video li').click(function (event) {
     $(this).toggleClass('active').siblings().removeClass('active');
