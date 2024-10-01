@@ -115,6 +115,7 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     position: relative;
+    transition: 0.1s;
   }
 
   .swiper-arrow {
@@ -127,6 +128,22 @@
     top: 45%;
     left: 50%;
     z-index: -1;
+    transition: 0.2s;
+  }
+
+  // swiper 箭頭 hover
+  .swiper-next {
+    &:hover {
+      .ic--round-keyboard-arrow-left {
+        width: 70px;
+        height: 70px;
+      }
+      .swiper-arrow {
+        width: 87px;
+        height: 87px;
+        background-color: $secondary-200;
+      }
+    }
   }
 
   // swiper 覆蓋
@@ -753,17 +770,41 @@
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
   }
 
-  .swiper-lecturers-next,
-  .swiper-lecturers-prev {
-    color: $neutral-950;
-  }
-
+  // swiper 箭頭 hover
   .swiper-lecturers-next {
     margin-right: 52px;
+
+    &:hover {
+      translate: 15px;
+
+      .ic--round-keyboard-arrow-right {
+        width: 70px;
+        height: 70px;
+      }
+
+      .swiper-arrow {
+        background-color: $secondary-200;
+        width: 87px;
+        height: 87px;
+      }
+    }
   }
 
   .swiper-lecturers-prev {
     margin-left: 93px;
+
+    &:hover {
+      .ic--round-keyboard-arrow-left {
+        width: 70px;
+        height: 70px;
+      }
+
+      .swiper-arrow {
+        background-color: $secondary-200;
+        width: 87px;
+        height: 87px;
+      }
+    }
   }
 
   .ic--round-keyboard-arrow-left {
