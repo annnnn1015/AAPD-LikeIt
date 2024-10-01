@@ -407,6 +407,31 @@
 
 .similar-course,
 .recommand-course {
+
+    // 卡片 hover 圖片放大效果(From窈菱)
+    .img-h {
+    max-height: 218px;
+    overflow: hidden;
+    }
+
+    .img-w {
+    max-width: 45.3%;
+    overflow: hidden;
+    }
+
+    .card {
+    img {
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        img {
+        transform: scale(1.2);
+        }
+    }
+    }
+
     .note {
         margin-left: 34px;
     }

@@ -186,6 +186,18 @@
         max-width: 808px;
     }
 
+    .review-area{
+        .form-floating > .form-control:not(:placeholder-shown) ~ label{
+            color: transparent !important;
+            &::after{
+                background-color: transparent !important;
+            }
+        }
+        .form-floating > .form-control:focus ~ label{
+            background-color: transparent !important;
+            color: transparent !important;
+        }
+    }
     // 滾動條樣式
     .scroll-y {
         &::-webkit-scrollbar {
@@ -213,12 +225,13 @@
         top: 4px;
         left: 4px;
         background-color: $secondary-300;
+        transition: linear 0.1s;
 
         &::before {
             content: "公開";
             position: absolute;
-            top: 4px;
-            left: 14px;
+            top: 6px;
+            left: 15px;
         }
     }
 
@@ -230,6 +243,9 @@
 
     .input-review:checked+.switch-toggle::before {
         content: "私人";
+        position: absolute;
+        top: 6px;
+        left: 17px;
     }
 
     // 送出留言按鈕樣式
