@@ -83,7 +83,13 @@
 
   .slogan {
     @include pad-lg {
-      max-width: 279px;
+      // max-width: 279px;
+      margin-left: 70px;
+    }
+    @include pad-xl {
+      margin-left: 90px;
+    }
+    @include pad-xxl {
       margin-left: 130px;
     }
   }
