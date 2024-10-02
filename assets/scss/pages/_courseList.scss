@@ -102,7 +102,7 @@
   .tab-bar {
     border-bottom: 1px solid $neutral-900;
 
-    .btn-light {
+    .btn-tab {
       background-color: #fff;
       color: $neutral-950;
       border: 1px solid $neutral-900;
@@ -120,6 +120,17 @@
         background-color: $primary-400;
         border-bottom: none;
         color: #fff;
+      }
+    }
+
+    .btn-tab-focus {
+      border: 1px solid $neutral-900;
+      background-color: $primary-400;
+      border-bottom: none;
+      color: #fff;
+
+      &:hover {
+        color: $neutral-950;
       }
     }
   }

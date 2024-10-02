@@ -67,3 +67,11 @@ $(".latest-link").click(function (event) {
   $(this).toggleClass("max-latest-link-focus");
   $(".max-link").removeClass("max-latest-link-focus");
 });
+
+// 課程清單 程度標籤切換
+$(".btn-tab").click(function (event) {
+  if ($(".btn-tab").hasClass("btn-tab-focus")) {
+    $(".btn-tab").removeClass("btn-tab-focus");
+  }
+  $(this).toggleClass("btn-tab-focus");
+});
