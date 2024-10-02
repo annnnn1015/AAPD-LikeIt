@@ -148,7 +148,7 @@
     margin: 0 -24px 0 0;
   }
 
-  .btn-light {
+  .btn-category {
     width: 128px;
     height: 64px;
     background-color: #fff;
@@ -161,7 +161,10 @@
     align-items: center;
 
     &:hover {
-      box-shadow: 4px 4px 0px 0px $primary-500;
+      color: #fff;
+      background-color: $primary-600;
+      border: 1px solid $primary-400;
+      box-shadow: none;
     }
 
     &:active {
