@@ -12,7 +12,7 @@ $('.collapse-list-item li a').click(function (event) {
 });
 
 
-// courseInfo.html 收藏按紐切換
+// courseInfo.html 收藏btn切換
 $('.courseInfo-banner .add-btn').click(function(event){
     $(this).addClass('d-none').siblings().removeClass('d-none');
 });
@@ -25,4 +25,14 @@ $('.course-unit .link-style').click(function(event){
 // courseVideo.html header影片右邊選單，點擊加active換color顏色
 $('.course-video li').click(function (event) {
     $(this).toggleClass('active').siblings().removeClass('active');
+});
+
+// courseVideo.html 平板header影片下面選單點擊樣式
+$('.course-list-tablet .link-style').click(function(event){
+    $(this).toggleClass('unit-link-active').siblings().removeClass('unit-link-active');
+});
+
+// courseVideo.html 學習心得分類ul點擊樣式
+$('.course-review-sort').click(function(event){
+    $(this).toggleClass('sort-active').parents().siblings().find('a').removeClass('sort-active');
 });

@@ -31,9 +31,9 @@
         max-width: 680px;
     }
     .add-btn{
-        transition: ease 0.5s;
-    &:hover{
-        color: $danger !important;
+        transition: ease 0.2s;
+        
+        &:hover{
         background-color: #FFF !important;
         }
     }
@@ -67,7 +67,7 @@
     .accordion-button:focus {
         box-shadow: none !important;
     }
-    }
+}
 
 
 @include media-breakpoint-up(lg) {
@@ -214,16 +214,10 @@
         }
     }
 
-    .link-style{
     //  單元a連結hover樣式
+    .link-style{
         &:hover{
-            a{
-            color: $primary-600 !important;
-            }
-        }
-    //  單元a連結active樣式
-        &:active{
-            a{
+            a,span{
             color: $primary-600 !important;
             }
         }
@@ -408,28 +402,20 @@
 .similar-course,
 .recommand-course {
 
-    // 卡片 hover 圖片放大效果(From窈菱)
-    .img-h {
-    max-height: 218px;
-    overflow: hidden;
-    }
+    .card{
+        .col-5{
+            width:45.3% !important;
+        }
 
-    .img-w {
-    max-width: 45.3%;
-    overflow: hidden;
-    }
-
-    .card {
-    img {
-        object-fit: cover;
-        transition: 0.5s;
-    }
-
-    &:hover {
-        img {
-        transform: scale(1.2);
+        &:hover{
+            .course-img{
+                transform: scale(1.2);
+            }
         }
     }
+    .course-img{
+        transition: 0.5s;
+        object-fit: cover;
     }
 
     .note {
@@ -522,6 +508,12 @@
 
     .similar-course,
     .recommand-course {
+        .card{
+            .col-5{
+                width:100% !important;
+            }
+        }
+
         .new-tag {
             top: 25px;
             border-radius: 0px 16px 16px 0;

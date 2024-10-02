@@ -82,9 +82,8 @@
             border-radius: 0px 0px 0 0 !important;
         }
     }
-
+// 單元a連結active樣式
     .active {
-
         a,
         span {
             color: $primary-600 !important;
@@ -107,6 +106,30 @@
     @include media-breakpoint-up(lg) {
         iframe {
             height: 480px;
+        }
+    }
+
+    //  單元a連結hover樣式
+    .link-style{
+        &:hover{
+            a,span{
+            color: $primary-600 !important;
+            }
+        }
+    }
+
+    // 單元a連結禁用+hover樣式
+    .link-disabled{
+        background-color: $neutral-100;
+        a,span{
+        pointer-events: none;
+        color: $neutral-500 !important;
+        }
+
+        &:hover{
+            a,span{
+            color: $neutral-950 !important;
+            }
         }
     }
 }
@@ -153,13 +176,33 @@
             font-size: 20px !important;
             color: $primary-600 !important;
         }
+    }
 
-        .btn-hover:hover {
-            font-size: 20px !important;
+    //  單元a連結hover樣式
+    .link-style:hover{
+        a,span{
+        color: $primary-600 !important;
+        }
+    }
+
+    // 單元a連結active樣式
+    .unit-link-active{
+        a,span{
             color: $primary-600 !important;
+        }
+    }
+    
+    // 單元a連結禁用+hover樣式
+    .link-disabled{
+        background-color: $neutral-100;
+        a,span{
+        pointer-events: none;
+        color: $neutral-500 !important;
+        }
 
-            a {
-                color: $primary-600 !important;
+        &:hover{
+            a,span{
+            color: $neutral-950 !important;
             }
         }
     }
@@ -399,6 +442,13 @@
     }
 }
 
+.course-review{
+    .sort-active{
+        color: $primary-700 !important;
+        font-weight: 700;
+    }
+}
+
 .similar-course,
 .recommand-course {
     .note {
@@ -456,6 +506,33 @@
         padding: 8px;
         line-height: 1.8;
     }
+
+    .more-link{
+        &:hover{
+        font-weight: 700;
+        color: $primary-700 !important;
+        }
+        &:active{
+            color:$primary-600;
+            background-color: $primary-50;
+            border-radius: 16px;
+        }
+    }
+
+    .card{
+        .col-5{
+            width:45.3% !important;
+        }
+        &:hover{
+            .course-img{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .course-img{
+        transition: 0.5s;
+        object-fit: cover;
+    }
 }
 
 
@@ -463,6 +540,12 @@
 
     .similar-course,
     .recommand-course {
+        .card{
+            .col-5{
+                width:100% !important;
+            }
+        }
+
         .new-tag {
             top: 25px;
             border-radius: 0px 16px 16px 0;
@@ -479,5 +562,6 @@
             top: 25px;
             border-radius: 0px 16px 16px 0;
         }
+
     }
 }
