@@ -34,5 +34,5 @@ $('.course-list-tablet .link-style').click(function(event){
 
 // courseVideo.html 學習心得分類ul點擊樣式
 $('.course-review-sort').click(function(event){
-    $(this).toggleClass('sort-active').parents().siblings().find('a').removeClass('sort-active');
+    $(this).toggleClass('sort-active').siblings().removeClass('sort-active');
 });
