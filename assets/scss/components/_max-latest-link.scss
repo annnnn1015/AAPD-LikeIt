@@ -1,0 +1,19 @@
+// 最多人學 | 最近更新 連結
+.max-link,
+.latest-link {
+  color: $neutral-950;
+
+  &:hover {
+    color: $primary-600;
+  }
+
+  &:active {
+    color: $primary-700;
+    font-weight: 700;
+  }
+}
+
+.max-latest-link-focus {
+  color: $primary-700;
+  font-weight: 700;
+}

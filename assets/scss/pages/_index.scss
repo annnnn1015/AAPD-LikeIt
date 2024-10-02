@@ -401,10 +401,6 @@
   }
 }
 
-// 推薦課程卡片
-// Anna
-// .recommand-course 在 _courseInfo.scss
-
 // 12 大領域
 .category {
   max-width: 1200px;
@@ -413,19 +409,6 @@
     height: 125px;
     width: 100%;
     border-radius: 32px 32px 0 0;
-  }
-
-  .link {
-    color: $neutral-950;
-
-    &:hover {
-      color: $primary-600;
-    }
-
-    &:active {
-      color: $primary-700;
-      font-weight: 700;
-    }
   }
 
   .category-card {
