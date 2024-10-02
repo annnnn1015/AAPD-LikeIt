@@ -98,40 +98,38 @@
 }
 
 //   課程清單
-.course-list {
-  .tab-bar {
-    border-bottom: 1px solid $neutral-900;
+.tab-bar {
+  border-bottom: 1px solid $neutral-900;
 
-    .btn-tab {
-      background-color: #fff;
-      color: $neutral-950;
-      border: 1px solid $neutral-900;
-      border-bottom: none;
-      border-radius: 16px 16px 0 0;
-      width: 100px;
-      height: 40px;
+  .btn-tab {
+    background-color: #fff;
+    color: $neutral-950;
+    border: 1px solid $neutral-900;
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    width: 100px;
+    height: 40px;
 
-      &:hover {
-        color: $primary-400;
-      }
-
-      &:active {
-        border: 1px solid $neutral-900;
-        background-color: $primary-400;
-        border-bottom: none;
-        color: #fff;
-      }
+    &:hover {
+      background-color: $primary-100;
     }
 
-    .btn-tab-focus {
+    &:active {
       border: 1px solid $neutral-900;
       background-color: $primary-400;
       border-bottom: none;
       color: #fff;
+    }
+  }
 
-      &:hover {
-        color: $neutral-950;
-      }
+  .btn-tab-focus {
+    border: 1px solid $neutral-900;
+    background-color: $primary-400;
+    border-bottom: none;
+    color: #fff;
+
+    &:hover {
+      background-color: $primary-400;
     }
   }
 }
