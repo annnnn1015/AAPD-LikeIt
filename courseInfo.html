@@ -14,8 +14,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,1,0" />
 
   <title>來趣學Like it 課程大綱</title>
-  <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-0c26e415.js"></script>
-  <link rel="stylesheet" href="/AAPD-LikeIt/assets/main-2c41297a.css">
+  <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-330c258f.js"></script>
+  <link rel="stylesheet" href="/AAPD-LikeIt/assets/main-a8d12d56.css">
 </head>
 
 <body>
@@ -370,12 +370,11 @@
       <div class="container  d-flex pt-7">
         <div class="card mb-3 border-0 rounded-5 mx-auto">
           <!-- breadcrumb -->
-          <nav class="mb-5"
-            style="--bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='black'/%3E%3C/svg%3E");"
+          <nav class="mb-5" style="--bs-breadcrumb-divider: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVChTY5ZT0SvgERRR//z+9UUGNMDMLyy+nZGRMYJPSIzh07tXB6HiYMDMJyz2EkgHABU4oCtgBnIuAHU/BLIxFDCDCFwKwJIggKFAWOwDE0QKAhj/Mf6HMhn+M/z7CJeUU9aL/8/0fwGIzfj/f8PT29fAbLCErKrufxCWU9GpBwuCAE4JEMApAQSgEHr47/+/g0/uXO2EikEBAwMAkoRK6UKE/MUAAAAASUVORK5CYII=);"
             aria-label="breadcrumb">
             <ol class="breadcrumb fs-body-2 text-neutral-950 fw-normal">
               <li class="breadcrumb-item"><a class=" text-neutral-950" href="index.html">首頁</a></li>
-              <li class="breadcrumb-item"><a class=" text-neutral-950" href="#">美學素養</a></li>
+              <li class="breadcrumb-item"><a class=" text-neutral-950" href="courseList.html">美學素養</a></li>
               <li class="breadcrumb-item active"><a class="text-primary" href="courseInfo.html">課程大綱</a>
               </li>
             </ol>
@@ -391,13 +390,13 @@
               <div class="col-xl-4 col-lg-5 pe-0 mb-5 mb-lg-0">
                 <!-- tag -->
                 <ul class="d-flex">
-                  <li><a href="#" class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1 ">美學素養</a>
+                  <li class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1 ">美學素養
                   </li>
-                  <li>
-                    <a href="#" class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1">初階</a>
+                  <li class="rounded-3 bg-primary-100 text-primary-700 me-2 px-2 py-1">
+                    初階
                   </li>
-                  <li>
-                    <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
+                  <li class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">
+                    色彩學
                   </li>
                 </ul>
                 <!-- 標題 進度條 -->
@@ -424,8 +423,15 @@
                 <div class="card-body py-0 px-2">
                   <div class="row mt-auto">
                     <div class="col-3 col-lg-3 ps-0">
-                      <button type="button" class="btn btn-outline-danger fs-body-2 w-100 py-3 rounded-3"><i
-                          class="bi bi-heart-fill me-2"></i><span class="d-none d-xxl-inline">加入</span>收藏</button>
+                      <button type="button"
+                        class="add-btn btn border-neutral-900 outline-shadow-sm fs-body-2 w-100 py-3 rounded-3">
+                        <span class="d-none d-xxl-inline">加入</span>收藏
+                      </button>
+                      <button type="button"
+                        class="add-btn d-none btn border-danger text-danger fs-body-2 w-100 py-3 rounded-3 text-nowrap">
+                        <i class="bi bi-heart-fill me-1 me-xxl-2"></i>
+                        已收藏
+                      </button>
                     </div>
                     <div class="col-9 col-lg-9 pe-0">
                       <a href="courseVideo.html" type="button"
@@ -443,7 +449,7 @@
       </div>
     </section>
     <!-- main -->
-    <main class="bg-primary-100 py-9">
+    <main class="info-main bg-primary-100 py-9">
       <div class="container">
         <div class="main-wrap rounded-5 border position-relative mx-auto px-5 py-7 bg-white">
           <!-- 課程簡介 -->
@@ -464,14 +470,15 @@
           <!-- 課程單元 -->
           <section class="course-unit mb-7">
             <h4 class="fw-bold d-flex align-items-center mb-5">
-              課程單元<span class="note position-relative fs-body-3 fs-md-body-1 text-neutral-500">總時長 95 分鐘，2 個章節 5
+              課程單元<span class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">總時長 95 分鐘，2 個章節
+                5
                 個單元</span>
             </h4>
             <!-- 章節一 -->
             <div class="accordion outline-shadow-lg rounded-5 mb-5" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item rounded-5">
+              <div class="accordion-item rounded-5 overflow-hidden">
                 <h2 class="accordion-header position-relative">
-                  <button class="accordion-button rounded-5 fw-bold px-5 bg-primary-100 fs-body-1" type=" button"
+                  <button class="accordion-button fw-bold px-5 bg-primary-100 fs-body-1" type=" button"
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseOne">
                     章節一
@@ -480,19 +487,22 @@
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                  <div class="accordion-body px-0">
+                  <div class="accordion-body px-0 py-0">
                     <ul class="mb-0">
-                      <li class="d-flex border-bottom border-neutral-100 px-8 pb-3">
-                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元一 : 彩虹冒險-認識色彩的奧秘</a><span
-                          class="text-neutral-500 ms-auto">12:06</span>
+                      <li class="unit-link-active d-flex border-bottom border-neutral-100 px-8 link-style">
+                        <a href="#"
+                          class="text-neutral-950 fs-body-md-1 text-truncate w-100 py-3">單元一：彩虹冒險-認識色彩的奧秘</a><span
+                          class="text-neutral-500 ms-auto py-3">12:06</span>
                       </li>
-                      <li class="d-flex border-bottom border-neutral-100 px-8 py-3">
-                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元二 : 調色魔法-創造你的專屬色彩</a><span
-                          class="text-neutral-500 ms-auto">14:15</span>
+                      <li class="d-flex border-bottom border-neutral-100 px-8 link-style">
+                        <a href="#"
+                          class="text-neutral-950 fs-body-md-1 text-truncate w-100 py-3">單元二：調色魔法-創造你的專屬色彩</a><span
+                          class="text-neutral-500 ms-auto py-3">14:15</span>
                       </li>
-                      <li class="d-flex px-8 pt-3">
-                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元三 : 色彩心情屋-感受顏色的力量</a><span
-                          class="text-neutral-500 ms-auto">24:03</span>
+                      <li class="d-flex px-8 link-style">
+                        <a href="#"
+                          class="text-neutral-950 fs-body-md-1 text-truncate w-100 py-3">單元三：色彩心情屋-感受顏色的力量</a><span
+                          class="text-neutral-500 ms-auto py-3">24:03</span>
                       </li>
                     </ul>
                   </div>
@@ -501,9 +511,9 @@
             </div>
             <!-- 章節二 -->
             <div class="accordion-unit2 accordion outline-shadow-lg rounded-5 mb-5" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item rounded-5">
+              <div class="accordion-item rounded-5 overflow-hidden">
                 <h2 class="accordion-header position-relative">
-                  <button class="accordion-button rounded-5 fw-bold px-5 bg-primary-100 fs-body-1" type=" button"
+                  <button class="accordion-button fw-bold px-5 bg-primary-100 fs-body-1" type=" button"
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseOne">
                     章節二
@@ -511,20 +521,16 @@
                       2 個單元 | 00 小時 45 分鐘</span>
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                  <div class="accordion-body px-0">
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body px-0 py-0">
                     <ul class="mb-0">
-                      <li class="d-flex border-bottom border-neutral-100 px-8 pb-3">
-                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元一 : 彩虹冒險-認識色彩的奧秘</a><span
-                          class="text-neutral-500 ms-auto">12:06</span>
+                      <li class="d-flex border-bottom border-neutral-100 px-8 py-3  link-disabled">
+                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元一：色彩心理-感受顏色的情緒和力量</a><span
+                          class="text-neutral-500 ms-auto">22:30</span>
                       </li>
-                      <li class="d-flex border-bottom border-neutral-100 px-8 py-3">
-                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元二 : 調色魔法-創造你的專屬色彩</a><span
-                          class="text-neutral-500 ms-auto">14:15</span>
-                      </li>
-                      <li class="d-flex px-8 pt-3">
-                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元三 : 色彩心情屋-感受顏色的力量</a><span
-                          class="text-neutral-500 ms-auto">24:03</span>
+                      <li class="d-flex px-8 py-3  link-disabled">
+                        <a href="#" class="text-neutral-950 fs-body-md-1 text-truncate">單元二：色彩影響-生活中的色彩影響</a><span
+                          class="text-neutral-500 ms-auto">23:05</span>
                       </li>
                     </ul>
                   </div>
@@ -554,7 +560,8 @@
           <!--學習心得 -->
           <section class="course-review mb-7">
             <h4 class="fw-bold d-flex align-items-center mb-5">
-              學習心得<span class="note position-relative fs-body-3 fs-md-body-1 text-neutral-500">快來看看同學們寫了什麼~</span>
+              學習心得<span
+                class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">快來看看同學們寫了什麼~</span>
             </h4>
             <!-- 心得卡片 -->
             <div class="row g-4">
@@ -719,9 +726,9 @@
         <div class="d-flex justify-content-between align-items-center mb-5">
           <h4 class="fw-bold d-flex align-items-center">
             類似的課程
-            <span class="note position-relative fs-body-3 fs-md-body-1 text-neutral-500">探索更多課程，讓學習更豐富！</span>
+            <span class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">探索更多課程，讓學習更豐富！</span>
           </h4>
-          <a href="#" class="text-neutral-950 d-flex align-items-center fs-body-2">查看更多
+          <a href="#" class="more-link text-neutral-950 d-flex align-items-center fs-body-2 p-1">查看更多
             <span class="material-symbols-outlined"> chevron_right </span></a>
         </div>
         <!-- 課程卡片 -->
@@ -729,13 +736,11 @@
           <div class="col-lg-4">
             <div
               class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <!-- 平板圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none" alt="..." />
-              <!-- 電腦圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
-              <div class="card-body col-7 col-lg-12">
+              <div class="col-lg-12 col-5 overflow-hidden">
+                <img src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png" class="course-img img-fluid h-100"
+                  alt="..." />
+              </div>
+              <div class="card-body col-7 col-lg-12 ">
                 <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -751,6 +756,14 @@
                 </nav>
                 <h5 class="fw-bold">自然界的調色盤</h5>
                 <p class="text-neutral-500 mb-3">38 位夥伴學習中</p>
+                <!-- progress -->
+                <div class="d-flex align-items-center mb-1">
+                  <div class="progress w-100 me-3" style="height: 15px">
+                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="text-neutral-500">0%</p>
+                </div>
               </div>
               <span class="new-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
                   auto_awesome </span>新上架</span>
@@ -761,12 +774,10 @@
           <div class="col-lg-4">
             <div
               class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <!-- 平板圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-46958ca2.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none" alt="..." />
-              <!-- 電腦圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-46958ca2.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <div class="col-lg-12 col-5 overflow-hidden">
+                <img src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-46958ca2.png" class="course-img img-fluid h-100"
+                  alt="..." />
+              </div>
               <div class="card-body col-7 col-lg-12">
                 <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -783,6 +794,14 @@
                 </nav>
                 <h5 class="fw-bold">數位色彩世界</h5>
                 <p class="text-neutral-500 mb-3">93 位夥伴學習中</p>
+                <!-- progress -->
+                <div class="d-flex align-items-center mb-1">
+                  <div class="progress w-100 me-3" style="height: 15px">
+                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="text-neutral-500">0%</p>
+                </div>
               </div>
               <button class="btn like-tag"></button>
               <a href="#" class="stretched-link"></a>
@@ -791,12 +810,10 @@
           <div class="col-lg-4">
             <div
               class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <!-- 平板圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-0fab52cc.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none" alt="..." />
-              <!-- 電腦圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-0fab52cc.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
+              <div class="col-lg-12 col-5 overflow-hidden">
+                <img src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-0fab52cc.png"
+                  class="course-img img-fluid h-100" alt="..." />
+              </div>
               <div class="card-body col-7 col-lg-12">
                 <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -813,6 +830,14 @@
                 </nav>
                 <h5 class="fw-bold">色彩與文化之旅</h5>
                 <p class="text-neutral-500 mb-3">139 位夥伴學習中</p>
+                <!-- progress -->
+                <div class="d-flex align-items-center mb-1">
+                  <div class="progress w-100 me-3" style="height: 15px">
+                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="text-neutral-500">0%</p>
+                </div>
               </div>
               <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
                   local_fire_department </span>熱門排行</span>
@@ -828,9 +853,10 @@
         <div class="d-flex justify-content-between align-items-center mb-5">
           <h4 class="fw-bold d-flex align-items-center">
             推薦課程卡片
-            <span class="note position-relative fs-body-3 fs-md-body-1 text-neutral-500">現在正熱門，看看大家都在學什麼！</span>
+            <span
+              class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">現在正熱門，看看大家都在學什麼！</span>
           </h4>
-          <a href="#" class="text-neutral-950 d-flex align-items-center fs-body-2">查看更多
+          <a href="#" class="more-link text-neutral-950 d-flex align-items-center fs-body-2 p-1">查看更多
             <span class="material-symbols-outlined"> chevron_right </span>
           </a>
         </div>
@@ -839,13 +865,11 @@
           <div class="col-lg-4">
             <div
               class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <!-- 平板圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-ac4b06a2.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none" alt="..." />
-              <!-- 電腦圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-ac4b06a2.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
-              <div class="card-body col-7 col-lg-12">
+              <div class="col-lg-12 col-5 overflow-hidden">
+                <img src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-ac4b06a2.png"
+                  class="course-img img-fluid h-100" alt="..." />
+              </div>
+              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
                 <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -861,6 +885,14 @@
                 </nav>
                 <h5 class="fw-bold text-truncate">造型美學大師班</h5>
                 <p class="text-neutral-500 mb-3">82 位夥伴學習中</p>
+                <!-- progress -->
+                <div class="d-flex align-items-center mb-1">
+                  <div class="progress w-100 me-3" style="height: 15px">
+                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="text-neutral-500">0%</p>
+                </div>
               </div>
               <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
                   local_fire_department </span>熱門排行</span>
@@ -871,13 +903,11 @@
           <div class="col-lg-4">
             <div
               class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <!-- 平板圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-60984d4b.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none" alt="..." />
-              <!-- 電腦圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-60984d4b.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
-              <div class="card-body col-7 col-lg-12">
+              <div class="col-lg-12 col-5 overflow-hidden">
+                <img src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-60984d4b.png"
+                  class="course-img img-fluid h-100" alt="..." />
+              </div>
+              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
                 <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -893,6 +923,14 @@
                 </nav>
                 <h5 class="fw-bold text-truncate">日常美學：發現生活中的美</h5>
                 <p class="text-neutral-500 mb-3">69 位夥伴學習中</p>
+                <!-- progress -->
+                <div class="d-flex align-items-center mb-1">
+                  <div class="progress w-100 me-3" style="height: 15px">
+                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="text-neutral-500">0%</p>
+                </div>
                 <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
                     local_fire_department </span>熱門排行</span>
               </div>
@@ -903,13 +941,11 @@
           <div class="col-lg-4">
             <div
               class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <!-- 平板圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-9701e635.png"
-                class="img-fluid col-5 rounded-5 rounded-end-0 d-lg-none" alt="..." />
-              <!-- 電腦圖片 -->
-              <img src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-9701e635.png"
-                class="img-fluid col-lg-12 col-5 rounded-5 rounded-bottom-0 d-none d-lg-block" alt="..." />
-              <div class="card-body col-7 col-lg-12">
+              <div class="col-lg-12 col-5 overflow-hidden">
+                <img src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-9701e635.png" class="course-img img-fluid h-100"
+                  alt="..." />
+              </div>
+              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
                 <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -925,6 +961,14 @@
                 </nav>
                 <h5 class="fw-bold text-truncate">藝術史小旅行</h5>
                 <p class="text-neutral-500 mb-3">75 位夥伴學習中</p>
+                <!-- progress -->
+                <div class="d-flex align-items-center mb-1">
+                  <div class="progress w-100 me-3" style="height: 15px">
+                    <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="text-neutral-500">0%</p>
+                </div>
               </div>
               <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
                   local_fire_department </span>熱門排行</span>
