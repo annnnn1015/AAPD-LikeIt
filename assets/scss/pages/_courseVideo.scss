@@ -478,18 +478,14 @@
         background-image: url(/assets/images/Like_icon/Like-icon-new.png);
         background-size: 105%;
         background-position: center;
+        background-repeat: no-repeat;
         z-index: 2;
         cursor: pointer;
+        border: 0;
 
         &:hover {
             background-image: url(/assets/images/Like_icon/Like_icon_Hover.png);
         }
-
-        &:active {
-            border-color: transparent !important;
-            box-shadow: transparent !important;
-        }
-        
     }
     .like-tag-focus {
         background-image: url(/assets/images/Like_icon/Like-icon-red.png);
