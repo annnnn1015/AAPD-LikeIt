@@ -28,4 +28,8 @@
 
 .like-tag-focus {
   background-image: url(/assets/images/Like_icon/Like-icon-red.png);
+
+  &:hover {
+    background-image: url(/assets/images/Like_icon/Like-icon-red.png);
+  }
 }
