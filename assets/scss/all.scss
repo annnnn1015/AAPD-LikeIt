@@ -8,11 +8,16 @@
 @import "./utils/utilities";
 @import "bootstrap/scss/utilities/api";
 @import "./base/base.scss";
+
+// 元件
+@import "./components/new-tag";
+@import "./components/like-tag";
+@import "./components/hot-tag";
+
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
 @import "./pages/index.scss";
 @import "./pages/courseInfo.scss";
 @import "./pages/courseList.scss";
-@import './pages/courseVideo.scss';
-
+@import "./pages/courseVideo.scss";

@@ -1,0 +1,18 @@
+// 新上架標籤 by Anna
+.new-tag {
+  content: "";
+  position: absolute;
+  width: 102px;
+  top: 8px;
+  left: 0px;
+  border-radius: 0px 16px 16px 0;
+  background-color: $success-500;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px;
+  line-height: 1.8;
+
+  @include pad-lg {
+    top: 25px;
+  }
+}

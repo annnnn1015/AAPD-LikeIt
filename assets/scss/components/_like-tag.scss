@@ -1,0 +1,31 @@
+// 愛心標籤 by Anna
+.like-tag {
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  border-radius: 50%;
+  background-image: url(/assets/images/Like_icon/Like-icon-new.png);
+  background-size: 105%;
+  background-position: center;
+  z-index: 2;
+  cursor: pointer;
+  border: 0;
+
+  @include pad-lg {
+    width: 49px;
+    height: 48px;
+    top: 24px;
+    right: 19.67px;
+  }
+
+  &:hover {
+    background-image: url(/assets/images/Like_icon/Like_icon_Hover.png);
+  }
+}
+
+.like-tag-focus {
+  background-image: url(/assets/images/Like_icon/Like-icon-red.png);
+}

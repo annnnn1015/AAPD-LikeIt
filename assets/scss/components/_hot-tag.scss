@@ -1,0 +1,18 @@
+// 熱門排行標籤 by Anna
+.hot-tag {
+  content: "";
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: 0px;
+  border-radius: 0px 16px 16px 0;
+  background-color: $primary-500;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px;
+  line-height: 1.8;
+
+  @include pad-lg {
+    top: 25px;
+  }
+}
