@@ -36,3 +36,7 @@ $('.course-list-tablet .link-style').click(function(event){
 $('.course-review-sort').click(function(event){
     $(this).toggleClass('sort-active').siblings().removeClass('sort-active');
 });
+
+// 愛心標籤換圖
+$('.like-tag').click(function(event){
+    $(this).toggleClass('like-tag-focus')});

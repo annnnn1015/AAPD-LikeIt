@@ -458,8 +458,10 @@
         position: absolute;
         top: 16px;
         right: 24px;
-        background-image: url(/assets/images/Like_icon/Like_icon_Default.png);
-        background-size: cover;
+        border-radius: 50%;
+        background-image: url(/assets/images/Like_icon/Like-icon-new.png);
+        background-size: 105%;
+        background-position: center;
         z-index: 2;
         cursor: pointer;
 
@@ -471,10 +473,10 @@
             border-color: transparent !important;
             box-shadow: transparent !important;
         }
+    }
 
-        &:focus {
-            background-image: url(/assets/images/Like_icon/Like_icon_Clicked.png);
-        }
+    .like-tag-focus {
+        background-image: url(/assets/images/Like_icon/Like-icon-red.png);
     }
 
     .hot-tag {
