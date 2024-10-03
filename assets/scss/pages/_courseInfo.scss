@@ -405,62 +405,6 @@
         top: 0px;
     }
 
-    // 新上架標籤
-    .new-tag {
-        content: "";
-        position: absolute;
-        width: 102px;
-        top: 8px;
-        left: 0px;
-        border-radius: 0px 16px 16px 0;
-        background-color: $success-500;
-        color: #FFFFFF;
-        font-weight: bold;
-        padding: 8px;
-        line-height: 1.8;
-    }
-
-
-
-    // 愛心標籤
-    .like-tag {
-        content: "";
-        width: 26px;
-        height: 26px;
-        position: absolute;
-        top: 16px;
-        right: 24px;
-        border-radius: 50%;
-        background-image: url(/assets/images/Like_icon/Like-icon-new.png);
-        background-size: 105%;
-        background-position: center;
-        z-index: 2;
-        cursor: pointer;
-        border: 0;
-
-        &:hover {
-            background-image: url(/assets/images/Like_icon/Like_icon_Hover.png);
-        }
-    }
-
-    .like-tag-focus {
-        background-image: url(/assets/images/Like_icon/Like-icon-red.png);
-    }
-
-    .hot-tag {
-        content: "";
-        position: absolute;
-        width: 120px;
-        top: 8px;
-        left: 0px;
-        border-radius: 0px 16px 16px 0;
-        background-color: $primary-500;
-        color: #FFFFFF;
-        font-weight: bold;
-        padding: 8px;
-        line-height: 1.8;
-    }
-
     .more-link{
         &:hover{
         font-weight: 700;
@@ -482,23 +426,6 @@
             .col-5{
                 width:100% !important;
             }
-        }
-
-        .new-tag {
-            top: 25px;
-            border-radius: 0px 16px 16px 0;
-        }
-
-        .like-tag {
-            width: 49px;
-            height: 49px;
-            top: 24px;
-            right: 20px;
-        }
-
-        .hot-tag {
-            top: 25px;
-            border-radius: 0px 16px 16px 0;
         }
     }
 }
