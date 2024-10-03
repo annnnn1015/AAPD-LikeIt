@@ -1,0 +1,45 @@
+// 畫面右下 AI 小幫手
+.AI-helper {
+  bottom: 16px;
+  right: 24px;
+  z-index: 4;
+  color: $neutral-950;
+
+  @include pad-lg {
+    right: 80px;
+  }
+
+  &:active {
+    translate: 4px 4px;
+  }
+
+  .helper {
+    background-color: #fff;
+    border: 1px solid $neutral-900;
+    box-shadow: 4px 4px 0px 0px $primary-200;
+  }
+
+  &:hover {
+    .helper {
+      color: #fff;
+      font-weight: 700;
+      background-color: $primary-600;
+      border: 1px solid $primary-400;
+      box-shadow: none;
+    }
+  }
+}
+
+// AI-helper 用  position: sticky; 測試 ↓
+
+//  AI 小幫手 sticky 的父層範圍，搭配 JS 計算 body 寬高重新渲染
+// .AI-helper-area {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   width: 100px;
+//   height: 100px;
+//   z-index: -4;
+// }
+
+// 問題：圖示用 sticky，z-index 只能跟隨父層，無法單獨另外設更高的數值，捨棄 ↑

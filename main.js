@@ -75,3 +75,62 @@ $(".btn-tab").click(function (event) {
   }
   $(this).toggleClass("btn-tab-focus");
 });
+
+// AI-helper 定位
+// 預設 position 為 fixed，當 footer 進入視窗時改 absolute ↓
+const AIhelper = document.getElementById("AI-helper");
+const footer = document.getElementById("footer");
+
+window.addEventListener("scroll", () => {
+  // getBoundingClientRect() 可返回元素的寬高，及其相對於 viewport 上下左右的位置資訊
+  const AIhelperBottom =
+    window.innerHeight - AIhelper.getBoundingClientRect().bottom;
+  const footerTop = footer.getBoundingClientRect().top;
+
+  // 若 footer 進入視窗
+  if (footerTop < window.innerHeight) {
+    AIhelper.classList.remove("position-fixed");
+    AIhelper.classList.add("position-absolute");
+
+    if (window.innerWidth >= 992) {
+      AIhelper.style.bottom = `${513 + 16}px`;
+      // lg 以上 footer 高 513px
+    } else {
+      AIhelper.style.bottom = `${548.6 + 16}px`;
+      // footer 高 548.6px
+    }
+
+    // 若 footer 不在視窗裡
+  } else {
+    AIhelper.classList.remove("position-absolute");
+    AIhelper.classList.add("position-fixed");
+    AIhelper.style.bottom = "16px";
+  }
+});
+
+// AI-helper 用 position: sticky; 測試的 JS ↓
+// <body> 設置 id="body"
+// <footer> 設置 id="footer"
+
+// function calcHelperArea() {
+//   let helperArea = document.querySelector("#helperArea");
+//   let bodyH = document.querySelector("#body").offsetHeight;
+//   let bodyW = document.querySelector("#body").offsetWidth;
+//   let footerH = document.querySelector("#footer").offsetHeight;
+
+//   helperArea.style.height = `${bodyH - footerH - 20 + 16}px`;
+//   helperArea.style.width = `${bodyW + 16}px`;
+
+//   console.log("body 高度：" + bodyH, typeof bodyH);
+//   console.log("body 寬度：" + bodyW);
+//   console.log("footer 高度：" + footerH);
+//   console.log("helperArea 高度：" + helperArea.style.height);
+//   console.log("helperArea 寬度：" + helperArea.style.width);
+// }
+
+// const viewHelperArea = () => {
+//   helperArea.style.backgroundColor = "black";
+//   helperArea.style.zIndex = 0;
+// };
+
+// 問題：圖示用 sticky，z-index 只能跟隨父層，無法單獨另外設更高的數值，捨棄 ↑
