@@ -76,14 +76,6 @@ $(".btn-tab").click(function (event) {
   $(this).toggleClass("btn-tab-focus");
 });
 
-// 心得輸入框字數顯示
-const thoughtsTextarea = document.getElementById("thoughtsTextarea");
-const charCount = document.getElementById("charCount");
-
-thoughtsTextarea.addEventListener("input", function () {
-  charCount.textContent = `${thoughtsTextarea.value.length} / 200 字`;
-});
-
 // AI-helper 定位
 // 預設 position 為 fixed，當 footer 進入視窗時改 absolute ↓
 const AIhelper = document.getElementById("AI-helper");
@@ -142,3 +134,11 @@ window.addEventListener("scroll", () => {
 // };
 
 // 問題：圖示用 sticky，z-index 只能跟隨父層，無法單獨另外設更高的數值，捨棄 ↑
+
+// 心得輸入框字數顯示
+const thoughtsTextarea = document.getElementById("thoughtsTextarea");
+const charCount = document.getElementById("charCount");
+
+thoughtsTextarea.addEventListener("input", function () {
+  charCount.textContent = `${thoughtsTextarea.value.length} / 200 字`;
+});
