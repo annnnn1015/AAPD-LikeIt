@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 // header 選單點擊套用樣式，同時移除其他選項樣式
 $(".header-list-item a").click(function (event) {
   $(this)
-    .addClass("click-active")
+    .toggleClass("click-active")
     .parents()
     .siblings()
     .find("a")
@@ -13,7 +13,7 @@ $(".header-list-item a").click(function (event) {
 
 $(".header-list-item-second").click(function (event) {
   $(this)
-    .addClass("click-active")
+    .toggleClass("click-active")
     .siblings()
     .removeClass("click-active");
 });
