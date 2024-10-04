@@ -109,7 +109,8 @@
 
 // school跟notification icon hover效果
 .notifications-btn:hover,.school-btn:hover{
-color: $primary !important;
+color: $primary-700 !important;
+font-weight: 700;
 }
 
 // notification通知紅點樣式
@@ -223,7 +224,7 @@ color: $primary !important;
   }
 
   .header-list-item a:hover{
-    color:$primary-600 !important;
+    color:$primary-700 !important;
     font-weight: 700;
   }
 

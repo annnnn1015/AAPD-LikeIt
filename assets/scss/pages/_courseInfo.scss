@@ -9,6 +9,59 @@
         background-color: #FFF !important;
         }
     }
+
+    // 
+    .breadcrumb-item {
+        a {
+            color: black;
+        }
+
+        &.active {
+            color: $primary;
+        }
+    }
+    // 文字間距
+    .breadcrumb-item + .breadcrumb-item{
+        padding-left: 20px;
+    }
+    /* 麵包屑連結的 hover 效果 */
+    .breadcrumb-link:hover {
+        color: $primary-700 !important; /* 設定你想要的 hover 顏色 */
+        font-weight: 700;
+    }
+    
+    // 覆蓋預設符號圖片
+    .breadcrumb-item::before{
+        content: "" !important;
+    }
+    
+    /* 使用 ::after 偽元素顯示符號圖片 */
+    .breadcrumb-item::after {
+        content: "";
+        display: inline-block;
+        width: 6.58px; 
+        height: 11.17px;
+        background-image: url(/assets/images/Icon/arrow_right_black.png); /* 符號圖片 */
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 13px; /* 符號與文字之間的間距 */
+    }
+    
+    /* 當 hover 文字時，同時變換符號圖片 */
+    .breadcrumb-item a:hover + .breadcrumb-item::after,
+    .breadcrumb-item:hover::after {
+        background-image: url(/assets/images/Icon/arrow_right_blue.png);
+        background-size: cover;
+        width: 6.58px; 
+        height: 11.17px;
+    }
+    
+    /* 隱藏最後一個項目的符號 */
+    .breadcrumb-item:last-child::after {
+        content: none;
+    }
+    
+    // 
 }
 
 @include media-breakpoint-up(lg) {
