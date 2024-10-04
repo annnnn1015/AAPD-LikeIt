@@ -222,6 +222,11 @@ color: $primary !important;
     transform: translateY(-50%);
   }
 
+  .header-list-item a:hover{
+    color:$primary-600 !important;
+    font-weight: 700;
+  }
+
   .click-active{
     color:$primary-600 !important;
     font-weight: 700;
