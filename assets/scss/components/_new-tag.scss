@@ -11,6 +11,7 @@
   font-weight: bold;
   padding: 8px;
   line-height: 1.8;
+  text-wrap: nowrap;
 
   @include pad-lg {
     top: 25px;
