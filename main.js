@@ -11,6 +11,13 @@ $(".header-list-item a").click(function (event) {
     .removeClass("click-active");
 });
 
+$(".header-list-item-second").click(function (event) {
+  $(this)
+    .addClass("click-active")
+    .siblings()
+    .removeClass("click-active");
+});
+
 // header 課程探索點擊套用樣式，同時移除其他選項樣式
 $(".collapse-list-item li a").click(function (event) {
   $(this)
