@@ -10,7 +10,7 @@
 }
 
 .tablet-header {
-  z-index: 9999;
+  z-index: 999;
   border-bottom: 1px solid $neutral-900;
   --bs-accordion-border-color: white !important;
 
@@ -165,7 +165,7 @@ font-weight: 700;
 
 // PC nav
 .pc-header {
-  z-index: 9999;
+  z-index: 999;
   border-bottom: 1px solid $neutral-900;
   --bs-accordion-border-color: white !important;
 
