@@ -242,14 +242,12 @@
     //  單元a連結hover樣式
     .link-style{
         &:hover{
-            a,span{
-            color: $primary-600 !important;
-            }
+            background-color: $neutral-200;
         }
     }
     // 單元a連結active樣式
     .unit-link-active{
-        a{
+        a,span{
             color: $primary-600 !important;
         }
     }
@@ -260,12 +258,6 @@
         a{
         pointer-events: none;
         color: $neutral-500 !important;
-        }
-
-        &:hover{
-            a{
-            color: $neutral-950 !important;
-            }
         }
     }
 }
