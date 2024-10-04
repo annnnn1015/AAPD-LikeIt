@@ -28,6 +28,13 @@ $(".collapse-list-item li a").click(function (event) {
     .removeClass("list-active");
 });
 
+// courseInfo.html 已加入收藏 定時關閉
+$('#exampleModal').on('shown.bs.modal', function () {
+  setTimeout(function() {
+      $('#exampleModal').modal('hide');
+  }, 2000); // 2秒後自動關閉
+});
+
 // courseInfo.html 收藏btn切換
 $(".courseInfo-banner .add-btn").click(function (event) {
   $(this).addClass("d-none").siblings().removeClass("d-none");
