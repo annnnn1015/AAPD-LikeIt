@@ -14,12 +14,40 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,1,0" />
 
   <title>美學素養:色彩魔法師</title>
-  <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-9f78044a.js"></script>
+  <script type="module" crossorigin src="/AAPD-LikeIt/assets/main-c560b094.js"></script>
   <link rel="stylesheet" href="/AAPD-LikeIt/assets/main-d9508232.css">
 </head>
 
 <body>
-  <!-- tablet nav -->
+  <!-- 大綱頁 課程加入收藏通知 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  mt-11">
+        <div class="modal-content bg-success-100 border-2 border-success outline-shadow-sm">
+            <div class="modal-body  d-flex justify-content-center fs-body-1">
+                <i class="bi bi-heart-fill me-3"></i>已加入收藏
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 手機版時提示通知 -->
+<div class="modal fade" id="mobileModal" tabindex="-1" aria-labelledby="mobileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-neutral-900 mx-auto mt-11" style="max-width: 342px;">
+            <div class="modal-header bg-warning border-0">
+            </div>
+            <div class="modal-body text-center py-5">
+                <h5 class="modal-title mx-auto fw-bold mb-2" id="mobileModalLabel">請使用電腦或平板觀看</h5>
+                <img class="mb-2" src="/AAPD-LikeIt/assets/Ani_Vision-care-35fea72b.gif" alt=""
+                    style="width: 195px; height: 92px; object-fit: cover;">
+                <p class="fs-body-2 mb-5">為保護眼睛健康<br>請轉換裝置以達最佳觀賞品質</p>
+                <button type="button"
+                    class="bg-warning border-1 rounded-3 outline-shadow-sm px-4 py-3 fs-body-2 mx-auto"
+                    data-bs-dismiss="modal">我知道了</button>
+            </div>
+        </div>
+    </div>
+</div>    <!-- tablet nav -->
 <nav class="tablet-header accordion w-100 rounded-5 rounded-top-0 bg-white
     d-lg-none float-start position-sticky top-0 outline-shadow-sm overflow-hidden" id="accordionExample">
     <div class="accordion-item overflow-hidden">
@@ -358,113 +386,114 @@
         </div>
     </div>
 </nav>
-    <!-- Header課程影片 -->
-    <header class="course-video header-spacern"
-      style="background-image: url(/AAPD-LikeIt/assets/Bg_Video_4x-953636a4.png);">
+      <!-- Header課程影片 -->
+      <header class="course-video header-spacern"
+        style="background-image: url(/AAPD-LikeIt/assets/Bg_Video_4x-953636a4.png);">
 
-      <div class="container py-9 mx-auto d-flex flex-column">
-        <!-- breadcrumb -->
-        <nav class="mb-5" aria-label="breadcrumb">
-          <ol class="breadcrumb fs-body-2 fw-normal">
-            <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">首頁</a></li>
-            <li class="breadcrumb-item"><a href="courseList.html" class="breadcrumb-link">美學素養</a></li>
-            <li class="breadcrumb-item"><a href="courseInfo.html" class="breadcrumb-link">課程大綱</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="courseVideo.html"
-                class="breadcrumb-link">色彩魔法師</a>
-            </li>
-          </ol>
-        </nav>
-        <!-- 標題 -->
-        <h2 class="mb-2 fw-bold text-white">色彩魔法師</h2>
-        <ul class="d-flex fs-body-1 text-nowrap text-white mb-4">
-          <li class="me-3"><i class="bi bi-clock-fill me-2 text-primary"></i>總時長 95 分鐘</li>
-          <li><i class="bi bi-bookmark-fill me-2 text-primary"></i>2 個章節 5 個單元</li>
-        </ul>
-        <div class="card mb-3 w-100 rounded-5 overflow-hidden">
-          <!-- 課程影片-->
-          <div class="row g-0">
-            <div class="col-xl-8">
-              <iframe width="100%" height="390px" src="https://www.youtube.com/embed/zOKBDzv-S9Y?si=Bkx86Np4hYEUiDR9"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <!-- 右側課程章節選單 -->
-            <div class="col-xl-4 d-none d-xl-block py-5 px-4">
-              <!-- 標題 -->
-              <div class="card-body p-0 mb-3">
-                <h5 class="card-title fw-bold  mb-1">課程單元</h5>
-                <p class="card-text"><small>3 個單元 | 00 小時 95 分鐘</small></p>
+        <div class="container py-9 mx-auto d-flex flex-column">
+          <!-- breadcrumb -->
+          <nav class="mb-5" aria-label="breadcrumb">
+            <ol class="breadcrumb fs-body-2 fw-normal">
+              <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">首頁</a></li>
+              <li class="breadcrumb-item"><a href="courseList.html" class="breadcrumb-link">美學素養</a></li>
+              <li class="breadcrumb-item"><a href="courseInfo.html" class="breadcrumb-link">課程大綱</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="courseVideo.html"
+                  class="breadcrumb-link">色彩魔法師</a>
+              </li>
+            </ol>
+          </nav>
+          <!-- 標題 -->
+          <h2 class="mb-2 fw-bold text-white">色彩魔法師</h2>
+          <ul class="d-flex fs-body-1 text-nowrap text-white mb-4">
+            <li class="me-3"><i class="bi bi-clock-fill me-2 text-primary"></i>總時長 95 分鐘</li>
+            <li><i class="bi bi-bookmark-fill me-2 text-primary"></i>2 個章節 5 個單元</li>
+          </ul>
+          <div class="card mb-3 w-100 rounded-5 overflow-hidden">
+            <!-- 課程影片-->
+            <div class="row g-0">
+              <div class="col-xl-8">
+                <iframe width="100%" height="390px" src="https://www.youtube.com/embed/zOKBDzv-S9Y?si=Bkx86Np4hYEUiDR9"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <!-- 滾動選單 -->
-              <div class="overflow-auto scroll-y" style="height:342px;">
-                <div class="accordion rounded-3 mb-5" id="accordionPanelsStayOpenExample">
-                  <!-- 章節一 -->
-                  <div class="accordion-item  rounded-3 rounded-bottom-0 overflow-hidden">
-                    <h2 class="accordion-header position-relative overflow-hidden">
-                      <button
-                        class="accordion-button fw-bold px-4 py-2 bg-primary-100 fs-body-2 text-wrap align-items-start"
-                        type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        <div class="d-flex flex-column me-auto text-neutral-950">
-                          章節一：認識色彩
-                          <span class="fs-md-body-2 fw-normal">
-                            00 小時 50 分鐘</span>
+              <!-- 右側課程章節選單 -->
+              <div class="col-xl-4 d-none d-xl-block py-5 px-4">
+                <!-- 標題 -->
+                <div class="card-body p-0 mb-3">
+                  <h5 class="card-title fw-bold  mb-1">課程單元</h5>
+                  <p class="card-text"><small>3 個單元 | 00 小時 95 分鐘</small></p>
+                </div>
+                <!-- 滾動選單 -->
+                <div class="overflow-auto scroll-y" style="height:342px;">
+                  <div class="accordion rounded-3 mb-5" id="accordionPanelsStayOpenExample">
+                    <!-- 章節一 -->
+                    <div class="accordion-item  rounded-3 rounded-bottom-0 overflow-hidden">
+                      <h2 class="accordion-header position-relative overflow-hidden">
+                        <button
+                          class="accordion-button fw-bold px-4 py-2 bg-primary-100 fs-body-2 text-wrap align-items-start"
+                          type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          <div class="d-flex flex-column me-auto text-neutral-950">
+                            章節一：認識色彩
+                            <span class="fs-md-body-2 fw-normal">
+                              00 小時 50 分鐘</span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body px-0 py-0">
+                          <ul class="mb-0 border-top border-neutral-400">
+                            <li class="active d-flex border-bottom border-neutral-100 px-3 py-3 link-style">
+                              <a href="#" class="text-neutral-950 d-flex flex-column">
+                                <span>單元一：</span>
+                                彩虹冒險-認識色彩的奧秘</a><span class="text-neutral-500 ms-auto mt-auto active">12:06</span>
+                            </li>
+                            <li class="d-flex border-bottom border-neutral-100 px-3 py-3 link-style">
+                              <a href="#" class="text-neutral-950 d-flex flex-column">
+                                <span>單元二：</span>
+                                調色魔法-創造你的專屬色彩</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
+                            </li>
+                            <li class="d-flex border-bottom border-neutral-100 px-3 py-3 link-style">
+                              <a href="#" class="text-neutral-950 d-flex flex-column">
+                                <span>單元三：</span>
+                                色彩心情屋-感受顏色的力量
+                              </a>
+                              <span class="text-neutral-500 ms-auto mt-auto">12:06</span>
+                            </li>
+                          </ul>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                      <div class="accordion-body px-0 py-0">
-                        <ul class="mb-0 border-top border-neutral-400">
-                          <li class="active d-flex border-bottom border-neutral-100 px-3 py-3 link-style">
-                            <a href="#" class="text-neutral-950 d-flex flex-column">
-                              <span>單元一：</span>
-                              彩虹冒險-認識色彩的奧秘</a><span class="text-neutral-500 ms-auto mt-auto active">12:06</span>
-                          </li>
-                          <li class="d-flex border-bottom border-neutral-100 px-3 py-3 link-style">
-                            <a href="#" class="text-neutral-950 d-flex flex-column">
-                              <span>單元二：</span>
-                              調色魔法-創造你的專屬色彩</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
-                          </li>
-                          <li class="d-flex border-bottom border-neutral-100 px-3 py-3 link-style">
-                            <a href="#" class="text-neutral-950 d-flex flex-column">
-                              <span>單元三：</span>
-                              色彩心情屋-感受顏色的力量
-                            </a>
-                            <span class="text-neutral-500 ms-auto mt-auto">12:06</span>
-                          </li>
-                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <!-- 章節二 -->
-                  <div class="accordion-unit2 accordion-item rounded-3 rounded-top-0 overflow-hidden border-top-0">
-                    <h2 class="accordion-header position-relative">
-                      <button
-                        class="accordion-button fw-bold px-4 py-2 bg-primary-100 fs-body-2 text-wrap align-items-start"
-                        type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                        aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                        <div class="d-flex flex-column me-auto text-neutral-950">
-                          章節二：色彩語言
-                          <span class="fs-md-body-2 fw-normal">
-                            00 小時 45 分鐘</span>
+                    <!-- 章節二 -->
+                    <div class="accordion-unit2 accordion-item rounded-3 rounded-top-0 overflow-hidden border-top-0">
+                      <h2 class="accordion-header position-relative">
+                        <button
+                          class="accordion-button fw-bold px-4 py-2 bg-primary-100 fs-body-2 text-wrap align-items-start"
+                          type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                          <div class="d-flex flex-column me-auto text-neutral-950">
+                            章節二：色彩語言
+                            <span class="fs-md-body-2 fw-normal">
+                              00 小時 45 分鐘</span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body px-0 py-0">
+                          <ul class="mb-0 border-top border-neutral-400">
+                            <li class="link-disabled d-flex border-bottom border-neutral-100 px-3 py-3">
+                              <a href="#" class="text-neutral-950 d-flex flex-column">
+                                <span>單元一：</span>
+                                色彩心理-感受顏色的情緒和力量</a><span class="text-neutral-500 ms-auto mt-auto active">12:06</span>
+                            </li>
+                            <li class="link-disabled d-flex border-bottom border-neutral-100 px-3 py-3">
+                              <a href="#" class="text-neutral-950 d-flex flex-column">
+                                <span>單元二：</span>
+                                色彩影響-生活中的色彩影響</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
+                            </li>
+                          </ul>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                      <div class="accordion-body px-0 py-0">
-                        <ul class="mb-0 border-top border-neutral-400">
-                          <li class="link-disabled d-flex border-bottom border-neutral-100 px-3 py-3">
-                            <a href="#" class="text-neutral-950 d-flex flex-column">
-                              <span>單元一：</span>
-                              色彩心理-感受顏色的情緒和力量</a><span class="text-neutral-500 ms-auto mt-auto active">12:06</span>
-                          </li>
-                          <li class="link-disabled d-flex border-bottom border-neutral-100 px-3 py-3">
-                            <a href="#" class="text-neutral-950 d-flex flex-column">
-                              <span>單元二：</span>
-                              色彩影響-生活中的色彩影響</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
@@ -473,604 +502,605 @@
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- 平板章節選單 -->
-    <section class="course-list-tablet">
-      <div class="accordion d-block d-xl-none" id="accordionPanelsStayOpenExample">
-        <!-- 單元列表收合 -->
-        <div class="accordion-item rounded-5 rounded-top-0 border-0">
-          <!-- 單元列表標題 -->
-          <h2 class="accordion-header course-list-title position-relative">
-            <button class="accordion-button bg-primary rounded-0" type=" button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseUnitAll" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseUnitAll">
-              <div class="fs-body-1 text-white ms-auto">單元列表</div>
-            </button>
-          </h2>
-          <!-- 單元列表內容 -->
-          <div id="panelsStayOpen-collapseUnitAll" class="accordion-collapse collapse show">
-            <div class="accordion-body px-0 py-0">
-              <ul class="mb-0">
-                <!-- 章節一 -->
-                <li>
-                  <div class="accordion-item overflow-hidden border border-bottom-0 rounded-0">
-                    <h2 class="accordion-header position-relative border-bottom border-neutral-400">
-                      <button class="accordion-button fw-bold px-5 bg-primary-100 fs-5 rounded-0 text-neutral-950"
-                        type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        章節一
-                        <span class="fs-body-2 fw-normal text-primary-700 ms-auto">
-                          3個單元 | 00 小時 50分鐘</span>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                      <div class="accordion-body px-0 py-0">
-                        <ul class="mb-0">
-                          <li
-                            class="unit-link-active d-flex border-bottom border-neutral-100  px-8 py-3 fs-body-2 link-style position-relative">
-                            <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
-                              <span>單元一：</span>
-                              彩虹冒險-認識色彩的奧秘</a>
-                            <span class="text-neutral-500 ms-auto mt-auto">12:06</span>
-                          </li>
-                          <li
-                            class="d-flex border-bottom border-neutral-100  px-8 py-3 fs-body-2 link-style position-relative">
-                            <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
-                              <span>單元二：</span>
-                              調色魔法-創造你的專屬色彩</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
-                          </li>
-                          <li
-                            class="d-flex border-bottom border-neutral-100  px-8 py-3 fs-body-2 link-style position-relative">
-                            <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
-                              <span>單元三：</span>
-                              色彩心情屋-感受顏色的力量</a><span class="text-neutral-500 ms-auto mt-auto">12:06</span>
-                          </li>
-                        </ul>
+      </header>
+      <!-- 平板章節選單 -->
+      <section class="course-list-tablet">
+        <div class="accordion d-block d-xl-none" id="accordionPanelsStayOpenExample">
+          <!-- 單元列表收合 -->
+          <div class="accordion-item rounded-5 rounded-top-0 border-0">
+            <!-- 單元列表標題 -->
+            <h2 class="accordion-header course-list-title position-relative">
+              <button class="accordion-button bg-primary rounded-0" type=" button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseUnitAll" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseUnitAll">
+                <div class="fs-body-1 text-white ms-auto">單元列表</div>
+              </button>
+            </h2>
+            <!-- 單元列表內容 -->
+            <div id="panelsStayOpen-collapseUnitAll" class="accordion-collapse collapse show">
+              <div class="accordion-body px-0 py-0">
+                <ul class="mb-0">
+                  <!-- 章節一 -->
+                  <li>
+                    <div class="accordion-item overflow-hidden border border-bottom-0 rounded-0">
+                      <h2 class="accordion-header position-relative border-bottom border-neutral-400">
+                        <button class="accordion-button fw-bold px-5 bg-primary-100 fs-5 rounded-0 text-neutral-950"
+                          type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          章節一
+                          <span class="fs-body-2 fw-normal text-primary-700 ms-auto">
+                            3個單元 | 00 小時 50分鐘</span>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body px-0 py-0">
+                          <ul class="mb-0">
+                            <li
+                              class="unit-link-active d-flex border-bottom border-neutral-100  px-8 py-3 fs-body-2 link-style position-relative">
+                              <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
+                                <span>單元一：</span>
+                                彩虹冒險-認識色彩的奧秘</a>
+                              <span class="text-neutral-500 ms-auto mt-auto">12:06</span>
+                            </li>
+                            <li
+                              class="d-flex border-bottom border-neutral-100  px-8 py-3 fs-body-2 link-style position-relative">
+                              <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
+                                <span>單元二：</span>
+                                調色魔法-創造你的專屬色彩</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
+                            </li>
+                            <li
+                              class="d-flex border-bottom border-neutral-100  px-8 py-3 fs-body-2 link-style position-relative">
+                              <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
+                                <span>單元三：</span>
+                                色彩心情屋-感受顏色的力量</a><span class="text-neutral-500 ms-auto mt-auto">12:06</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <!-- 章節二 -->
-                <li>
-                  <div
-                    class="accordion-unit2 accordion-item border border-top-0 rounded-top-0 outline-shadow-lg rounded-5 overflow-hidden">
-                    <h2 class="accordion-header position-relative border-bottom border-neutral-400">
-                      <button class="accordion-button fw-bold px-5 bg-primary-100 fs-5 rounded-0 text-neutral-950"
-                        type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                        aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                        章節二
-                        <span class="fs-body-2 fw-normal text-neutral-500 ms-auto">
-                          2個單元 | 00 小時 45分鐘</span>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                      <div class="accordion-body px-0 py-0">
-                        <ul class="mb-0">
-                          <li
-                            class="link-disabled d-flex border-bottom border-neutral-100 px-8 py-3 fs-body-2 position-relative">
-                            <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
-                              <span>單元一：</span>
-                              色彩心理-感受顏色的情緒和力量</a>
-                            <span class="text-neutral-500 ms-auto mt-auto">12:06</span>
-                          </li>
-                          <li
-                            class="link-disabled d-flex border-bottom border-neutral-100 px-8 py-3 fs-body-2 position-relative">
-                            <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
-                              <span>單元二：</span>
-                              色彩影響-生活中的色彩影響</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
-                          </li>
-                        </ul>
+                  </li>
+                  <!-- 章節二 -->
+                  <li>
+                    <div
+                      class="accordion-unit2 accordion-item border border-top-0 rounded-top-0 outline-shadow-lg rounded-5 overflow-hidden">
+                      <h2 class="accordion-header position-relative border-bottom border-neutral-400">
+                        <button class="accordion-button fw-bold px-5 bg-primary-100 fs-5 rounded-0 text-neutral-950"
+                          type=" button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                          章節二
+                          <span class="fs-body-2 fw-normal text-neutral-500 ms-auto">
+                            2個單元 | 00 小時 45分鐘</span>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body px-0 py-0">
+                          <ul class="mb-0">
+                            <li
+                              class="link-disabled d-flex border-bottom border-neutral-100 px-8 py-3 fs-body-2 position-relative">
+                              <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
+                                <span>單元一：</span>
+                                色彩心理-感受顏色的情緒和力量</a>
+                              <span class="text-neutral-500 ms-auto mt-auto">12:06</span>
+                            </li>
+                            <li
+                              class="link-disabled d-flex border-bottom border-neutral-100 px-8 py-3 fs-body-2 position-relative">
+                              <a href="#" class="text-neutral-950 d-flex flex-column stretched-link">
+                                <span>單元二：</span>
+                                色彩影響-生活中的色彩影響</a><span class="text-neutral-500 ms-auto mt-auto">24:03</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 學習進度 -->
-    <section>
-      <div class="container py-7">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-9 col-7 ps-0">
-            <p class="fs-body-1 fw-bold text-neutral-500 mb-1">學習進度</p>
-            <!-- progress -->
-            <div class="d-flex align-items-center mb-1">
-              <div class="progress w-100 me-3" style="height: 15px">
-                <div class="progress-bar bg-primary-300" role="progressbar" style="width: 70%" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100"></div>
+                  </li>
+                </ul>
               </div>
-              <p class="text-neutral-500">70%</p>
             </div>
-            <p class="fs-body-1 text-neutral-500">
-              按照自己的步調來快樂學習！享受上課的樂趣！
-            </p>
-          </div>
-          <div class="col-lg-3 col-5 d-flex justify-content-between">
-            <div class="d-flex flex-column align-items-center">
-              <img class="d-block img-fluid" src="data:image/png;base64,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"
-                alt="Collection_Certificate_Default" />
-              <p>完課證明</p>
-            </div>
-            <div class="d-flex flex-column align-items-center">
-              <img class="d-block img-fluid" src="data:image/png;base64,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"
-                alt="Collection_Star_reward_Default" />
-              <p>心得獎勵</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <main class="course-video-review bg-primary-100 py-7">
-      <!--課程心得-->
-      <section class="video-review container mb-7  px-5">
-        <h4 class="fw-bold  d-flex align-items-center mb-5">課程心得<span
-            class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">整堂課不分單元，發表一次心得即可獲得學習星星唷
-            !</span>
-        </h4>
-        <!-- 心得輸入框 -->
-        <div class="review-area p-4 bg-white rounded-5 border">
-          <div class="form-floating mb-3">
-            <textarea id="thoughtsTextarea" maxlength="200" class="form-control fs-body-2 p-3 scroll-y" placeholder=""
-              style="height: 197px;resize: none; line-height: 48px;"></textarea>
-            <label for="thoughtsTextarea" class="fs-body-2 text-neutral-300">在這邊寫下你的心得吧～</label>
-          </div>
-          <div class="d-flex justify-content-end align-items-center">
-            <p class="fs-body-2 text-neutral-500 me-4">(※ 送出後可以編輯留言)<span id="charCount" class="ms-4">0/200字</span></p>
-            <div class="review-switch-btn p-1 border rounded-pill position-relative">
-              <!-- input要放在前面，:checked + 是控制後方兄弟元素 -->
-              <input type="checkbox" id="review-switch-btn" class="input-review d-none">
-              <label class="switch-toggle rounded-pill position-absolute fs-body-2" for="review-switch-btn"></label>
-            </div>
-            <button type="submit"
-              class="btn review-btn btn-outline-dark ms-4 outline-shadow-disable rounded-3">送出</button>
           </div>
         </div>
       </section>
-      <!--學習心得 -->
-      <section class="course-review container mb-7 px-5">
-        <!-- 標題 -->
-        <div class="d-lg-flex justify-content-between align-items-center">
-          <h4 class="fw-bold  mb-5">學習心得<span
-              class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">快來看看同學們寫了什麼~</span>
+      <!-- 學習進度 -->
+      <section>
+        <div class="container py-7">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-9 col-7">
+              <p class="fs-body-1 fw-bold text-neutral-500 mb-1">學習進度</p>
+              <!-- progress -->
+              <div class="d-flex align-items-center mb-1">
+                <div class="progress w-100 me-3" style="height: 15px">
+                  <div class="progress-bar bg-primary-300" role="progressbar" style="width: 70%" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="text-neutral-500">70%</p>
+              </div>
+              <p class="fs-body-1 text-neutral-500">
+                按照自己的步調來快樂學習！享受上課的樂趣！
+              </p>
+            </div>
+            <div class="col-lg-3 col-5 d-flex justify-content-between">
+              <div class="d-flex flex-column align-items-center">
+                <img class="d-block img-fluid" src="data:image/png;base64,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"
+                  alt="Collection_Certificate_Default" />
+                <p>完課證明</p>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img class="d-block img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB3CAMAAAAZxb9xAAACslBMVEUAAABiYmJubm5vb29sbGxpaWltbW1ubm59fX1tbW1tbW1vb29ra2tPT09ubm5tbW1ubm5ubm5tbW1mZmZ4eHhycnJ2dnZycnJubm5ubm5xcXFsbGxubm5sbGxsbGxsbGxwcHBxcXFwcHBtbW1ubm5tbW1tbW1sbGxtbW1sbGxvb294eHhra2usrKxzc3NtbW1tbW18fHxtbW16enp2dnZubm5tbW1tbW1tbW1tbW1sbGyhoaFycnJvb29ycnJzc3NxcXF0dHR4eHhsbGxwcHB4eHhtbW2bm5tvb29tbW1tbW14eHhtbW2Pj49paWmioqJ6enptbW1wcHBubm6JiYlwcHB/f390dHSAgICHh4dwcHBwcHCSkpJtbW2AgIB0dHSUlJSGhoaenp6JiYmLi4vBwcG4uLh1dXWAgIB1dXVtbW2Ojo52dnZ8fHyUlJSAgIB8fHxxcXF5eXmEhIR8fHyEhISHh4eqqqqAgICMjIynp6eRkZGEhISAgIBwcHB7e3t0dHSFhYWUlJSTk5NsbGxubm6NjY2hoaF1dXWDg4N7e3uZmZmZmZmioqKBgYF2dnabm5urq6t9fX1oaGjR0dGVlZWSkpLPz890dHSUlJRycnKLi4txcXHMzMx8fHyKiop2dnaNjY2Hh4d5eXmCgoJ3d3eEhIR/f3+Pj4+Ojo7FxcXKysrOzs6GhoZ4eHhubm7ExMTAwMCBgYHJycm9vr5+fn7Hx8erq6u2trZtbW2vr7B7e3uxsbGmpqaioqKdnp6XmJjT09PBwsKpqaqfn5+bm5utra24uLijo6PY2du5ubm8vLy7u7unp6ejpKWZmprc3d/V1ta6urqxtLaurq7i5+y1tbWcnJzy9Pa0tLSzs7OoqKje4eK9wMKTmZ3n7fHi5OaPlJmNkpXW29+mqa2coaStaL3vAAAAlHRSTlMACc80Ix8b+Afg2F8MBLuFgEw5D/z89vby7MyjjmdjWv37+unHwnBPSEQ9FRMJ+uPc29LPubasqJ16XTswKAnx7+jf3NTIloZqW1ZMPxoYFfzw5+Xk3dzY1bGxk450cUc3MzEpIR8Y1MvLy8nAv764raqml46HX1VEPSAP+/r179G4t6ampaGdh3t6eGddW1RKQzkWPcutbAAACg5JREFUaN7tm+dXE1kUwIcmgi6iUizI2nvZta6urrqrrtt7tW3vvffee3mZeZmezEwq6QnBAKEjgoC9r9v/j828MRCQASeT5OwHf584noO/uXn3vtz75oFd4hKX+P8zev2uos0kvXfvXo+HnnnPmvGjsMyx5I0pt1ON0QZ77fQSqyiy/KQdeVjGeONaMewgAAhEKMlsMBhNVvqqW7EM8cS14nECyBA+MzQZDAZcnFSMZYiddIssRxxw1xpkvZSdg2WEd65lnSAOgdOUrOf2VmAZ4YulLaCfalowysEL2QuxDPDIk7UMSMBAmmN2Izdj3Fgs7Sx5tawbJOKDLC4HX5s9AUs7V68QHSARplEJ3ly6Nu3BL3m9rIUBiRCH3eeDX74BSzMPrbA0y86mQ01xvfMEaZKDt8yozMLSypLdS7tR6PtPHgRxTgl+OXibdE+at/uH7+V8Md+h/U1nT/YFz7TRdkMMkd6OpZXdsIOI+Q7+frDpb9DHcclqQMHfORFLI4/d7z8AANKfbUpIe4q2yXqLZxqWRnZKDQRA7D92CPTTCVllty9M48ov+dDqjQtRzschKJT2BvMdafyqu55EoQ+Bz4OCN8LZubot6l9u1UAFE8nJetcdc7E0sXNmPVCjiw6hDQ+uSlOP9cjTQkDV7uR4Cm14d027DEsHr5d3AFWIOqhsePzqtKz81Sv8XqBOtV0JXpw8Jh3Bf720ngDqEO1QlIM3SavTsPIPPSUGwXB4TdCGgs+fl/Lg390Nu6vAsIQltPJ2ac6vqba/fa/LB4an2g7Rhuf3jE+xfMMrfH0VGIGIJNjllU/xhjfxppdhowOMBNMDBbPNaDDPXL0wJV1OVu7N64p3rN7ijnrByDCREO1m/RYhf3nFuvV5erw587ZXPDgnu3DZpBJLW9AJLgYi2E2xJE179uYvW/5M0dRx0xbkXXwBXDN28aK8vBvWXjWlnIZQEsx4R52vCmjE0dnRy7EShLTHExvxC4tiD5F76+KJWeoPMvrW9RPmz61Ynb2RFFirBT8RrvESQAeOwy2tuFkM1Uqk/AzZRdvW3nhzzoa8xUOkRO72qVvK3FYLhfdG6/Z5q0CKqPadPtNqpMyiQMYeIf+6OWsq5s5fPEj+1oNl5rbu9n3BagKkgUBz59EzJyjJw8c+itKCbesHfnluZaM+BqQXwttuhWbczvnpopsT7Q8IYSdIP0SwlsdjLYgrvyhh6Pp+o4EAmYAIeyyoB8kflxD69C6QISQeNWDC7Jw++/MkyBR2aEfj9nU39tnniCBTtCG7gbqzss/+XC3IFPh5+6Zp/etOOkCGYCUcDT13reuzf7spCjLDPg+adnFrdn/FL7k/tA9kAq9VmfTtMz6fmDAZb7LWpKniCab/R5+FRgdMdnL5/AH7/BR/OwPSQXNDIC6vsUBRllOwoHLg9+tNU9j6uL5pf1OqAq8C1Xibs09uxmW5e1blaGywXuqJ24/9kRp9VSTMAEdjg6wnjos8p8gno1FvkP4+CY2of+yPHUwcTE3oNbZwVeyzPxz7OWiFZqPc8fKTi1Hkg3j0Sr5FPpI5uR8dTKQk+HZzkAAME8t2AXJGNGUWVA59tHTblXwPA8DZmD5ltLvkWiY6BZJTsr3wctXTuBW19QEAjh0DKdSbAGBOh2g04JrgdUiuon/udjnzD6V0ewNMmIUocspdgORq/LLy9nq1LqfGRwCFrsN9jespJv5TTZXqwUJMbkTyK8Zgw5KzsqRR5b85aqo5Hw1V02c39QCEz6A63df5JQ5X5OuysBH0W0tV9DWsVc4Kb9RV1yciukx4FwCBMyzboiLvFCCllNoVY5B8WEY9SbYNqY/UddpZiyXUhlYgrq9utfo5q/1wTQSoPDNJnS81JB+JsU+VGgJqBRy8cMAhHEEGqK85aVMpNRVuebGsA+l1Q0RYqFZq6vqXSlqdQD/Oo1aeM6qUmjqPPl/Sqn+UY+pZPqHUNOhfWtqoW98GeSXbYaHGk5yxL5INQI2WCAEQjrZOAqhxmpRMKNtjcs0HKfe7I6rtGYUHY9ZAHdfrUJ/fBWhDHSRZuCCJM7ISg+pnXx01hb2+Bi4yzOq0xno4GeukZF6X3HK3q3mYvgFvNPb6wDBQNK6EviorCfttL1g7gTqO+ggDhsPFo9A5+gYsGfsnVg1Nvqrd5ZmQlP1Zi0+P3QyTtqN1p6r12HH6vH1BUm/+rEagh1bahIYmelcy9p/4Vn0NHXShnKenJvXyTQrrG6Ekv0GGn52M/QVW31xLCG5kDy1bnIT9bmsz0IWFRHbLrJwk7O9ZCH12m/Jimpt8o3b546QB6KOb5lDa5Rdrt79J9ui0B2nRIDNjjXb7l7AO6IRmkd09+xrN9mclr1675DaipM/O1Wy/V2D02s1Ke2G5YoLmpNtMAb00kpRsp7Qn/ZubGnXbW5TuxpY/V/M+W96u2+5Qkh6H47S+mP10hk+/XWKVq3dTR2m0f0zqnyaqRQGX7dZVGzRe3NxaCwZCEBqGmCMBNEjhPLr+5dJ67fDn++yDPsV/Dgx4lq6oEccbaoae9gJ/oaRhOpSLKNSsedrs321uGxiNs6cjIfjm3hAkIeRrbccvXKDfehztBkZ+xFMkSnrTjHUaU74sPPBeATjy5299j9IqkAJlw3FTiIaDmz+GqXY1N/95BF13hSIqOV7jlctXoS8hmCBhiQQalUu0RKBFogVKHk3t/tI7tkwubRzwJi/SG/j3HNHSKv9bkA0p74A03jR+pTYhpCPnmo/+RRw56oy5vWGRRkeeuM2ydNaD88buWbVMaEvwB8/t8zYAhlHmPcEm20OrcjXts1u5QL/dGQ0yRwi03h0iKbhw+TDCz8+6av5E+YB3z457/CcOEH1v/Bz9v9iAkt4g3qWpvbn6ykYmsXCdyurXu3jBjMcCt4n8pKnj8+I3Qsa//IHYEAQXQJxRkt4yc6E2e8cFucyEXSTvkt0GF5w554bE/WvUnpVQjDrAYMKKnYOVWZrsRucg93EO8hbkpoTp2WNGDeoYFo25jw51M0PbKThXi/2JldbEQiKcp80eUpTXG6eEScvWDtUjZ42Zkl9b5yQStyjcbUexa7Njr5WHE9wH2mhoRdlLseUFFXlqV1O+mV3OHXX0+09Bq/L2bfrll2m7tOs+TACEs6aXhSFKdpv85YXb5g+zc+S+NqXMHgkQANFFQcqAKq5AY3fzw2Z/iwPtVw0hyJoTi2xYcr7aUoLXMXKm1JlJlxEdjJdWLMK08eNHkDsRjRr9JMvJ7niRjcTYhePuZPHWaCvOQguOcs79jPYRfv32lRtJcq/HbbHjBrsYL7KRWZSz6+mNJO3Jf5+zyX/RQRbMG41p5rJFoxas/Wy5h6ZpklaK7CLJWpQ7vrho8vTYL8aeomghkidH1oTKbWvGLUBqbeTOK566pjgHu8QlLnGe/wA1EG0yOiYRAAAAAABJRU5ErkJggg=="
+                  alt="Collection_Star_reward_Default" />
+                <p>心得獎勵</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main class="course-video-review bg-primary-100 py-7">
+        <!--課程心得-->
+        <section class="video-review container mb-7  px-5">
+          <h4 class="fw-bold  d-flex align-items-center mb-5">課程心得<span
+              class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">整堂課不分單元，發表一次心得即可獲得學習星星唷
+              !</span>
           </h4>
-          <ul class="d-flex mb-3 fs-body-2 justify-content-end">
-            <li class="course-review-sort sort-active">
-              <a href="#" class="text-primary-950">最新發布</a>
+          <!-- 心得輸入框 -->
+          <div class="review-area p-4 bg-white rounded-5 border">
+            <div class="form-floating mb-3">
+              <textarea id="thoughtsTextarea" maxlength="200" class="form-control fs-body-2 p-3 scroll-y" placeholder=""
+                style="height: 197px;resize: none; line-height: 48px;"></textarea>
+              <label for="thoughtsTextarea" class="fs-body-2 text-neutral-300">在這邊寫下你的心得吧～</label>
+            </div>
+            <div class="d-flex justify-content-end align-items-center">
+              <p class="fs-body-2 text-neutral-500 me-4">(※ 送出後可以編輯留言)<span id="charCount" class="ms-4">0/200字</span>
+              </p>
+              <div class="review-switch-btn p-1 border rounded-pill position-relative">
+                <!-- input要放在前面，:checked + 是控制後方兄弟元素 -->
+                <input type="checkbox" id="review-switch-btn" class="input-review d-none">
+                <label class="switch-toggle rounded-pill position-absolute fs-body-2" for="review-switch-btn"></label>
+              </div>
+              <button type="submit"
+                class="btn review-btn btn-outline-dark ms-4 outline-shadow-disable rounded-3">送出</button>
+            </div>
+          </div>
+        </section>
+        <!--學習心得 -->
+        <section class="course-review container mb-7 px-5">
+          <!-- 標題 -->
+          <div class="d-lg-flex justify-content-between align-items-center">
+            <h4 class="fw-bold  mb-5">學習心得<span
+                class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">快來看看同學們寫了什麼~</span>
+            </h4>
+            <ul class="d-flex mb-3 fs-body-2 justify-content-end">
+              <li class="course-review-sort sort-active">
+                <a href="#" class="text-primary-950">最新發布</a>
+              </li>
+              <li class="course-review-sort position-relative">
+                <a href="#" class="note-sm text-neutral-950">最多人讚</a>
+              </li>
+              <li class="course-review-sort position-relative">
+                <a href="#" class="note-sm text-neutral-950">我的日記</a>
+              </li>
+            </ul>
+          </div>
+          <!-- 心得卡片 -->
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="position-relative">
+                <!-- 展開按鈕(功能) -->
+                <input type="checkbox" id="open-review-card1" class="open-review-card1 d-none">
+                <div
+                  class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
+                  <!-- 卡片標題 -->
+                  <div class="d-flex align-items-center mb-3">
+                    <img class="me-3" src="data:image/png;base64,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" alt="user photo">
+                    <div class="d-flex flex-column">
+                      <small>@mingtian77</small>
+                      <p class="fs-body-3">小明<span class="ms-1"> 小朋友</span></p>
+                    </div>
+                    <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>100+
+                    </p>
+                  </div>
+                  <!-- 卡片內容 -->
+                  我真的很喜歡這個平台上的課程！小王老師的科學課特別有趣，每次上課都有好多新發現。現在我每天都期待上課，因為可以學到好多有趣的知識，還能做很多好玩的實驗！
+                  <!-- 展開按鈕(文字) -->
+                  <label
+                    class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
+                    for="open-review-card1">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <!-- 展開按鈕(功能) -->
+                <input type="checkbox" id="open-review-card2" class="open-review-card2 d-none">
+                <div
+                  class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
+                  <!-- 卡片標題 -->
+                  <div class="d-flex align-items-center mb-3">
+                    <img class="me-3" src="data:image/png;base64,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" alt="user photo">
+                    <div class="d-flex flex-column">
+                      <small>@xiaohua</small>
+                      <p class="fs-body-3">小華<span class="ms-1">小朋友</span></p>
+                    </div>
+                    <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>32
+                    </p>
+                  </div>
+                  <!-- 卡片內容 -->
+                  老師們講得很清楚，每次我有問題，他們都會耐心解答。而且還有很多互動的環節，讓我在學習中不會覺得無聊。這裡真是太棒了！
+                  <!-- 展開按鈕(文字) -->
+                  <label
+                    class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
+                    for="open-review-card2">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-none d-lg-block">
+              <div class="position-relative">
+                <!-- 展開按鈕(功能) -->
+                <input type="checkbox" id="open-review-card3" class="open-review-card3 d-none">
+                <div
+                  class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
+                  <!-- 卡片標題 -->
+                  <div class="d-flex align-items-center mb-3">
+                    <img class="me-3" src="data:image/png;base64,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" alt="user photo">
+                    <div class="d-flex flex-column">
+                      <small>@xiaomeiwang</small>
+                      <p class="fs-body-3">王小美<span class="ms-1">小朋友</span></p>
+                    </div>
+                    <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>10
+                    </p>
+                  </div>
+                  <!-- 卡片內容 -->
+                  課程很有趣，我特別喜歡動植物課，每次上課都像在探險一樣。還有好多有趣的小遊戲和實驗，讓我每次都學到很多新知識！
+                  <!-- 展開按鈕(文字) -->
+                  <label
+                    class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
+                    for="open-review-card3">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-none d-lg-block">
+              <div class="position-relative">
+                <!-- 展開按鈕(功能) -->
+                <input type="checkbox" id="open-review-card4" class="open-review-card4 d-none">
+                <div
+                  class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
+                  <!-- 卡片標題 -->
+                  <div class="d-flex align-items-center mb-3">
+                    <img class="me-3" src="data:image/png;base64,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" alt="user photo">
+                    <div class="d-flex flex-column">
+                      <small>@liii145</small>
+                      <p class="fs-body-3">小麗<span class="ms-1">小朋友</span></p>
+                    </div>
+                    <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>10
+                    </p>
+                  </div>
+                  <!-- 卡片內容 -->
+                  覺得課程真的很棒！每次上課都有新的挑戰和發現，老師們也很親切友好。我最喜歡的是可以在家裡舒舒服服地上課，還能跟同學們一起交流。這是我最喜歡的學習平台！
+                  <!-- 展開按鈕(文字) -->
+                  <label
+                    class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
+                    for="open-review-card4">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 頁碼 -->
+        <nav class="course-page">
+          <ul class="pagination justify-content-center fs-body-2">
+            <li class="page-item">
+              <a class="page-link bg-white rounded outline-shadow-sm" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+              </a>
             </li>
-            <li class="course-review-sort position-relative">
-              <a href="#" class="note-sm text-neutral-950">最多人讚</a>
+            <li class="page-item">
+              <a class="page-link border-0 rounded-0 mx-1" href="#">1</a>
             </li>
-            <li class="course-review-sort position-relative">
-              <a href="#" class="note-sm text-neutral-950">我的日記</a>
+            <li class="page-item">
+              <a class="page-link border-0 rounded-0 mx-1" href="#">2</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link border-0 rounded-0 mx-1" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link border-0 rounded-0 mx-1" href="#">...</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link border-0 rounded-0 mx-1" href="#">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link border-0 rounded-0 mx-1" href="#">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link bg-white rounded outline-shadow-sm" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+              </a>
             </li>
           </ul>
-        </div>
-        <!-- 心得卡片 -->
-        <div class="row g-4">
-          <div class="col-6">
-            <div class="position-relative">
-              <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card1" class="open-review-card1 d-none">
+        </nav>
+      </main>
+      <aside>
+        <!-- 類似課程 -->
+        <section class="container similar-course py-7">
+          <!-- 標題 -->
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h4 class="fw-bold d-flex align-items-center">
+              類似的課程
+              <span
+                class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">探索更多課程，讓學習更豐富！</span>
+            </h4>
+            <a href="#" class="more-link text-neutral-950 d-flex align-items-center fs-body-2 p-1">查看更多
+              <span class="material-symbols-outlined"> chevron_right </span></a>
+          </div>
+          <!-- 課程卡片 -->
+          <div class="row g-4 flex-column flex-lg-row align-items-center">
+            <div class="col-lg-4">
               <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
-                <!-- 卡片標題 -->
-                <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="data:image/png;base64,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" alt="user photo">
-                  <div class="d-flex flex-column">
-                    <small>@mingtian77</small>
-                    <p class="fs-body-3">小明<span class="ms-1"> 小朋友</span></p>
-                  </div>
-                  <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>100+
-                  </p>
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+                <div class="col-lg-12 col-5 overflow-hidden">
+                  <img src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png" class="course-img img-fluid h-100"
+                    alt="..." />
                 </div>
-                <!-- 卡片內容 -->
-                我真的很喜歡這個平台上的課程！小王老師的科學課特別有趣，每次上課都有好多新發現。現在我每天都期待上課，因為可以學到好多有趣的知識，還能做很多好玩的實驗！
-                <!-- 展開按鈕(文字) -->
-                <label
-                  class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
-                  for="open-review-card1">
-                </label>
+                <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
+                  <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">自然界的調色盤</h5>
+                  <p class="text-neutral-500 mb-2 fs-body-3">38 位夥伴學習中</p>
+                  <div>
+                    <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
+                    <!-- progress -->
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="progress w-100 me-3" style="height: 15px">
+                        <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="text-neutral-500">0%</p>
+                    </div>
+                  </div>
+                </div>
+                <span class="new-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
+                    auto_awesome </span>新上架</span>
+                <button class="like-tag"></button>
+                <a href="#" class="stretched-link"></a>
               </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="position-relative">
-              <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card2" class="open-review-card2 d-none">
+            <div class="col-lg-4">
               <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
-                <!-- 卡片標題 -->
-                <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="data:image/png;base64,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" alt="user photo">
-                  <div class="d-flex flex-column">
-                    <small>@xiaohua</small>
-                    <p class="fs-body-3">小華<span class="ms-1">小朋友</span></p>
-                  </div>
-                  <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>32
-                  </p>
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+                <div class="col-lg-12 col-5 overflow-hidden">
+                  <img src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-46958ca2.png"
+                    class="course-img img-fluid h-100" alt="..." />
                 </div>
-                <!-- 卡片內容 -->
-                老師們講得很清楚，每次我有問題，他們都會耐心解答。而且還有很多互動的環節，讓我在學習中不會覺得無聊。這裡真是太棒了！
-                <!-- 展開按鈕(文字) -->
-                <label
-                  class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
-                  for="open-review-card2">
-                </label>
+                <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
+                  <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">數位色彩世界</h5>
+                  <p class="text-neutral-500 mb-2 fs-body-3">93 位夥伴學習中</p>
+                  <div>
+                    <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
+                    <!-- progress -->
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="progress w-100 me-3" style="height: 15px">
+                        <div class="progress-bar bg-primary-300" role="progressbar" style="width: 40%"
+                          aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="text-neutral-500">40%</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="like-tag"></button>
+                <a href="#" class="stretched-link"></a>
               </div>
             </div>
-          </div>
-          <div class="col-6 d-none d-lg-block">
-            <div class="position-relative">
-              <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card3" class="open-review-card3 d-none">
+            <div class="col-lg-4">
               <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
-                <!-- 卡片標題 -->
-                <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="data:image/png;base64,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" alt="user photo">
-                  <div class="d-flex flex-column">
-                    <small>@xiaomeiwang</small>
-                    <p class="fs-body-3">王小美<span class="ms-1">小朋友</span></p>
-                  </div>
-                  <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>10
-                  </p>
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+                <div class="col-lg-12 col-5 overflow-hidden">
+                  <img src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-0fab52cc.png"
+                    class="course-img img-fluid h-100" alt="..." />
                 </div>
-                <!-- 卡片內容 -->
-                課程很有趣，我特別喜歡動植物課，每次上課都像在探險一樣。還有好多有趣的小遊戲和實驗，讓我每次都學到很多新知識！
-                <!-- 展開按鈕(文字) -->
-                <label
-                  class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
-                  for="open-review-card3">
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 d-none d-lg-block">
-            <div class="position-relative">
-              <!-- 展開按鈕(功能) -->
-              <input type="checkbox" id="open-review-card4" class="open-review-card4 d-none">
-              <div
-                class="card card-body fs-body-3 rounded-5 border bg-white outline-shadow-sm px-5 pt-4 py-7 text position-relative  gradient">
-                <!-- 卡片標題 -->
-                <div class="d-flex align-items-center mb-3">
-                  <img class="me-3" src="data:image/png;base64,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" alt="user photo">
-                  <div class="d-flex flex-column">
-                    <small>@liii145</small>
-                    <p class="fs-body-3">小麗<span class="ms-1">小朋友</span></p>
-                  </div>
-                  <p class="fs-body-2 ms-auto"><i class="bi bi-star-fill text-secondary-300 me-1"></i>10
-                  </p>
-                </div>
-                <!-- 卡片內容 -->
-                覺得課程真的很棒！每次上課都有新的挑戰和發現，老師們也很親切友好。我最喜歡的是可以在家裡舒舒服服地上課，還能跟同學們一起交流。這是我最喜歡的學習平台！
-                <!-- 展開按鈕(文字) -->
-                <label
-                  class="btn btn-light border rounded-3 position-absolute bottom-0 start-50 translate-middle-x mb-4 text-nowrap card-btn"
-                  for="open-review-card4">
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 頁碼 -->
-      <nav class="course-page">
-        <ul class="pagination justify-content-center fs-body-2">
-          <li class="page-item">
-            <a class="page-link bg-white rounded outline-shadow-sm" href="#" aria-label="Previous">
-              <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-0 rounded-0 mx-1" href="#">1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-0 rounded-0 mx-1" href="#">2</a>
-          </li>
-          <li class="page-item active">
-            <a class="page-link border-0 rounded-0 mx-1" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-0 rounded-0 mx-1" href="#">...</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-0 rounded-0 mx-1" href="#">9</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-0 rounded-0 mx-1" href="#">10</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link bg-white rounded outline-shadow-sm" href="#" aria-label="Next">
-              <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </main>
-    <aside>
-      <!-- 類似課程 -->
-      <section class="container similar-course py-7">
-        <!-- 標題 -->
-        <div class="d-flex justify-content-between align-items-center mb-5">
-          <h4 class="fw-bold d-flex align-items-center">
-            類似的課程
-            <span class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">探索更多課程，讓學習更豐富！</span>
-          </h4>
-          <a href="#" class="more-link text-neutral-950 d-flex align-items-center fs-body-2 p-1">查看更多
-            <span class="material-symbols-outlined"> chevron_right </span></a>
-        </div>
-        <!-- 課程卡片 -->
-        <div class="row g-4 flex-column flex-lg-row align-items-center">
-          <div class="col-lg-4">
-            <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <div class="col-lg-12 col-5 overflow-hidden">
-                <img src="/AAPD-LikeIt/assets/Course_Cover_自然界的調色盤-2042ef79.png" class="course-img img-fluid h-100"
-                  alt="..." />
-              </div>
-              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
-                    </li>
-                    <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
-                    </li>
-                  </ol>
-                </nav>
-                <h5 class="fw-bold">自然界的調色盤</h5>
-                <p class="text-neutral-500 mb-2 fs-body-3">38 位夥伴學習中</p>
-                <div>
-                  <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
-                  <!-- progress -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="progress w-100 me-3" style="height: 15px">
-                      <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
+                  <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold">色彩與文化之旅</h5>
+                  <p class="text-neutral-500 mb-2 fs-body-3">139 位夥伴學習中</p>
+                  <div>
+                    <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
+                    <!-- progress -->
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="progress w-100 me-3" style="height: 15px">
+                        <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="text-neutral-500">0%</p>
                     </div>
-                    <p class="text-neutral-500">0%</p>
-                  </div>
-                </div>
-              </div>
-              <span class="new-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  auto_awesome </span>新上架</span>
-              <button class="like-tag"></button>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <div class="col-lg-12 col-5 overflow-hidden">
-                <img src="/AAPD-LikeIt/assets/Course_Cover_數位色彩世界-46958ca2.png" class="course-img img-fluid h-100"
-                  alt="..." />
-              </div>
-              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
-                    </li>
-                    <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
-                    </li>
-                  </ol>
-                </nav>
-                <h5 class="fw-bold">數位色彩世界</h5>
-                <p class="text-neutral-500 mb-2 fs-body-3">93 位夥伴學習中</p>
-                <div>
-                  <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
-                  <!-- progress -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="progress w-100 me-3" style="height: 15px">
-                      <div class="progress-bar bg-primary-300" role="progressbar" style="width: 40%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p class="text-neutral-500">40%</p>
-                  </div>
-                </div>
-              </div>
-              <button class="like-tag"></button>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <div class="col-lg-12 col-5 overflow-hidden">
-                <img src="/AAPD-LikeIt/assets/Course_Cover_色彩與文化之旅-0fab52cc.png"
-                  class="course-img img-fluid h-100" alt="..." />
-              </div>
-              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
-                    </li>
-                    <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">色彩學</a>
-                    </li>
-                  </ol>
-                </nav>
-                <h5 class="fw-bold">色彩與文化之旅</h5>
-                <p class="text-neutral-500 mb-2 fs-body-3">139 位夥伴學習中</p>
-                <div>
-                  <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
-                  <!-- progress -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="progress w-100 me-3" style="height: 15px">
-                      <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p class="text-neutral-500">0%</p>
-                  </div>
-                </div>
-              </div>
-              <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  local_fire_department </span>熱門排行</span>
-              <button class="like-tag"></button>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 推薦課程 -->
-      <section class="container recommand-course py-7">
-        <!-- 標題 -->
-        <div class="d-flex justify-content-between align-items-center mb-5">
-          <h4 class="fw-bold d-flex align-items-center">
-            推薦課程卡片
-            <span
-              class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">現在正熱門，看看大家都在學什麼！</span>
-          </h4>
-          <a href="#" class="more-link text-neutral-950 d-flex align-items-center fs-body-2 p-1">查看更多
-            <span class="material-symbols-outlined"> chevron_right </span>
-          </a>
-        </div>
-        <!-- 課程卡片 -->
-        <div class="row g-4 flex-column flex-lg-row align-items-center">
-          <div class="col-lg-4">
-            <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <div class="col-lg-12 col-5 overflow-hidden">
-                <img src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-ac4b06a2.png"
-                  class="course-img img-fluid h-100" alt="..." />
-              </div>
-              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
-                    </li>
-                    <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">視覺設計</a>
-                    </li>
-                  </ol>
-                </nav>
-                <h5 class="fw-bold text-truncate">造型美學大師班</h5>
-                <p class="text-neutral-500 mb-2 fs-body-3">82 位夥伴學習中</p>
-                <div>
-                  <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
-                  <!-- progress -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="progress w-100 me-3" style="height: 15px">
-                      <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p class="text-neutral-500">0%</p>
-                  </div>
-                </div>
-              </div>
-              <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  local_fire_department </span>熱門排行</span>
-              <button class="like-tag"></button>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <div class="col-lg-12 col-5 overflow-hidden">
-                <img src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-60984d4b.png"
-                  class="course-img img-fluid h-100" alt="..." />
-              </div>
-              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
-                    </li>
-                    <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">攝影</a>
-                    </li>
-                  </ol>
-                </nav>
-                <h5 class="fw-bold text-truncate">日常美學：發現生活中的美</h5>
-                <p class="text-neutral-500 mb-2 fs-body-3">69 位夥伴學習中</p>
-                <div>
-                  <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
-                  <!-- progress -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="progress w-100 me-3" style="height: 15px">
-                      <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p class="text-neutral-500">0%</p>
                   </div>
                 </div>
                 <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
                     local_fire_department </span>熱門排行</span>
+                <button class="like-tag"></button>
+                <a href="#" class="stretched-link"></a>
               </div>
-              <button class="like-tag"></button>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
-              <div class="col-lg-12 col-5 overflow-hidden">
-                <img src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-9701e635.png" class="course-img img-fluid h-100"
-                  alt="..." />
-              </div>
-              <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
-                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
-                    </li>
-                    <li class="breadcrumb-item px-0">
-                      <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">藝術鑑賞</a>
-                    </li>
-                  </ol>
-                </nav>
-                <h5 class="fw-bold text-truncate">藝術史小旅行</h5>
-                <p class="text-neutral-500 mb-2 fs-body-3">75 位夥伴學習中</p>
-                <div>
-                  <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
-                  <!-- progress -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="progress w-100 me-3" style="height: 15px">
-                      <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+        </section>
+        <!-- 推薦課程 -->
+        <section class="container recommand-course py-7">
+          <!-- 標題 -->
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h4 class="fw-bold d-flex align-items-center">
+              推薦課程卡片
+              <span
+                class="fw-normal note position-relative fs-body-3 fs-md-body-1 text-neutral-500">現在正熱門，看看大家都在學什麼！</span>
+            </h4>
+            <a href="#" class="more-link text-neutral-950 d-flex align-items-center fs-body-2 p-1">查看更多
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </a>
+          </div>
+          <!-- 課程卡片 -->
+          <div class="row g-4 flex-column flex-lg-row align-items-center">
+            <div class="col-lg-4">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+                <div class="col-lg-12 col-5 overflow-hidden">
+                  <img src="/AAPD-LikeIt/assets/Course_Cover_造型美學大師班-ac4b06a2.png"
+                    class="course-img img-fluid h-100" alt="..." />
+                </div>
+                <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
+                  <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">高階</a>
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">視覺設計</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold text-truncate">造型美學大師班</h5>
+                  <p class="text-neutral-500 mb-2 fs-body-3">82 位夥伴學習中</p>
+                  <div>
+                    <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
+                    <!-- progress -->
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="progress w-100 me-3" style="height: 15px">
+                        <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="text-neutral-500">0%</p>
                     </div>
-                    <p class="text-neutral-500">0%</p>
                   </div>
                 </div>
+                <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
+                    local_fire_department </span>熱門排行</span>
+                <button class="like-tag"></button>
+                <a href="#" class="stretched-link"></a>
               </div>
-              <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
-                  local_fire_department </span>熱門排行</span>
-              <button class="like-tag"></button>
-              <a href="#" class="stretched-link"></a>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+                <div class="col-lg-12 col-5 overflow-hidden">
+                  <img src="/AAPD-LikeIt/assets/Course_Cover_日常美學：發現生活中的美-60984d4b.png"
+                    class="course-img img-fluid h-100" alt="..." />
+                </div>
+                <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
+                  <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">攝影</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold text-truncate">日常美學：發現生活中的美</h5>
+                  <p class="text-neutral-500 mb-2 fs-body-3">69 位夥伴學習中</p>
+                  <div>
+                    <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
+                    <!-- progress -->
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="progress w-100 me-3" style="height: 15px">
+                        <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="text-neutral-500">0%</p>
+                    </div>
+                  </div>
+                  <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
+                      local_fire_department </span>熱門排行</span>
+                </div>
+                <button class="like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card w-100 flex-row flex-lg-column rounded-5 position-relative border outline-shadow-lg overflow-hidden">
+                <div class="col-lg-12 col-5 overflow-hidden">
+                  <img src="/AAPD-LikeIt/assets/Course_Cover_藝術史小旅行-9701e635.png"
+                    class="course-img img-fluid h-100" alt="..." />
+                </div>
+                <div class="card-body col-7 col-lg-12 px-3 px-lg-4 py-3">
+                  <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">美學素養</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">初階</a>
+                      </li>
+                      <li class="breadcrumb-item px-0">
+                        <a href="#" class="rounded-3 bg-primary-100 text-primary-700 px-2 py-1">藝術鑑賞</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <h5 class="fw-bold text-truncate">藝術史小旅行</h5>
+                  <p class="text-neutral-500 mb-2 fs-body-3">75 位夥伴學習中</p>
+                  <div>
+                    <p class="fs-body-4 text-neutral-500 mb-1">學習進度</p>
+                    <!-- progress -->
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="progress w-100 me-3" style="height: 15px">
+                        <div class="progress-bar bg-primary-300" role="progressbar" style="width: 0%" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="text-neutral-500">0%</p>
+                    </div>
+                  </div>
+                </div>
+                <span class="hot-tag d-flex justify-content-end align-items-center"><span class="material-icons me-2">
+                    local_fire_department </span>熱門排行</span>
+                <button class="like-tag"></button>
+                <a href="#" class="stretched-link"></a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </aside>
+        </section>
+      </aside>
 
-    <div class="mt-7"><footer id="footer" class="position-relative">
+      <div class="mt-7"><footer id="footer" class="position-relative">
   <!-- AI 小幫手 -->
   <a class="AI-helper position-fixed" href="#" id="AI-helper">
     <img
@@ -1135,9 +1165,9 @@
 </footer>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    
+      <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      
 </body>
 
 </html>
