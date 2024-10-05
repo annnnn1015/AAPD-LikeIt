@@ -1,6 +1,24 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+// // 手機版提示通知(chatGPT)
+// // 檢查視窗大小的函數，如果寬度小於等於 768px（手機尺寸）則顯示 Modal
+function checkWindowSize() {
+  if (window.innerWidth <= 430) { // 檢查寬度是否小於等於 768px
+      $('#mobileModal').modal('show'); // 顯示 Modal 視窗
+  }
+}
+
+// 當頁面加載完成時檢查視窗大小
+$(document).ready(function() {
+  checkWindowSize(); // 頁面載入時執行檢查
+});
+
+// 當視窗大小改變時重新檢查
+$(window).resize(function() {
+  checkWindowSize(); // 視窗尺寸改變時重新檢查
+});
+
 // header 選單點擊套用樣式，同時移除其他選項樣式
 $(".header-list-item a").click(function (event) {
   $(this)
@@ -28,7 +46,7 @@ $(".collapse-list-item li a").click(function (event) {
     .removeClass("list-active");
 });
 
-// courseInfo.html 已加入收藏 定時關閉
+// courseInfo.html 已加入收藏 定時關閉(chatGPT)
 $('#exampleModal').on('shown.bs.modal', function () {
   setTimeout(function() {
       $('#exampleModal').modal('hide');
